@@ -1,0 +1,17 @@
+{
+  "authRoutes": [],
+  "publicRoutes": [
+    {
+      "name": "Courses",
+      "to": "../courses"
+    },
+    {
+      "name": "Tests",
+      "to": "../tests"
+    },
+    {
+      "name": "Teachers",
+      "to": "../teachers"
+    }
+  ]
+}
