@@ -16,6 +16,7 @@ import Tests from './pages/public/Tests';
 // CSS
 import './App.css';
 import './index.css';
+import './assets/css/style.css';
 
 const App = () => {
   return (
