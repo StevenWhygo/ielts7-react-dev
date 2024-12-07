@@ -23,15 +23,15 @@ const App = () => {
     <Routes>
       <Route path="/" element={<RootLayout />}>
         <Route element={<PublicRoutes />}>
-          <Route element={<PublicLayout />}>
-            <Route index element={<Home />} />
-            <Route path="home" element={<Navigate to="/" replace />} />
-            <Route path="courses" element={<Courses />} />
-            <Route path="teachers" element={<Teachers />} />
-            <Route path="tests" element={<Tests />} />
-          </Route>
+          {/* <Route element={<PublicLayout />}> */}
+          <Route index element={<Home />} />
+          <Route path="home" element={<Navigate to="/" replace />} />
+          <Route path="courses" element={<Courses />} />
+          <Route path="teachers" element={<Teachers />} />
+          <Route path="tests" element={<Tests />} />
         </Route>
       </Route>
+      {/* </Route> */}
     </Routes>
   );
 };
