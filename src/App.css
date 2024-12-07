@@ -3,15 +3,7 @@
 }
 
 body {
-    /* display: flex;
-    flex-direction: column; */
-    min-width: 37rem;
-    width: 100%;
-    /* min-height: 100vh; */
-    margin-inline: auto;
-    line-height: 1.5;
     overflow-x: hidden;
-    scrollbar-gutter: stable both-edges;
   }
 
 .layout {
