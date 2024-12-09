@@ -1,10 +1,11 @@
 import Menu from './Menu';
-
+import Hamburger from './Hamburger';
 const Navbar = () => {
   return (
-    <div className="">
+    <nav className="">
+      <Hamburger />
       <Menu />
-    </div>
+    </nav>
   );
 };
 export default Navbar;

@@ -6,6 +6,8 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from 'react-router-dom';
+import { NavProvider } from './contexts/NavContext.jsx';
+import { ViewportProvider } from './contexts/ViewportContext.jsx';
 import App from './App.jsx';
 
 const router = createBrowserRouter(
@@ -16,6 +18,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <ViewportProvider>
+      <NavProvider>
+        <RouterProvider router={router} />
+      </NavProvider>
+    </ViewportProvider>
   </StrictMode>
 );

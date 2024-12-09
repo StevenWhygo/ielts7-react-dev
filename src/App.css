@@ -13,6 +13,47 @@ body {
     width: 100%;
     min-height: 100vh;
   }
+
+  /* Hamburger */
+/* source @ https://www.youtube.com/watch?v=R00QiudbD4Y&t=3167s */
+.hamburger {
+    background: transparent;
+    color: var(--clr-grey);
+ }
+ 
+ .hamburger .line {
+  transition: 
+   y 100ms ease-in 100ms,
+   transform 100ms ease-in,
+   opacity 0ms 100ms;
+  transform-origin: center;
+ }
+ 
+ /* Open Menu/Searchbar hamburger [X] animation rules */ 
+ .hamburger[aria-expanded="true"] .line {
+  transition: 
+   y 100ms ease-in,
+   transform 100ms ease-in 100ms,
+   opacity 0ms 100ms;
+ }
+ 
+ .hamburger[aria-expanded="true"] :is(.top, .bottom) {
+     y: 45px;
+ }
+ 
+ .hamburger[aria-expanded="true"] .top {
+     transform: rotate(45deg);
+     -webkit-transform: rotate(45deg);
+ }
+ 
+ .hamburger[aria-expanded="true"] .middle {
+    opacity: 0; 
+ }
+ 
+ .hamburger[aria-expanded="true"] .bottom {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+ }
 /* 
   header.main-header {
     position: fixed;
@@ -37,7 +78,7 @@ body {
 
 nav {
     width: 100%;
-}
+}   
 
 .nav-btns {
     display: flex;
