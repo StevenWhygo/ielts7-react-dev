@@ -82,19 +82,22 @@ const useNavButton = () => {
   useEffect(() => {
     const navHandler = (e) => {
       if (!isMobile && displayMenu) {
-        if (isAuth) {
-          if (e.target.id !== 'auth-btn') {
-            handleAuthMenu(false);
-          }
-        } else {
-          if (e.target.id !== 'hamburger-btn') {
-            handleMenu(false);
-          }
+        // if (isAuth) {
+        //   if (e.target.id !== 'auth-btn') {
+        //     handleAuthMenu(false);
+        //   }
+        // } else {
+        //   if (e.target.id !== 'hamburger-btn') {
+        //     handleMenu(false);
+        //   }
+        // }
+        if (e.target.id !== 'hamburger') {
+          handleMenu(false);
         }
       }
 
       if (isMobile && displayMenu) {
-        if (e.target.id !== 'hamburger-btn') {
+        if (e.target.id !== 'hamburger') {
           handleMenu(false);
         }
       }

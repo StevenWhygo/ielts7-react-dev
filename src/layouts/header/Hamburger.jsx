@@ -14,12 +14,12 @@ const Hamburger = () => {
     ariaExpanded: 'false',
   };
 
+  const handleClick = () => {
+    handleHamburger(!openHamburger);
+  };
+
   return (
-    <Button
-      attributes={attributes}
-      handler={() => handleHamburger(!openHamburger)}
-      ref={hamburgerRef}
-    >
+    <Button attributes={attributes} handler={handleClick} ref={hamburgerRef}>
       {
         <svg
           className="hamburger"
