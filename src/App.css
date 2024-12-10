@@ -16,6 +16,10 @@ body {
 
   /* Hamburger */
 /* source @ https://www.youtube.com/watch?v=R00QiudbD4Y&t=3167s */
+.hamburger * {
+    pointer-events: none;
+}
+
 .hamburger {
     background: transparent;
     color: var(--clr-grey);
