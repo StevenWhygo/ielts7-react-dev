@@ -1,4 +1,10 @@
+import Page from '../../components/Page';
+
 const Teachers = () => {
-  return <div>Teachers</div>;
+  return (
+    <Page>
+      <div>Teachers</div>
+    </Page>
+  );
 };
 export default Teachers;

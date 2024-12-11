@@ -1,14 +1,18 @@
 import { NavLink } from 'react-router-dom';
-import routes from '../../data/ROUTES.json';
+import useNavContext from '../../hooks/contextHooks/useNavContext';
+import menu from '../../data/MENU.json';
 
 const Menu = () => {
-  const { publicRoutes } = routes;
+  const { menuRef } = useNavContext();
+  const { publicMenu } = menu;
   return (
-    <ul className="hidden">
-      {publicRoutes.map((route, i) => {
+    <ul id="menu" className="menu w-full bg-slate-100" ref={menuRef}>
+      {publicMenu.map((option, i) => {
         return (
           <li key={i}>
-            <NavLink to={route.to}>{route.name}</NavLink>
+            <NavLink className={option.style} to={option.route}>
+              {option.label}
+            </NavLink>
           </li>
         );
       })}

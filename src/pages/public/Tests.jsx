@@ -1,4 +1,10 @@
+import Page from '../../components/Page';
+
 const Tests = () => {
-  return <div>Tests</div>;
+  return (
+    <Page>
+      <div>Tests</div>
+    </Page>
+  );
 };
 export default Tests;
