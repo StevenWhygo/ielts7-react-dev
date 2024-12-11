@@ -1,0 +1,32 @@
+{
+  "authMenu": [],
+  "publicMenu": [
+    {
+      "label": "Courses",
+      "route": "../courses",
+      "style": "block text-large border-y p-6 border-slate-700",
+      "submenu": [
+        {
+          "label": "Basic Courses",
+          "route": "./basic-courses",
+          "style": "block text-large border-b p-6 border-slate-700"
+        },
+        {
+          "label": "Advanced Courses",
+          "route": "./advanced-courses",
+          "style": "block text-large border-b p-6 border-slate-700"
+        }
+      ]
+    },
+    {
+      "label": "Tests",
+      "route": "../tests",
+      "style": "block text-large border-b p-6 border-slate-700"
+    },
+    {
+      "label": "Teachers",
+      "route": "../teachers",
+      "style": "block text-large bold border-b p-6 border-slate-700"
+    }
+  ]
+}

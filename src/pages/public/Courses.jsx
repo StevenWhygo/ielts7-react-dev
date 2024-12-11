@@ -1,4 +1,10 @@
+import Page from '../../components/Page';
+
 const Courses = () => {
-  return <div>Courses</div>;
+  return (
+    <Page>
+      <div>Courses</div>
+    </Page>
+  );
 };
 export default Courses;
