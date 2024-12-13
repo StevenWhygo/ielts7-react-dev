@@ -12,6 +12,8 @@ import Home from './pages/public/Home';
 import Courses from './pages/public/Courses';
 import Teachers from './pages/public/Teachers';
 import Tests from './pages/public/Tests';
+import Login from './pages/public/Login';
+import Cart from './pages/public/Cart';
 
 // CSS
 import './App.css';
@@ -29,6 +31,8 @@ const App = () => {
           <Route path="courses" element={<Courses />} />
           <Route path="teachers" element={<Teachers />} />
           <Route path="tests" element={<Tests />} />
+          <Route path="login" element={<Login />} />
+          <Route path="cart" element={<Cart />} />
         </Route>
       </Route>
       {/* </Route> */}

@@ -4,44 +4,18 @@ import useNavContext from './contextHooks/useNavContext';
 import useViewportContext from './contextHooks/useViewportContext';
 
 // Handles control of Navbar buttons @ MainHeader
-const useNavButton = () => {
+const useNavIcon = () => {
   const { dispatch, displayMenu } = useNavContext();
 
   const { isMobile } = useViewportContext();
   // const { isAuth } = useAuthContext();
 
   function handleHamburger(open) {
-    // if (!open && displaySearchBar) {
-    //   handleSearchBar(false);
-    // }
     if (open && !displayMenu) {
       handleMenu(true);
     }
     if (!open && displayMenu) {
       handleMenu(false);
-    }
-  }
-
-  function handleSearchBar(display) {
-    if (!display) {
-      // Delays reaction time to prevent opening menu
-      setTimeout(() => {
-        dispatch({
-          type: 'searchbar',
-          payload: {
-            openHamburger: false,
-            // displaySearchBar: false,
-          },
-        });
-      }, 200);
-    } else {
-      dispatch({
-        type: 'searchbar',
-        payload: {
-          openHamburger: true,
-          // displaySearchBar: true,
-        },
-      });
     }
   }
 
@@ -65,23 +39,24 @@ const useNavButton = () => {
     }
   }
 
-  function handleAuthMenu(display) {
-    if (!display) {
-      dispatch({
-        type: 'auth-menu',
-        payload: false,
-      });
-    } else {
-      dispatch({
-        type: 'auth-menu',
-        payload: true,
-      });
-    }
-  }
+  // function handleAuthMenu(display) {
+  //   if (!display) {
+  //     dispatch({
+  //       type: 'auth-menu',
+  //       payload: false,
+  //     });
+  //   } else {
+  //     dispatch({
+  //       type: 'auth-menu',
+  //       payload: true,
+  //     });
+  //   }
+  // }
 
   useEffect(() => {
     const navHandler = (e) => {
       if (!isMobile && displayMenu) {
+        handleMenu(false);
         // if (isAuth) {
         //   if (e.target.id !== 'auth-btn') {
         //     handleAuthMenu(false);
@@ -109,9 +84,9 @@ const useNavButton = () => {
       document.body.removeEventListener('click', navHandler);
     };
   }, [displayMenu]);
-  // }, [displayMenu, displaySearchBar]);
 
-  return { handleMenu, handleSearchBar, handleHamburger, handleAuthMenu };
+  return { handleMenu, handleHamburger };
+  // return { handleMenu, handleHamburger, handleAuthMenu };
 };
 
-export default useNavButton;
+export default useNavIcon;

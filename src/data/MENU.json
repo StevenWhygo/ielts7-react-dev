@@ -3,17 +3,7 @@
   "publicMenu": [
     {
       "label": "Courses",
-      "route": "../courses",
-      "submenu": [
-        {
-          "label": "Basic Courses",
-          "route": "./basic-courses"
-        },
-        {
-          "label": "Advanced Courses",
-          "route": "./advanced-courses"
-        }
-      ]
+      "route": "../courses"
     },
     {
       "label": "Tests",

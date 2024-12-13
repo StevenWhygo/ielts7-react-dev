@@ -1,10 +1,10 @@
 import Button from '../../components/Button';
 import useNavContext from '../../hooks/contextHooks/useNavContext';
-import useNavButton from '../../hooks/useNavButton';
+import useNavIcon from '../../hooks/useNavIcon';
 
 const Hamburger = () => {
   const { hamburgerRef, openHamburger } = useNavContext();
-  const { handleHamburger } = useNavButton();
+  const { handleHamburger } = useNavIcon();
 
   const attributes = {
     id: 'hamburger',
