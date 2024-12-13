@@ -1,0 +1,28 @@
+{
+  "slider": [
+    {
+      "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01_mobile.jpg",
+      "srcset": [
+        "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01_mobile.webp 576w",
+        "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01.webp 1920w"
+      ],
+      "alt": "IELTS7 Taipei Signup image"
+    },
+    {
+      "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_02_mobile.jpg",
+      "srcset": [
+        "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_02_mobile.webp 576w",
+        "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_02.webp 1920w"
+      ],
+      "alt": "IELTS7 Taipei Tests image"
+    },
+    {
+      "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03_mobile.jpg",
+      "srcset": [
+        "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03_mobile.webp 576w",
+        "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03.webp 1920w"
+      ],
+      "alt": "IELTS7 Taipei Courses image"
+    }
+  ]
+}

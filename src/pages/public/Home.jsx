@@ -1,9 +1,13 @@
 import Page from '../../components/Page';
+import Slider from '../../components/Slider';
+import images from '../../data/IMAGES.json';
 
 const Home = () => {
+  console.log(images.slider);
+
   return (
     <Page>
-      <div>Home</div>
+      <Slider sliderImgs={images.slider} />
     </Page>
   );
 };
