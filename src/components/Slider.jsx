@@ -1,23 +1,25 @@
 import { useState } from 'react';
 
-const Slider = ({ sliderImgs }) => {
+const Slider = ({ slider }) => {
   const [imageIndex, setImageIndex] = useState(0);
-  console.log(sliderImgs);
+  console.log(slider);
 
   return (
     <div>
-      {sliderImgs.map((img, i) => {
+      {slider.pictures.map((picture, i) => {
         return (
-          <img
-            key={i}
-            className="w-screen"
-            src={img.src}
-            sizes="100vw"
-            srcSet={img.srcset.map((set, i) => {
-              return ` ${set}`;
+          <picture key={i}>
+            {picture.sources.map((source, i) => {
+              return (
+                <source key={i} srcSet={source.srcset} media={source.media} />
+              );
             })}
-            alt={img.alt}
-          />
+            <img
+              src={picture.img.src}
+              className={picture.img.className}
+              alt={picture.img.alt}
+            />
+          </picture>
         );
       })}
     </div>
