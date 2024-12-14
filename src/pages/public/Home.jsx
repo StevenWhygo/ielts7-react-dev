@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <Page>
-      <Slider sliderImgs={images.slider} />
+      <Slider slider={images.slider} />
     </Page>
   );
 };
