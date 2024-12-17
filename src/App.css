@@ -122,6 +122,8 @@ body {
 }
 
 .slide-image-transion {
+    -webkit-transition: translate 300ms ease-in-out;
+    -webkit-transition: -webkit-translate 300ms ease-in-out;
     transition: translate 300ms ease-in-out;
 }
 
