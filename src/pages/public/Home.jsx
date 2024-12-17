@@ -1,13 +1,13 @@
 import Page from '../../components/Page';
-import Slider from '../../components/Slider';
+import Slider from '../../features/slider/Slider';
 import images from '../../data/IMAGES.json';
 
 const Home = () => {
-  console.log(images.slider);
+  console.log(images);
 
   return (
     <Page>
-      <Slider slider={images.slider} />
+      <Slider slides={images.slider} />
     </Page>
   );
 };
