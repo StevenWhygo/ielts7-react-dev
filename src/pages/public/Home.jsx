@@ -1,13 +1,11 @@
 import Page from '../../components/Page';
-import Slider from '../../features/slider/Slider';
-import images from '../../data/IMAGES.json';
+import Carousel from '../../features/carousel/Carousel';
+import home from '../../data/HOME.json';
 
 const Home = () => {
-  console.log(images);
-
   return (
     <Page>
-      <Slider slides={images.slider} />
+      <Carousel slides={home.carousel.slides} cards={home.carousel.cards} />
     </Page>
   );
 };

@@ -9,9 +9,9 @@ const Hamburger = () => {
   const attributes = {
     id: 'hamburger',
     className: 'hamburger',
-    type: 'button',
     ariaControls: 'navigation',
     ariaExpanded: 'false',
+    ariaLabel: 'open menu',
   };
 
   const handleClick = () => {
@@ -21,12 +21,7 @@ const Hamburger = () => {
   return (
     <Button attributes={attributes} handler={handleClick} ref={hamburgerRef}>
       {
-        <svg
-          className="hamburger"
-          fill="var(--clr-grey)"
-          viewBox="0 0 100 100"
-          width="30"
-        >
+        <svg viewBox="0 0 100 100" width="30">
           <rect
             className="line top"
             width="90"

@@ -83,14 +83,14 @@ body {
 }  
 
 /* Slider */
-.slider {
+.carousel {
     /* max-width: 1200px; */
     width: 100%;
     min-height: 456px;
     margin: 0 auto;
 }
 
-.slider-btn {
+.carousel-arrow {
     display: block;
     position: absolute;
     top: 0;
@@ -99,17 +99,13 @@ body {
     cursor: pointer;
 }
 
-.slider-btn * {
+.carousel-arrow * {
     pointer-events: none;
 }
 
 /* Slider Indicator */
 .indicator * {
     pointer-events: none;
-}
-
-.slide {
-    flex: 1 0 100%;
 }
 
 .slide-image {
