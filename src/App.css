@@ -117,12 +117,6 @@ body {
     flex-grow: 0;
 }
 
-.slide-transition {
-    -webkit-transition: left 300ms ease-in-out;
-    -webkit-transition: -webkit-left 300ms ease-in-out;
-    transition: left 300ms ease-in-out;
-}
-
 .slider {
     position: relative;
     width: 100%;
@@ -130,13 +124,5 @@ body {
     grid-auto-flow: column;
     grid-auto-columns: 100%;
     transition: left 300ms ease-in-out;
-}
-
-.slide-scroll {
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
-    scroll-snap-type: inline mandatory;
-    scrollbar-width: none;
-
 }
 
