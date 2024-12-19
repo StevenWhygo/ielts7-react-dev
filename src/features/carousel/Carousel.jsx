@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import { useLayoutEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
 import Card from '../../components/Card';
@@ -48,7 +48,7 @@ const Carousel = ({ slides, cards }) => {
     }
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     // switch slide: update translate property value on slide index change
     carouselRef.current.style.translate = `${-100 * slideIndex}%`;
   }, [slideIndex]);

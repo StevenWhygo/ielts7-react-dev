@@ -2,7 +2,6 @@ import { forwardRef } from 'react';
 
 const Button = forwardRef(function Button(props, ref) {
   const { children, handler = null, attributes } = props;
-  console.log(props);
 
   const {
     id = 'button',
