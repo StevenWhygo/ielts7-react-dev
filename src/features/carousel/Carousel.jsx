@@ -50,16 +50,13 @@ const Carousel = ({ slides, cards }) => {
 
   useLayoutEffect(() => {
     // switch slide: update translate property value on slide index change
-    carouselRef.current.style.translate = `${-100 * slideIndex}%`;
+    carouselRef.current.style.left = `${-100 * slideIndex}%`;
   }, [slideIndex]);
 
   return (
     <section className="carousel">
       <div className="relative overflow-hidden">
-        <div
-          className="flex max-w-full scroll-smooth slide-transition touch-none"
-          ref={carouselRef}
-        >
+        <div className="slider" ref={carouselRef}>
           {slides.map((slide, i) => {
             return (
               <picture key={i} className="relative flex-100">

@@ -4,6 +4,7 @@ html {
 
 body {
     overflow-x: hidden;
+    min-width: 325px;
   }
 
 .layout {
@@ -117,8 +118,25 @@ body {
 }
 
 .slide-transition {
-    -webkit-transition: translate 300ms ease-in-out;
-    -webkit-transition: -webkit-translate 300ms ease-in-out;
-    transition: translate 300ms ease-in-out;
+    -webkit-transition: left 300ms ease-in-out;
+    -webkit-transition: -webkit-left 300ms ease-in-out;
+    transition: left 300ms ease-in-out;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    transition: left 300ms ease-in-out;
+}
+
+.slide-scroll {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+    scrollbar-width: none;
+
 }
 
