@@ -15,6 +15,16 @@
         "img": {
           "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01.jpg",
           "alt": "Everything you need to succeed"
+        },
+        "card": {
+          "className": "slide-card",
+          "header": "Everything You Need To Succeed",
+          "body": ["Basic to Advanced Courses."],
+          "link": {
+            "className": "slide-link",
+            "to": "/signup",
+            "value": "Sign Up"
+          }
         }
       },
       {
@@ -31,6 +41,16 @@
         "img": {
           "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_02.jpg",
           "alt": "Try our tests"
+        },
+        "card": {
+          "className": "slide-card",
+          "header": "Test Your Skills",
+          "body": "Test your english skills with our customized tests.",
+          "link": {
+            "className": "slide-link",
+            "to": "/tests",
+            "value": "Go To Tests"
+          }
         }
       },
       {
@@ -47,35 +67,16 @@
         "img": {
           "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03.jpg",
           "alt": "Learning any place, any time"
-        }
-      }
-    ],
-    "cards": [
-      {
-        "header": "Everything you need to succeed",
-        "body": "",
-        "link": {
-          "className": "carousel-link",
-          "to": "/signup",
-          "value": "Sign Up"
-        }
-      },
-      {
-        "header": "Test your skills",
-        "body": "",
-        "link": {
-          "className": "carousel-link",
-          "to": "/tests",
-          "value": "Learn More"
-        }
-      },
-      {
-        "header": "Flexibility that fits your needs",
-        "body": "",
-        "link": {
-          "className": "carousel-link",
-          "to": "/courses",
-          "value": "Learn More"
+        },
+        "card": {
+          "className": "slide-card",
+          "header": "Flexibility To Fit Your Needs",
+          "body": "Unlimited access to online courses and exercises.",
+          "link": {
+            "className": "slide-link",
+            "to": "/courses",
+            "value": "Learn More"
+          }
         }
       }
     ]

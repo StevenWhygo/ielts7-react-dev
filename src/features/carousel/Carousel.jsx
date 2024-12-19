@@ -59,32 +59,41 @@ const Carousel = ({ slides, cards }) => {
         <div className="slider" ref={carouselRef}>
           {slides.map((slide, i) => {
             return (
-              <picture key={i} className="relative flex-100">
-                {slide.sources.map((source, i) => {
-                  return (
-                    <source
-                      key={i}
-                      srcSet={source.srcset}
-                      media={source.media}
-                    />
-                  );
-                })}
-                <img
-                  src={slide.img.src}
-                  className="slide-image"
-                  alt={slide.img.alt}
-                />
-                <div className="absolute top-0 h-12 ">
-                  <div>{cards[i].header}</div>
-                  <Link
-                    to={{
-                      pathname: `${cards[i].link}`,
-                    }}
-                  >
-                    {cards[i].link.value}
-                  </Link>
+              <div className="relative">
+                <picture key={i} className="relative flex-100">
+                  {slide.sources.map((source, i) => {
+                    return (
+                      <source
+                        key={i}
+                        srcSet={source.srcset}
+                        media={source.media}
+                      />
+                    );
+                  })}
+                  <img
+                    src={slide.img.src}
+                    className="slide-image"
+                    alt={slide.img.alt}
+                  />
+                </picture>
+                <div className="absolute top-0 p-4 m-4 w-11/12 min-h-36  bg-slate-50 opacity-40"></div>
+                <div className="absolute top-0 p-4 m-4 w-11/12 min-h-36">
+                  <header className="font-bold text-xl pb-2 mb-2 border-b border-slate-950">
+                    {slide.card.header}
+                  </header>
+                  <p className="text-sm mb-2">{slide.card.body}</p>
+                  <div className="mt-2 text-right">
+                    <Link
+                      className="inline-block w-32 py-2 text-sm text-center border-blue bg-blue text-slate-50 font-bold hover:opacity-80"
+                      to={{
+                        pathname: `${slide.card.link.to}`,
+                      }}
+                    >
+                      {slide.card.link.value}
+                    </Link>
+                  </div>
                 </div>
-              </picture>
+              </div>
             );
           })}
         </div>

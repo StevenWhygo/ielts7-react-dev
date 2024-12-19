@@ -1,5 +1,5 @@
 const Card = ({ children, props }) => {
   const { className } = props;
-  return <article className={`cards ${className}`}>{children}</article>;
+  return <div className={`card ${className}`}>{children}</div>;
 };
 export default Card;
