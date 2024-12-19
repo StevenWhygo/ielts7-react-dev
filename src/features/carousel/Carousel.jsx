@@ -76,13 +76,13 @@ const Carousel = ({ slides, cards }) => {
                     alt={slide.img.alt}
                   />
                 </picture>
-                <div className="absolute top-0 p-4 m-4 w-11/12 min-h-36  bg-slate-50 opacity-40"></div>
-                <div className="absolute top-0 p-4 m-4 w-11/12 min-h-36">
+                <div className="absolute top-0 p-4 m-4 w-11/12 min-h-40  bg-slate-50 opacity-40"></div>
+                <div className="absolute top-0 p-4 m-4 w-11/12 min-h-40">
                   <header className="font-bold text-xl pb-2 mb-2 border-b border-slate-950">
                     {slide.card.header}
                   </header>
                   <p className="text-sm mb-2">{slide.card.body}</p>
-                  <div className="mt-2 text-right">
+                  <div className="mt-6 text-right">
                     <Link
                       className="inline-block w-32 py-2 text-sm text-center border-blue bg-blue text-slate-50 font-bold hover:opacity-80"
                       to={{
