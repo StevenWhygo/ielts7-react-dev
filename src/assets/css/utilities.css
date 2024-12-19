@@ -1,5 +1,12 @@
 /* Custom utility classes */
-
 .flex-100 {
     flex: 1 0 100%;
+}
+
+.border-blue {
+    border: 1px solid var(--clr-blue);
+}
+
+.bg-blue {
+    background-color: var(--clr-blue);
 }

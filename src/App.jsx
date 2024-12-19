@@ -13,6 +13,7 @@ import Courses from './pages/public/Courses';
 import Teachers from './pages/public/Teachers';
 import Tests from './pages/public/Tests';
 import Login from './pages/public/Login';
+import Signup from './pages/public/Signup';
 import Cart from './pages/public/Cart';
 
 // CSS
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="teachers" element={<Teachers />} />
           <Route path="tests" element={<Tests />} />
           <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} />
           <Route path="cart" element={<Cart />} />
         </Route>
       </Route>

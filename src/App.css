@@ -1,3 +1,7 @@
+:root {
+    --slate-100: rgb(241 245 249 / var(--tw-bg-opacity, 1));
+    --clr-blue: #0080c8;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -124,5 +128,13 @@ body {
     grid-auto-flow: column;
     grid-auto-columns: 100%;
     transition: left 300ms ease-in-out;
+}
+
+.slide-card {
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+    background-color: var(--slate-100);
+    opacity: 0.3;
 }
 
