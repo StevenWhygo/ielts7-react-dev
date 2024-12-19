@@ -18,7 +18,7 @@ import Cart from './pages/public/Cart';
 // CSS
 import './App.css';
 import './index.css';
-import './assets/css/style.css';
+import './assets/css/utilities.css';
 
 const App = () => {
   return (
