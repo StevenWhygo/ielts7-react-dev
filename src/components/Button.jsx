@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 
 const Button = forwardRef(function Button(props, ref) {
   const { children, handler = null, attributes } = props;
-  // console.log(props);
+  console.log(props);
 
   const {
     id = 'button',
@@ -10,6 +10,7 @@ const Button = forwardRef(function Button(props, ref) {
     type = 'button',
     ariaControls = false,
     ariaExpanded = false,
+    ariaLabel = false,
   } = attributes;
 
   return (
@@ -19,6 +20,7 @@ const Button = forwardRef(function Button(props, ref) {
       type={type}
       aria-controls={ariaControls}
       aria-expanded={ariaExpanded}
+      aria-label={ariaLabel}
       onClick={handler}
       ref={ref}
     >
