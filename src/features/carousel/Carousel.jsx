@@ -18,7 +18,7 @@ const Carousel = ({ slides, cards }) => {
     {
       attributes: {
         id: 'left',
-        className: 'carousel-arrow transition-opacity hover:opacity-60',
+        className: 'arrow transition-opacity hover:opacity-60',
         ariaLabel: `View Image ${slideIndex}`,
       },
       ref: leftArrowRef,
@@ -27,7 +27,7 @@ const Carousel = ({ slides, cards }) => {
     {
       attributes: {
         id: 'right',
-        className: 'carousel-arrow right-0 transition-opacity hover:opacity-60',
+        className: 'arrow right-0 transition-opacity hover:opacity-60',
         ariaLabel: `View Image ${slideIndex}`,
       },
       ref: rightArrowRef,
@@ -57,7 +57,7 @@ const Carousel = ({ slides, cards }) => {
     <section className="carousel">
       <div className="relative overflow-hidden">
         <div
-          className="flex max-w-full slide-image-transion touch-none"
+          className="flex max-w-full scroll-smooth slide-transition touch-none"
           ref={carouselRef}
         >
           {slides.map((slide, i) => {
