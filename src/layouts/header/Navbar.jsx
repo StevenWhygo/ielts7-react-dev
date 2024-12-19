@@ -6,7 +6,7 @@ import ShoppingCart from './ShoppingCart';
 const Navbar = () => {
   return (
     <div className="ml-auto">
-      <div className="flex items-center gap-x-6 w-full">
+      <div className="flex items-center gap-x-4 w-full">
         <SignIn />
         <ShoppingCart />
         <Hamburger />

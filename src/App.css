@@ -1,5 +1,5 @@
-:root {
-    --min-height-5: 5rem;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -90,16 +90,15 @@ body {
     margin: 0 auto;
 }
 
-.carousel-arrow {
+.arrow {
     display: block;
     position: absolute;
     top: 0;
     bottom: 0;
-    padding: 1rem;
     cursor: pointer;
 }
 
-.carousel-arrow * {
+.arrow * {
     pointer-events: none;
 }
 
@@ -117,7 +116,7 @@ body {
     flex-grow: 0;
 }
 
-.slide-image-transion {
+.slide-transition {
     -webkit-transition: translate 300ms ease-in-out;
     -webkit-transition: -webkit-translate 300ms ease-in-out;
     transition: translate 300ms ease-in-out;
