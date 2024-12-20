@@ -19,7 +19,8 @@ const Carousel = ({ slides, cards }) => {
     {
       attributes: {
         id: 'left',
-        className: 'arrow transition-opacity pr-3/12 hover:opacity-60',
+        className:
+          'block absolute inset-y-0 transition-opacity pr-12 hover:opacity-60',
         ariaLabel: `View Image ${slideIndex}`,
       },
       ref: leftArrowRef,
@@ -28,7 +29,8 @@ const Carousel = ({ slides, cards }) => {
     {
       attributes: {
         id: 'right',
-        className: 'arrow right-0 pl-3/12 transition-opacity hover:opacity-60',
+        className:
+          'block absolute inset-y-0 right-0 pl-12 transition-opacity hover:opacity-60',
         ariaLabel: `View Image ${slideIndex}`,
       },
       ref: rightArrowRef,
@@ -77,8 +79,8 @@ const Carousel = ({ slides, cards }) => {
                     );
                   })}
                   <img
-                    src={slide.img.src}
                     className="slide-image"
+                    src={slide.img.src}
                     alt={slide.img.alt}
                   />
                 </picture>
@@ -115,14 +117,16 @@ const Carousel = ({ slides, cards }) => {
                 handler={nextSlide}
                 ref={arrow.ref}
               >
-                <IconContext.Provider
-                  value={{
-                    color: '#1e293b',
-                    size: '3rem',
-                  }}
-                >
-                  <div>{arrow.icon}</div>
-                </IconContext.Provider>
+                <div className="pointer-events-none">
+                  <IconContext.Provider
+                    value={{
+                      color: '#1e293b',
+                      size: '3rem',
+                    }}
+                  >
+                    {arrow.icon}
+                  </IconContext.Provider>
+                </div>
               </Button>
             );
           })}
@@ -139,26 +143,27 @@ const Carousel = ({ slides, cards }) => {
                 }}
                 handler={nextSlide}
               >
-                {/* {slideIndex === key ? <FaRegCircleDot /> : <FaRegCircle />} */}
-                {slideIndex === key ? (
-                  <IconContext.Provider
-                    value={{
-                      color: '#0080c8',
-                      size: '1.2rem',
-                    }}
-                  >
-                    <GoDotFill />
-                  </IconContext.Provider>
-                ) : (
-                  <IconContext.Provider
-                    value={{
-                      color: '#e2e8f0',
-                      size: '1.2rem',
-                    }}
-                  >
-                    <GoDotFill />
-                  </IconContext.Provider>
-                )}
+                <span className="pointer-events-none">
+                  {slideIndex === key ? (
+                    <IconContext.Provider
+                      value={{
+                        color: '#0080c8',
+                        size: '1.2rem',
+                      }}
+                    >
+                      <GoDotFill />
+                    </IconContext.Provider>
+                  ) : (
+                    <IconContext.Provider
+                      value={{
+                        color: '#e2e8f0',
+                        size: '1.2rem',
+                      }}
+                    >
+                      <GoDotFill />
+                    </IconContext.Provider>
+                  )}
+                </span>
               </Button>
             );
           })}
