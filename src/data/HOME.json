@@ -5,25 +5,25 @@
         "sources": [
           {
             "media": "(max-width: 576px)",
-            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01_mobile.webp"
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03_mobile.webp"
           },
           {
             "media": "(min-width: 577px)",
-            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01.webp"
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03.webp"
           }
         ],
         "img": {
-          "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01.jpg",
-          "alt": "Everything you need to succeed"
+          "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03.jpg",
+          "alt": "Learning any place, any time"
         },
         "card": {
           "className": "slide-card",
-          "header": "Everything You Need To Succeed",
-          "body": ["Basic to Advanced Courses."],
+          "header": "Flexibility To Fit Your Needs",
+          "body": "Unlimited access to online courses and exercises.",
           "link": {
             "className": "slide-link",
-            "to": "/signup",
-            "value": "Sign Up"
+            "to": "/courses",
+            "value": "Learn More"
           }
         }
       },
@@ -49,7 +49,7 @@
           "link": {
             "className": "slide-link",
             "to": "/tests",
-            "value": "Go To Tests"
+            "value": "Try Tests"
           }
         }
       },
@@ -57,25 +57,25 @@
         "sources": [
           {
             "media": "(max-width: 576px)",
-            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03_mobile.webp"
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01_mobile.webp"
           },
           {
             "media": "(min-width: 577px)",
-            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03.webp"
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01.webp"
           }
         ],
         "img": {
-          "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03.jpg",
-          "alt": "Learning any place, any time"
+          "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01.jpg",
+          "alt": "Everything you need to succeed"
         },
         "card": {
           "className": "slide-card",
-          "header": "Flexibility To Fit Your Needs",
-          "body": "Unlimited access to online courses and exercises.",
+          "header": "Everything You Need To Succeed",
+          "body": ["Basic to Advanced Courses."],
           "link": {
             "className": "slide-link",
-            "to": "/courses",
-            "value": "Learn More"
+            "to": "/signup",
+            "value": "Sign Up"
           }
         }
       }
