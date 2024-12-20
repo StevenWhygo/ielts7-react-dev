@@ -5,32 +5,6 @@
         "sources": [
           {
             "media": "(max-width: 576px)",
-            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03_mobile.webp"
-          },
-          {
-            "media": "(min-width: 577px)",
-            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03.webp"
-          }
-        ],
-        "img": {
-          "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03.jpg",
-          "alt": "Learning any place, any time"
-        },
-        "card": {
-          "className": "slide-card",
-          "header": "Flexibility To Fit Your Needs",
-          "body": "Unlimited access to online courses and exercises.",
-          "link": {
-            "className": "slide-link",
-            "to": "/courses",
-            "value": "Learn More"
-          }
-        }
-      },
-      {
-        "sources": [
-          {
-            "media": "(max-width: 576px)",
             "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_02_mobile.webp"
           },
           {
@@ -50,6 +24,32 @@
             "className": "slide-link",
             "to": "/tests",
             "value": "Try Tests"
+          }
+        }
+      },
+      {
+        "sources": [
+          {
+            "media": "(max-width: 576px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03_mobile.webp"
+          },
+          {
+            "media": "(min-width: 577px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03.webp"
+          }
+        ],
+        "img": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03.jpg",
+          "alt": "Learning any place, any time"
+        },
+        "card": {
+          "className": "slide-card",
+          "header": "Flexibility To Fit Your Needs",
+          "body": "Unlimited access to online courses and exercises.",
+          "link": {
+            "className": "slide-link",
+            "to": "/courses",
+            "value": "Learn More"
           }
         }
       },
