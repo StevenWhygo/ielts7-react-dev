@@ -83,21 +83,25 @@ const Carousel = ({ slides, cards }) => {
                   />
                 </picture>
                 <>
-                  <div className="absolute top-0 p-4 m-4 w-11/12 min-h-44  bg-slate-50 opacity-40"></div>
-                  <div className="absolute flex flex-col top-0 p-4 m-4 w-11/12 min-h-44">
-                    <header className="font-bold text-xl pb-2 mb-2 border-b border-slate-950">
-                      {slide.card.header}
-                    </header>
-                    {/* <p className="text-sm mb-2">{slide.card.body}</p> */}
-                    <div className="mt-auto text-right">
-                      <Link
-                        className="inline-block w-32 py-2 text-sm text-center border-blue bg-sky-600 text-slate-50 font-bold hover:opacity-80"
-                        to={{
-                          pathname: `${slide.card.link.to}`,
-                        }}
-                      >
-                        {slide.card.link.value}
-                      </Link>
+                  <div className="absolute top-0 flex justify-center w-full min-h-44 min-w-80 p-4">
+                    <div className="absolute p-4 w-11/12 min-h-44 max-w-md min-w-80 bg-slate-50 opacity-40 z-0"></div>
+                    <div className="absolute p-4 w-11/12 min-h-44 max-w-md min-w-80 flex flex-col">
+                      <header className="pb-2 mb-2 border-b border-slate-950">
+                        <h2 className="font-bold text-xl">
+                          {slide.card.title}
+                        </h2>
+                      </header>
+                      <p className="text-sm mb-2">{slide.card.text}</p>
+                      <div className="mt-auto text-right">
+                        <Link
+                          className="inline-block w-32 py-2 text-sm text-center border-blue bg-sky-600 text-slate-50 font-bold hover:opacity-80"
+                          to={{
+                            pathname: `${slide.card.link.to}`,
+                          }}
+                        >
+                          {slide.card.link.value}
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </>
