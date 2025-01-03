@@ -14,7 +14,7 @@
         ],
         "img": {
           "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03.jpg",
-          "alt": "Learning any place, any time"
+          "alt": "Test Your Skills Slide"
         },
         "card": {
           "className": "slide-card",
@@ -40,7 +40,7 @@
         ],
         "img": {
           "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01.jpg",
-          "alt": "Everything you need to succeed"
+          "alt": "Flexibility To Fit Your Needs Slide"
         },
         "card": {
           "className": "slide-card",
@@ -66,7 +66,7 @@
         ],
         "img": {
           "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_02.jpg",
-          "alt": "Try our tests"
+          "alt": "Everything You Need To Succeed Slide"
         },
         "card": {
           "className": "slide-card",

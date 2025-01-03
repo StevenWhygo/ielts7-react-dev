@@ -95,6 +95,18 @@ body {
     margin: 0 auto;
 }
 
+.arrow {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.arrow * {
+    pointer-events: none;
+}
+
 /* Slider Indicator */
 .indicator * {
     pointer-events: none;
@@ -125,4 +137,3 @@ body {
     background-color: var(--slate-100);
     opacity: 0.3;
 }
-
