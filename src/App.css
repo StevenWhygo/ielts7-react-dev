@@ -1,6 +1,17 @@
+
 :root {
     --slate-100: rgb(241 245 249 / var(--tw-bg-opacity, 1));
     --clr-blue: #0080c8;
+    --clr-surface: #4b4b4b;
+    --clr-lightest: #fafafa;
+
+    /* size units */
+    --size-4: 1rem;
+    --size-2: 0.5rem;
+
+    /* border radius */
+    --radius-1: 2px;
+    --radius-2: 4px;
 }
 html {
     scroll-behavior: smooth;
@@ -136,4 +147,21 @@ body {
     padding: 1rem;
     background-color: var(--slate-100);
     opacity: 0.3;
+}
+
+.media-scroller {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 75%;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.media-element {
+    padding: var(--size-2);
+    color: var(--clr-lightest);
+    background-color: var(--clr-surface);
+    border-radius: var(--radius-2)
 }
