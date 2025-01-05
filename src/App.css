@@ -107,6 +107,7 @@ body {
     width: 100%;
     /* min-height: 456px; */
     margin: 0 auto;
+    padding-block-end: var(--spacer-4)
 }
 
 .arrow {

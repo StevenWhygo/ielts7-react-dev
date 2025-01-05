@@ -5,7 +5,7 @@ import home from '../../data/HOME.json';
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="">
       <Carousel slides={home.carousel.slides} cards={home.carousel.cards} />
       <Scroller cards={home.scroller.cards} />
     </div>
