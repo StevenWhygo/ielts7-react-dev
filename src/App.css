@@ -1,17 +1,20 @@
-
+/* Custom properties */
 :root {
     --slate-100: rgb(241 245 249 / var(--tw-bg-opacity, 1));
     --clr-blue: #0080c8;
     --clr-surface: #4b4b4b;
-    --clr-lightest: #fafafa;
+    --clr-lightest: #f0f0f5;
 
     /* size units */
-    --size-4: 1rem;
-    --size-2: 0.5rem;
+    --spacer-4: 1rem;
+    --spacer-2: 0.5rem;
 
     /* border radius */
     --radius-1: 2px;
     --radius-2: 4px;
+
+    /* box shadow */
+    --shadow-3: 0px 4px 6px 0px rgba(0,0,0,0.3);
 }
 html {
     scroll-behavior: smooth;
@@ -19,7 +22,7 @@ html {
 
 body {
     overflow-x: hidden;
-    min-width: 325px;
+    min-width: 375px;
   }
 
 .layout {
@@ -102,7 +105,7 @@ body {
 .carousel {
     /* max-width: 1200px; */
     width: 100%;
-    min-height: 456px;
+    /* min-height: 456px; */
     margin: 0 auto;
 }
 
@@ -150,18 +153,45 @@ body {
 }
 
 .media-scroller {
+    --spacer: var(--spacer-4);
     display: grid;
     gap: 1rem;
     grid-auto-flow: column;
-    grid-auto-columns: 75%;
+    grid-auto-columns: 83%;
 
     overflow-x: auto;
     overscroll-behavior-inline: contain;
+
+    padding: 0 var(--spacer) var(--spacer)
 }
 
 .media-element {
-    padding: var(--size-2);
+    position: relative;
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--spacer);
+    padding: calc(var(--spacer) * 1.2);
     color: var(--clr-lightest);
     background-color: var(--clr-surface);
-    border-radius: var(--radius-2)
+    border-radius: var(--radius-2);
+    box-shadow: var(--shadow-3);
+}
+
+.media-element-inner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    opacity: 0.2;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--spacer)
+}
+
+/* select all direct children */
+.snaps-inline > * {
+    scroll-snap-align: start;
 }

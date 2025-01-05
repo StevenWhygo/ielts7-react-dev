@@ -82,36 +82,54 @@
     ]
   },
   "scroller": {
-    "elements": [
+    "cards": [
       {
         "title": "Online IELTS Test",
         "text": [
-          "Our mock tests evaluate your listening, reading, writing and speaking skills as does the real test. To take the test you only need a computer and internet connection so you can take them where you want an when you want."
+          "Our mock tests evaluate your listening, reading, writing and speaking skills as does the real test.",
+          "To take the test you only need a computer and internet connection so you can take them where you want an when you want."
         ],
-        "icon": "school"
+        "icon": "school",
+        "link": {
+          "to": "./tests",
+          "value": "Try Tests Now"
+        }
       },
       {
         "title": "In-Depth Scoring",
         "text": [
-          "You will be scored as the real IELTS test, you can check immediately your scores for the reading and speaking parts os the tests, the speaking and writing parts will be evaluated by one of our certified teachers in less than 24h."
+          "You will be scored as the real IELTS test, you can check immediately your scores for the reading and speaking.",
+          "The speaking and writing parts will be evaluated by one of our certified teachers in less than 24h."
         ],
-        "icon": "score"
+        "icon": "score",
+        "link": {
+          "to": "./teachers",
+          "value": "IELTS7 Teachers"
+        }
       },
       {
         "title": "Unlimited Tests Access",
         "text": [
-          "You can take all the mock tests you need to be prepared, the reading and listening parts of the tests are completely free, you will only be charged if you need the assessment of one of our certified teachers to evaluate the speaking and writing parts of the test.",
+          "Take all the mock tests you need to be prepared. Reading and listening portions of all tests are completely free.",
           "All the scores of the tests you take are saved so you can easily see your progression and know where to focus your energy."
         ],
-        "icon": "unlimited"
+        "icon": "unlimited",
+        "link": {
+          "to": "./tests",
+          "value": "test"
+        }
       },
       {
         "title": "IELTS Tests Like No Other",
         "text": [
           "Our mock tests have been created by our expert team of certified teachers with years of experience in IELTS tests.",
-          "With our IELTS mock tests your four skills, reading, listening, speaking and writing will be tested, with the same content, structure, timings and question types as if you were taking the real IELTS test."
+          "Whether it be Reading, Listening, Speaking or Writing, IELTS7 tests will give you everything you need to succeed."
         ],
-        "icon": "best"
+        "icon": "best",
+        "link": {
+          "to": "./courses",
+          "value": "All Courses"
+        }
       }
     ]
   }
