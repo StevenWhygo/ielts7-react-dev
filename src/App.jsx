@@ -12,6 +12,7 @@ import Home from './pages/public/Home';
 import Courses from './pages/public/Courses';
 import Teachers from './pages/public/Teachers';
 import Tests from './pages/public/Tests';
+import MockTests from './pages/public/MockTests';
 import Login from './pages/public/Login';
 import Signup from './pages/public/Signup';
 import Cart from './pages/public/Cart';
@@ -31,7 +32,8 @@ const App = () => {
           <Route path="home" element={<Navigate to="/" replace />} />
           <Route path="courses" element={<Courses />} />
           <Route path="teachers" element={<Teachers />} />
-          <Route path="tests" element={<Tests />} />
+          <Route path="all-tests" element={<Tests />} />
+          <Route path="mocktests" element={<MockTests />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
           <Route path="cart" element={<Cart />} />

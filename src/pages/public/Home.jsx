@@ -5,10 +5,10 @@ import home from '../../data/HOME.json';
 
 const Home = () => {
   return (
-    <Page>
+    <div className="flex flex-col gap-4">
       <Carousel slides={home.carousel.slides} cards={home.carousel.cards} />
-      <Scroller elements={home.scroller.elements} />
-    </Page>
+      <Scroller cards={home.scroller.cards} />
+    </div>
   );
 };
 export default Home;
