@@ -3,7 +3,7 @@ import Page from '../../components/Page';
 const MockTests = () => {
   return (
     <Page>
-      <div>Tests</div>
+      <div>Mock Tests</div>
     </Page>
   );
 };
