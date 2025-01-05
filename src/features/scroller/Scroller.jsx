@@ -44,7 +44,7 @@ const Scroller = ({ cards }) => {
               })}
 
               <Link
-                className="relative mt-auto inline-block w-full py-3 text-sm text-center border-blue bg-sky-600 text-slate-50 font-bold opacity-100"
+                className="relative mt-auto inline-block w-full py-3 text-center border-blue bg-sky-600 text-slate-50 text-base font-bold opacity-100"
                 to={{
                   pathname: card.link.to,
                 }}

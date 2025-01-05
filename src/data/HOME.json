@@ -91,7 +91,7 @@
         ],
         "icon": "school",
         "link": {
-          "to": "./tests",
+          "to": "./mocktests",
           "value": "Try Tests Now"
         }
       },
@@ -115,8 +115,8 @@
         ],
         "icon": "unlimited",
         "link": {
-          "to": "./tests",
-          "value": "test"
+          "to": "./all-tests",
+          "value": "Learn More"
         }
       },
       {
