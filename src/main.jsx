@@ -6,6 +6,7 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from 'react-router-dom';
+import { AuthProvider } from './contexts/AuthContext.jsx';
 import { NavProvider } from './contexts/NavContext.jsx';
 import { ViewportProvider } from './contexts/ViewportContext.jsx';
 import App from './App.jsx';
@@ -18,10 +19,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <StrictMode>
-    <ViewportProvider>
-      <NavProvider>
-        <RouterProvider router={router} />
-      </NavProvider>
-    </ViewportProvider>
+    <AuthProvider>
+      <ViewportProvider>
+        <NavProvider>
+          <RouterProvider router={router} />
+        </NavProvider>
+      </ViewportProvider>
+    </AuthProvider>
   </StrictMode>
 );

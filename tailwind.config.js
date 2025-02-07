@@ -4,7 +4,11 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {}
   },
   plugins: [],
+  corePlugins: {
+    // disable container class
+    container: false
+  }
 }

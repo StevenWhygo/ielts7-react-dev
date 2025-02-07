@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import { NavContext } from '../../contexts/NavContext';
 
-const useNavContext = () => {
+const useNav = () => {
   return useContext(NavContext);
 };
 
-export default useNavContext;
+export default useNav;
