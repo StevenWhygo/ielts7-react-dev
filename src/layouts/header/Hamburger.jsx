@@ -1,5 +1,5 @@
 import Button from '../../components/Button';
-import useNavContext from '../../hooks/contextHooks/useNavContext';
+import useNavContext from '../../hooks/context/useNav';
 import useNavIcon from '../../hooks/useNavIcon';
 
 const Hamburger = () => {

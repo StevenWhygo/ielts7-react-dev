@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import useNavContext from './contextHooks/useNavContext';
+import useNavContext from './context/useNav';
 // import useAuthContext from './contexthooks/useAuthContext';
-import useViewportContext from './contextHooks/useViewportContext';
+import useViewportContext from './context/useViewport';
 
 // Handles control of Navbar buttons @ MainHeader
 const useNavIcon = () => {

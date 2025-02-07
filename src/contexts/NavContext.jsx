@@ -1,6 +1,6 @@
 import { useEffect, useReducer, useRef, createContext } from 'react';
 import { navReducer } from './services/navReducer';
-import useViewportContext from '../hooks/contextHooks/useViewportContext';
+import useViewportContext from '../hooks/context/useViewport';
 
 const initialState = {
   displayMenu: false,

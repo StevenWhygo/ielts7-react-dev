@@ -6,12 +6,13 @@
     --clr-lightest: #f0f0f5;
 
     /* size units */
+    --spacer-6: 1.5rem;
     --spacer-4: 1rem;
     --spacer-2: 0.5rem;
 
     /* border radius */
-    --radius-1: 2px;
     --radius-2: 4px;
+    --radius-1: 2px;
 
     /* box shadow */
     --shadow-3: 0px 4px 6px 0px rgba(0,0,0,0.3);
@@ -22,8 +23,16 @@ html {
 
 body {
     overflow-x: hidden;
-    min-width: 375px;
-  }
+    min-width: 360px;
+}
+
+main > section {
+    margin-bottom: 1rem;
+}
+
+li {
+    list-style-type: none;
+}
 
 .layout {
     display: flex;
@@ -31,6 +40,17 @@ body {
     min-width: 37rem;
     width: 100%;
     min-height: 100vh;
+  }
+
+  .wrapper {
+    max-width: 2000px;
+    margin-inline: auto;
+  }
+
+  .container {
+    margin-inline: auto;
+    max-width: 1563px;
+    padding: 1rem;
   }
 
   /* Hamburger */
@@ -101,14 +121,6 @@ body {
     left: 0;
 }  
 
-/* Slider */
-.carousel {
-    /* max-width: 1200px; */
-    width: 100%;
-    /* min-height: 456px; */
-    margin: 0 auto;
-    padding-block-end: var(--spacer-4)
-}
 
 .arrow {
     display: block;
@@ -122,44 +134,59 @@ body {
     pointer-events: none;
 }
 
-/* Slider Indicator */
-.indicator * {
-    pointer-events: none;
-}
-
-.slide-image {
-    display: block;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    flex-shrink: 0;
-    flex-grow: 0;
+/* Slider */
+.carousel {
+    position: relative;
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-auto-flow: column;
+    /* margin: 0 auto; */
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-snap-type: inline mandatory;
+    overscroll-behavior-inline: contain;
+    padding-block-end: var(--spacer-4)
 }
 
 .slider {
-    position: relative;
+    display: flex;
     width: 100%;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 100%;
-    transition: left 300ms ease-in-out;
+    height: 100%;
 }
 
-.slide-card {
-    position: absolute;
-    top: 0;
-    padding: 1rem;
-    background-color: var(--slate-100);
-    opacity: 0.3;
+.slide {
+   flex: 0 0 auto;
+   position: relative;
+   width: 100%;
+   height: auto;
+}
+
+.indicators {
+position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 1rem;
+  margin-inline: auto;
+  width: fit-content;
+  z-index: 1;
+}
+
+.indicators button {
+    padding: 5px;
+}
+
+.indicators button * {
+    pointer-events: none;
 }
 
 .media-scroller {
-    --spacer: var(--spacer-4);
+    --spacer: var(--spacer-6);
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
     grid-auto-flow: column;
     grid-auto-columns: 83%;
-
     overflow-x: auto;
     overscroll-behavior-inline: contain;
 
@@ -170,21 +197,17 @@ body {
     position: relative;
     display: grid;
     grid-template-rows: min-content;
-    gap: var(--spacer);
-    padding: calc(var(--spacer) * 1.2);
-    color: var(--clr-lightest);
-    background-color: var(--clr-surface);
+    max-width: 25rem;
     border-radius: var(--radius-2);
     box-shadow: var(--shadow-3);
 }
 
-.media-element-inner {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    opacity: 0.2;
+.auto-rows {
+    grid-auto-rows: 1fr;
+}
+
+.element-gap {
+    gap: var(--spacer);
 }
 
 .snaps-inline {
@@ -196,3 +219,53 @@ body {
 .snaps-inline > * {
     scroll-snap-align: start;
 }
+
+/* Custom Utility Classes */
+
+.rounded-top-sm {
+    border-top-right-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+}
+
+.dark-clr {
+    color: rgba(31, 41, 55, 1)
+}
+
+.light-clr {
+    color: rgba(249, 250, 251, 1)
+}
+
+
+/* Media Queries */
+
+/* xsm max-width:  549px */
+@media screen and (width >= 549px) {
+
+}
+
+/* sm max-width:  640px */
+@media screen and (width >= 550px) {
+
+}
+
+/* md max-width:  768px */
+@media screen and (width >= 640px) {
+
+}
+
+/* lg max-width:  1024px */
+@media screen and (width >= 768px) {
+
+}
+
+/* xl max-width: 1280px */
+@media screen and (width >= 1024px) {
+
+}
+
+/* 2xl max-width: 1563px */
+@media screen and (width >= 1280px) and (width <= 1563px) {
+
+}
+
+/* @source: https://www.browserstack.com/guide/responsive-design-breakpoints#:~:text=different%20screen%20sizes.-,What%20is%20a%20Breakpoint%20in%20Responsive%20Design?,design%20appears%20to%20the%20viewer. */

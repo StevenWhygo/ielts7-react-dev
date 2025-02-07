@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect, createElement } from 'react';
 import { NavLink } from 'react-router-dom';
-import useNavContext from '../../hooks/contextHooks/useNavContext';
+import useNavContext from '../../hooks/context/useNav';
 import useNavIcon from '../../hooks/useNavIcon';
 import menu from '../../data/MENU.json';
 import { FiChevronDown } from 'react-icons/fi';

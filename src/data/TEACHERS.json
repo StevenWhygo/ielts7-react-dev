@@ -1,0 +1,151 @@
+{
+  "scroller": {
+    "type": "teacher",
+    "style": {
+      "article": "media-element element-gap p-6",
+      "header": "flex justify-between",
+      "title": "font-bold text-xl py-2",
+      "subtitle": "text-xs",
+      "image": "w-1/3 aspect-square rounded-full bg-center bg-contain bg-no-repeat bg-slate-100"
+    }
+  },
+  "abstract": [
+    {
+      "title": "Steven Tessier",
+      "subtitle": "1755 points / 30 minutes",
+      "text": "Steven Tessier is a veteran teacher with over 30 years of experience teaching and preparing students for IELTS tests.",
+      "links": {
+        "more": {
+          "value": "Learn More",
+          "to": "./teachers/steven"
+        },
+        "action": {
+          "value": "Booking",
+          "to": "/"
+        }
+      },
+      "image": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/ZDaTNQdqBQWPQVUS.png?t=0f58c8a"
+    },
+    {
+      "title": "Shad Gilbert",
+      "subtitle": "1755 points / 30 minutes",
+      "text": "Shad is a senior teacher with over 20 years experience teaching in the United States, China and Taiwan.",
+      "links": {
+        "more": {
+          "value": "Learn More",
+          "to": "./teachers/shad"
+        },
+        "action": {
+          "value": "Booking",
+          "to": "/"
+        }
+      },
+      "image": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/5QXZ7HiiF7ER3rLM.png?t=0f58c8a"
+    },
+    {
+      "title": "Kate Licup",
+      "subtitle": "264 points / 30 minutes",
+      "text": "Kate has TESOL certificate in English teaching.",
+      "links": {
+        "more": {
+          "value": "Learn More",
+          "to": "./teachers/kate"
+        },
+        "action": {
+          "value": "Booking",
+          "to": "/"
+        }
+      },
+      "image": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/D4nrCI0kapCx2FOk.jpg?t=0f58c8a"
+    }
+  ],
+  "profile": {
+    "steven": {
+      "name": "Steven Tessier",
+      "rate": "1755 points / 30 minutes",
+      "about": [
+        "Steven Tessier is the founder and director of the Whygo Language Center in Taipei.",
+        "He is a veteran teacher with over 30 years of experience."
+      ],
+      "image": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/ZDaTNQdqBQWPQVUS.png?t=0f58c8a",
+      "video": "https://storage-school.ieltstaipei.com/ielts-dojo/videos/bio/Steven_E.mp4",
+      "resume": {
+        "experience": [
+          "Steven Tessier is a veteran teacher with over 30 years of experience.",
+          "He has taught thousands of students and consistently reaches high scores with them.",
+          "He created hundreds of IELTS and grammar teaching handouts.",
+          "He is the founder and director of the Whygo Language Center in Taipei.",
+          "He also speaks and teaches French (perfectly bilingual).",
+          "His clients include executives and managers of large international companies in Taiwan such as Intel and Deloitte.",
+          "He regularly taught courses and lectures at Taiwanese Universities.",
+          "He worked with the Taiwanese government to design and deliver courses on protocol, etiquette and cultural differences to train Taiwanese diplomats."
+        ],
+        "education": [
+          " Social Sciences",
+          "Computer programming",
+          "Computer Engineering"
+        ],
+        "license": [
+          "Teaching grammar",
+          "IELTS writing (including how to finish on time)",
+          "IELTS reading (some students improved by 1 band after only 6 classes)",
+          "IELTS speaking (fluency training specifically)"
+        ]
+      }
+    },
+    "shad": {
+      "name": "Shad Gilbert",
+      "rate": "1755 points / 30 minutes",
+      "about": [
+        "Shad is a Senior teacher with over 20 years of teaching experience in the US, China and Taiwan.",
+        "He is also the head teacher at the Whygo Language Center in Taipei."
+      ],
+      "image": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/5QXZ7HiiF7ER3rLM.png?t=0f58c8a",
+      "video": "https://storage-school.ieltstaipei.com/ielts-dojo/videos/bio/Shad_IELTS.mp4",
+      "resume": {
+        "experience": [
+          "His clients include executives and managers of large international companies in Taiwan such as Ernst and Young, CPC, Dimension Data, etc.",
+          "Shad has helped Doctors and other professionals revise articles for publication in prestigious journals and prepare them to make important presentations in front of large audiences.",
+          "He has extensive experience in public speaking, often to groups nearing a thousand."
+        ],
+        "education": [
+          "Bachelor of Arts",
+          "Master in Theology",
+          "Master in Chinese Philosophy"
+        ],
+        "license": [
+          "IELTS writing (sentence structures and avoiding Chinglish)",
+          "IELTS speaking",
+          "Shad speaks and writes Chinese (perfectly bilingual)",
+          "He develops customized training programs and evaluation methods for corporations, publishers and educational institutions. He also trains other foreign teachers.",
+          "Shad has taught many aspects of English, including business English, grammar and vocabulary, academic writing and is an expert at test preparation such as IELTS, TOEFL, SAT, GRE and GMAT.",
+          "Shad also has a wide range of complementary skills and experiences: he has studied Chinese, Spanish, Ancient Greek and Ancient Hebrew; he was part of a team that launched a new organization; he has trained and led volunteers to work in Africa, South America and Europe; he also has experience in retail, health care, food service and hospitality."
+        ]
+      }
+    },
+    "kate": {
+      "name": "Kate Licup",
+      "rate": "264 points / 30 minutes",
+      "image": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/D4nrCI0kapCx2FOk.jpg?t=0f58c8a",
+      "education": ["Bachelor of Science in Mining Engineering. "],
+      "license": [
+        "TESOL certificate in teaching English to children.",
+        "Advanced TESOL certificate. ",
+        "Trained business students in presentations, meetings, and communicating in English."
+      ]
+    },
+    "faq": {
+      "appointement": [
+        "After purchasing the course, you can reserve the course according to the time on the teacher's calendar.",
+        "If the teacher shows \"available to teach immediately\", you can immediately reserve the teacher's time for the meeting.",
+        "If the teacher is not online, you can make a reservation for a class as soon as 48 hours later."
+      ],
+      "fee": "The course duration is 30 minutes per unit",
+      "intructions": [
+        "Enter the website 10 minutes before the class starts, select \"My Courses\" to find the class and click \"Enter Classroom\" to open the ZOOM classroom and start class.",
+        "ZOOM classes can be used on mobile phones and computers (please download the ZOOM app on mobile phones first)."
+      ],
+      "question": "Contact us as soon as possible if there is a problem with the course."
+    }
+  }
+}
