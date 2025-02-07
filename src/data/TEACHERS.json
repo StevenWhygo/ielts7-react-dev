@@ -2,7 +2,7 @@
   "scroller": {
     "type": "teacher",
     "style": {
-      "article": "media-element element-gap p-6",
+      "article": "media-element element-gap p-4",
       "header": "flex justify-between",
       "title": "font-bold text-xl py-2",
       "subtitle": "text-xs",
@@ -13,7 +13,7 @@
     {
       "title": "Steven Tessier",
       "subtitle": "1755 points / 30 minutes",
-      "text": "Steven Tessier is a veteran teacher with over 30 years of experience teaching and preparing students for IELTS tests.",
+      "text": "Steven Tessier is a veteran teacher with over 30 years of experience teaching and preparing students for IELTS tests...",
       "links": {
         "more": {
           "value": "Learn More",

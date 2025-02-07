@@ -11,7 +11,7 @@ const Navbar = () => {
         <ShoppingCart />
         <Hamburger />
       </div>
-      <nav className="absolute top-12 h-0 w-0">
+      <nav className="absolute top-12 h-0 w-0 z-10">
         <Menu />
       </nav>
     </div>

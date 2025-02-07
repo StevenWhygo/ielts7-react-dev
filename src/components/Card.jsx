@@ -8,15 +8,12 @@ const Card = ({ content, style, type }) => {
     teacher: function (content) {
       const { title, subtitle, image } = content;
       return (
-        <header className="flex justify-between">
-          <div>
-            <h2 className="font-bold text-xl py-2">{title}</h2>
-            <h3 className="text-xs">{subtitle}</h3>
-          </div>
+        <header className="">
           <div
             style={{ backgroundImage: `url(${image})` }}
-            className="w-1/3 max-w-[150px] aspect-square rounded-full bg-center bg-contain bg-no-repeat bg-slate-100"
+            className="mx-auto max-w-[200px] h-fit aspect-square rounded-full bg-center bg-contain bg-no-repeat bg-slate-100"
           ></div>
+          <h2 className="font-medium text-2xl py-2 text-center">{title}</h2>
         </header>
       );
     },
@@ -34,8 +31,8 @@ const Card = ({ content, style, type }) => {
     teacher: function (content) {
       const { text, links } = content;
       return (
-        <div className="flex flex-col justify-between">
-          <p>
+        <div className="flex flex-col justify-between pl-3 text-base border-l">
+          <p className="leading-snug">
             {text}
             <a className="mx-2" href={links.more.to}>
               <span className="font-semibold">{links.more.value}</span>

@@ -68,7 +68,7 @@ const Carousel = ({ elements }) => {
   ];
 
   const nextSlide = (e) => {
-    containerRef.current.style.transitionDuration = '400ms';
+    containerRef.current.style.transitionDuration = '300ms';
     // Left arrow
     if (e.target.name === 'previous') {
       if (currentIndex <= 1) {
