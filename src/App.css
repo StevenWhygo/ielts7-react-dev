@@ -6,6 +6,8 @@
     --clr-lightest: #f0f0f5;
 
     /* size units */
+    --spacer-10: 2.5rem;
+    --spacer-8: 2rem;
     --spacer-6: 1.5rem;
     --spacer-4: 1rem;
     --spacer-2: 0.5rem;
@@ -27,7 +29,7 @@ body {
 }
 
 main > section {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 li {
@@ -140,7 +142,6 @@ li {
     display: grid;
     grid-auto-columns: 100%;
     grid-auto-flow: column;
-    /* margin: 0 auto; */
     overflow-x: auto;
     scrollbar-width: none;
     scroll-snap-type: inline mandatory;
@@ -189,8 +190,11 @@ position: absolute;
     grid-auto-columns: 83%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
-
-    padding: 0 var(--spacer) var(--spacer)
+    padding-top: 30px;
+    padding-bottom: 1rem;
+    /* padding: var(--spacer-10) var(--spacer-4) var(--spacer); */
+    /* padding-block-start: var(--spacer-10);*/
+    padding-inline: var(--spacer);
 }
 
 .media-element {
