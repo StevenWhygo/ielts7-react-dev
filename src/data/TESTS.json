@@ -1,0 +1,14 @@
+{
+    "scroller": {
+        "type": "test",
+        "style": {
+            "section": "media-scroller snaps-inline",
+            "article": "media-element"
+        },
+    
+    "title": {
+      "style": "mb-[30px] px-4 pb-4 text-3xl border-b font-bold",
+      "text": "Tests"
+        }
+    }
+}
