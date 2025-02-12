@@ -14,6 +14,7 @@ import Home from './pages/public/Home';
 import Dashboard from './pages/private/Dashboard';
 import NotFound from './pages/NotFound';
 import Courses from './pages/public/Courses';
+import Course from './pages/public/Course';
 import Teachers from './pages/public/Teachers';
 import Teacher from './pages/public/Teacher';
 import Tests from './pages/public/Tests';
@@ -36,6 +37,7 @@ const App = () => {
             <Route index element={<Home />} />
             <Route path="home" element={<Navigate to="/" replace />} />
             <Route path="courses" element={<Courses />} />
+            <Route path="courses/:name" element={<Course />} />
             <Route path="teachers" element={<Teachers />} />
             <Route path="teachers/:name" element={<Teacher />} />
             <Route path="tests" element={<Tests />} />

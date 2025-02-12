@@ -22,7 +22,7 @@ const Home = () => {
       <Carousel elements={carousel.elements} />
       <main className="container">
         <section>
-          <h2 className={courses.scroller.title.style}>
+          <h2 className="mb-[30px] px-4 pb-4 text-3xl border-b font-bold">
             {courses.scroller.title.text}
           </h2>
           <div className={courses.scroller.style.section}>
@@ -43,7 +43,7 @@ const Home = () => {
           <h2 className={teachers.scroller.title.style}>
             {teachers.scroller.title.text}
           </h2>
-          <div className="media-scroller snaps-inline">
+          <div className={teachers.scroller.style.section}>
             {teachers.cards.map((card, i) => {
               return (
                 <Card

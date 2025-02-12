@@ -5,21 +5,17 @@
       "section": "media-scroller snaps-inline",
       "article": "media-element"
     },
-    
+
     "title": {
-      "style": "px-4 pb-4 text-3xl border-b font-bold",
+      "style": "mb-[30px] px-4 pb-4 text-3xl border-b font-bold",
       "text": "Courses"
     }
   },
   "cards": [
     {
       "title": {
-        "text": "Grammar",
+        "text": "Grammar Basic",
         "color": "rgb(0, 146, 184)"
-      },
-      "level": {
-        "text": "Beginners",
-        "color": "rgb(254, 154, 0)"
       },
       "image": "../assets/img/ielts7_online_01.jpg",
 
@@ -30,25 +26,20 @@
         { "icon": "quiz", "text": "Final Quiz" }
       ],
       "links": {
-        "more": {
-          "value": "Learn More",
-          "to": "./courses/ielts-grammar-basic"
+        "page": {
+          "title": "Learn More",
+          "url": "./courses/grammar-basic"
         },
-        "action": {
-          "value": "Free Trial",
-          "to": "/courses/trial/ielts-grammar-basic"
+        "trial": {
+          "title": "Free Trial",
+          "url": "https://www.ielts7.online/main/10"
         }
-      },
-      "isCart": "true"
+      }
     },
     {
       "title": {
-        "text": "Grammar",
-        "color": "rgb(0, 146, 184)"
-      },
-      "level": {
-        "text": "Advanced",
-        "color": "rgb(255, 105, 0)"
+        "text": "Grammar Advanced",
+        "color": "rgb(0, 105, 168)"
       },
 
       "image": "../assets/img/ielts7_online_02.jpg",
@@ -60,25 +51,20 @@
         { "icon": "quiz", "text": "Final Quiz" }
       ],
       "links": {
-        "more": {
-          "value": "Learn More",
-          "to": "./courses/ielts-grammar-advanced"
+        "page": {
+          "title": "Learn More",
+          "url": "./courses/grammar-advanced"
         },
-        "action": {
-          "value": "Free Trial",
-          "to": "/courses/trial/ielts-grammar-advanced"
+        "trial": {
+          "title": "Free Trial",
+          "url": "https://www.ielts7.online/main/11"
         }
-      },
-      "isCart": "true"
+      }
     },
     {
       "title": {
-        "text": "IELTS",
-        "color": "rgb(0, 95, 120)"
-      },
-      "level": {
-        "text": "Beginners",
-        "color": "rgb(254, 154, 0)"
+        "text": "IELTS Basic",
+        "color": "rgb(0, 153, 102)"
       },
       "image": "../assets/img/ielts7_online_03.jpg",
       "background": "bg-amber-500",
@@ -89,25 +75,20 @@
         { "icon": "quiz", "text": "Final Quiz" }
       ],
       "links": {
-        "more": {
-          "value": "Learn More",
-          "to": "./courses/ielts-basic"
+        "page": {
+          "title": "Learn More",
+          "url": "./courses/ielts-basic"
         },
-        "action": {
-          "value": "Free Trial",
-          "to": "/courses/trial/ielts-basic"
+        "trial": {
+          "title": "Free Trial",
+          "url": "https://www.ielts7.online/main/1"
         }
-      },
-      "isCart": "true"
+      }
     },
     {
       "title": {
-        "text": "IELTS",
-        "color": "rgb(0, 95, 120)"
-      },
-      "level": {
-        "text": "Advanced",
-        "color": "rgb(255, 105, 0)"
+        "text": "IELTS Advanced",
+        "color": "rgb(0, 150, 137)"
       },
       "image": "../assets/img/ielts7_online_04.jpg",
       "list": [
@@ -117,17 +98,67 @@
         { "icon": "quiz", "text": "Final Quiz" }
       ],
       "links": {
-        "more": {
-          "value": "Learn More",
-          "to": "./courses/ielts-advanced"
+        "page": {
+          "title": "Learn More",
+          "url": "./courses/ielts-advanced"
         },
-        "action": {
-          "value": "Free Trial",
-          "to": "/courses/trial/ielts-advanced"
+        "trial": {
+          "title": "Free Trial",
+          "url": "https://www.ielts7.online/main/2"
         }
+      }
+    },
+    {
+      "title": {
+        "text": "Scored Speaking",
+        "color": "rgb(240, 177, 0)"
       },
-      "isCart": "true"
+      "image": "../assets/img/ielts7_online_04.jpg",
+      "list": [
+        { "icon": "exam", "text": "IELTS Exam Knowledge Review" },
+        { "icon": "video", "text": "Unlimited Video Lessons" },
+        { "icon": "exercise", "text": "Hundreds Of Exercises" },
+        { "icon": "quiz", "text": "Final Quiz" }
+      ],
+      "links": {
+        "page": {
+          "title": "Learn More",
+          "url": "./courses/ielts-advanced"
+        }
+      }
+    },
+    {
+      "title": {
+        "text": "Scored Essay",
+        "color": "rgb(254, 154, 0)"
+      },
+      "image": "../assets/img/ielts7_online_04.jpg",
+      "list": [
+        { "icon": "exam", "text": "IELTS Exam Knowledge Review" },
+        { "icon": "video", "text": "Unlimited Video Lessons" },
+        { "icon": "exercise", "text": "Hundreds Of Exercises" },
+        { "icon": "quiz", "text": "Final Quiz" }
+      ],
+      "links": {
+        "page": {
+          "title": "Learn More",
+          "url": "./courses/ielts-advanced"
+        }
+      }
     }
   ],
-  "pages": {}
+  "pages": {
+    "grammar-basic": {
+      "name": "Grammar Basic"
+    },
+    "grammar-advanced": {
+      "name": "Grammar Advanced"
+    },
+    "ielts-basic": {
+      "name": "IELTS Basic"
+    },
+    "ielts-advanced": {
+      "name": "IELTS Advanced"
+    }
+  }
 }

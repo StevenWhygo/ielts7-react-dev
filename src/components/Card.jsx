@@ -1,14 +1,12 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Picture from './Picture';
 import { IconContext } from 'react-icons';
 
 // review / grammar
 import { MdRateReview } from 'react-icons/md';
 import { MdFeedback } from 'react-icons/md';
-
 // quiz
 import { MdQuiz } from 'react-icons/md';
-
 // video
 import { MdVideoLibrary } from 'react-icons/md';
 // exam
@@ -19,8 +17,12 @@ import { MdChecklist } from 'react-icons/md';
 import { MdForum } from 'react-icons/md';
 // grammar
 import { MdEditSquare } from 'react-icons/md';
+// cart
+import { MdOutlineShoppingCart } from 'react-icons/md';
 
 const Card = ({ card, style, image, type }) => {
+  const navigate = useNavigate();
+
   const fetchIcon = (type) => {
     switch (type) {
       case 'grammar':
@@ -43,59 +45,45 @@ const Card = ({ card, style, image, type }) => {
 
   const Header = {
     course: function (card, image) {
-      const { title, level, color } = card;
+      const { title, color, links } = card;
 
       return (
         <header className="relative">
-          {/* <h2 className="absolute top-[-30px] left-0 flex justify-between w-full font-semibold text-stone-50">
-            <span
-              className="flex justify-center items-center w-1/2 h-[30px]"
-              style={{ backgroundColor: title.color }}
-            >
-              {title.text}
-            </span>
-
-            <span
-              className="flex justify-center items-center w-1/2 h-[30px]"
-              style={{ backgroundColor: level.color }}
-            >
-              {level.text}
-            </span>
-          </h2> */}
           <h2
-            className="flex justify-between w-full font-semibold text-stone-50 rounded-top-sm"
+            className="absolute top-[-40px] flex justify-center items-center w-3/5 h-[40px] font-semibold text-stone-50 rounded-top-sm"
             style={{ backgroundColor: title.color }}
           >
-            <span
-              className="flex justify-center items-center w-1/2 h-[40px] rounded-tl-sm"
-              style={{ backgroundColor: title.color }}
-            >
-              {title.text}
-            </span>
+            {title.text}
 
-            <span
+            {/* <span
               className="flex justify-center items-center w-1/2 h-[40px] rounded-tr-sm"
               style={{ backgroundColor: level.color }}
             >
               {level.text}
-            </span>
+            </span> */}
           </h2>
-          <div
-            className="relative h-[150px] w-full bg-center bg-cover bg-no-repeat"
-            style={{ backgroundImage: `url(${image})` }}
-          ></div>
+          <div className="w-full h-[175px] overflow-hidden rounded-tr-sm">
+            <div
+              className="course__bg"
+              style={{ backgroundImage: `url(${image})` }}
+              onClick={() => navigate(links.page.url)}
+              title={links.page.title}
+            ></div>
+          </div>
         </header>
       );
     },
     teacher: function (card) {
       const { title, subtitle, image } = card;
       return (
-        <header className="">
+        <header>
+          <h2 className="py-1 mb-4 font-medium text-2xl text-center  bg-stone-700 text-stone-50 rounded-top-sm">
+            {title}
+          </h2>
           <div
             style={{ backgroundImage: `url(${image})` }}
-            className="mx-auto max-w-[200px] h-fit aspect-square rounded-full bg-center bg-contain bg-no-repeat bg-slate-100"
+            className="mx-auto max-w-[175px] h-fit aspect-square rounded-full bg-center bg-contain bg-no-repeat bg-slate-100"
           ></div>
-          <h2 className="font-medium text-2xl py-2 text-center">{title}</h2>
         </header>
       );
     },
@@ -119,7 +107,6 @@ const Card = ({ card, style, image, type }) => {
               return (
                 <li key={i} className="flex items-center gap-4">
                   <span>
-                    {' '}
                     <IconContext.Provider
                       value={{
                         color: '#1e293b',
@@ -129,7 +116,7 @@ const Card = ({ card, style, image, type }) => {
                       {fetchIcon(item.icon)}
                     </IconContext.Provider>
                   </span>
-                  <span className="text-sm">{item.text}</span>
+                  <span className="text-sm font-semibold">{item.text}</span>
                 </li>
               );
             })}
@@ -138,10 +125,10 @@ const Card = ({ card, style, image, type }) => {
       );
     },
     teacher: function (card) {
-      const { text, links } = card;
+      const { title, text, links } = card;
       return (
-        <div className="flex flex-col justify-between pl-3 text-base border-l">
-          <p className="leading-snug">
+        <div className="flex flex-col justify-between px-4 text-base">
+          <p className="leading-snug pl-4 border-l">
             {text}
             <a className="mx-2" href={links.more.to}>
               <span className="font-semibold">{links.more.value}</span>
@@ -183,11 +170,36 @@ const Card = ({ card, style, image, type }) => {
 
   const Footer = {
     course: function (card) {
-      <footer className="px-4 pb-4"></footer>;
+      const { links } = card;
+
+      return (
+        <footer className="px-4 pb-4 flex gap-2">
+          {links.trial && (
+            <Link
+              className="relative w-full py-2 rounded-sm text-center border-blue bg-sky-600 text-slate-50 text-base font-semibold opacity-100"
+              to={{
+                pathname: links.trial.url,
+              }}
+            >
+              {links.trial.title}
+            </Link>
+          )}
+          <button className="relative flex justify-center items-center w-full mx-auto rounded-sm border-yellow bg-yellow-500 text-slate-50 text-base font-bold opacity-100">
+            <IconContext.Provider
+              value={{
+                color: '#1e293b',
+                size: '2rem',
+              }}
+            >
+              <MdOutlineShoppingCart />
+            </IconContext.Provider>
+          </button>
+        </footer>
+      );
     },
     teacher: function (card) {
       return (
-        <footer className="flex">
+        <footer className="flex px-4 pb-4">
           <Link
             className="relative mt-auto inline-block w-full py-2 rounded-sm text-center border-blue bg-sky-600 text-slate-50 text-base font-semibold opacity-100"
             to={{

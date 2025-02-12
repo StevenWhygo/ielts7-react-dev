@@ -191,7 +191,7 @@ position: absolute;
     grid-auto-columns: 92%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 1rem;
     padding-inline: var(--spacer);
 }
@@ -236,6 +236,21 @@ position: absolute;
 
 .light-clr {
     color: rgba(249, 250, 251, 1)
+}
+
+.course__bg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.course__bg:hover {
+   transform: scale(1.1);
 }
 
 

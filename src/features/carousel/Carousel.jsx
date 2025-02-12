@@ -24,7 +24,7 @@ const Carousel = ({ elements }) => {
 
   const Label = ({ card }) => {
     return (
-      <div className="absolute top-0 flex justify-center w-full min-h-44 min-w-80 p-4 z-10">
+      <div className="absolute top-0 flex justify-center w-full min-h-44 min-w-80 p-4 z-10 rounded">
         <div className="absolute p-4 w-11/12 min-h-44 max-w-md min-w-80 bg-slate-50 opacity-40 z-0"></div>
         <div className="absolute p-4 w-11/12 min-h-44 max-w-md min-w-80 flex flex-col">
           <header className="pb-2 mb-2 border-b border-slate-950">
