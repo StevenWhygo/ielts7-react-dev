@@ -188,7 +188,7 @@ position: absolute;
     display: grid;
     gap: 2rem;
     grid-auto-flow: column;
-    grid-auto-columns: 88%;
+    grid-auto-columns: 92%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     padding-top: 30px;
