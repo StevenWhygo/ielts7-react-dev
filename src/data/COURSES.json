@@ -21,7 +21,7 @@
         "text": "Beginners",
         "color": "rgb(254, 154, 0)"
       },
-      "image": "'/src/assets/img/ielts7_online_01.jpg'",
+      "image": "../assets/img/ielts7_online_01.jpg",
 
       "list": [
         { "icon": "grammar", "text": "Key Grammar" },
@@ -51,7 +51,7 @@
         "color": "rgb(255, 105, 0)"
       },
 
-      "image": "'/src/assets/img/ielts7_online_02.jpg'",
+      "image": "../assets/img/ielts7_online_02.jpg",
       "background": "bg-emerald-500",
       "list": [
         { "icon": "exam", "text": "IELTS Exam Knowledge" },
@@ -80,7 +80,7 @@
         "text": "Beginners",
         "color": "rgb(254, 154, 0)"
       },
-      "image": "'/src/assets/img/ielts7_online_03.jpg'",
+      "image": "../assets/img/ielts7_online_03.jpg",
       "background": "bg-amber-500",
       "list": [
         { "icon": "exam", "text": "IELTS Exam Knowledge Review" },
@@ -109,7 +109,7 @@
         "text": "Advanced",
         "color": "rgb(255, 105, 0)"
       },
-      "image": "'/src/assets/img/ielts7_online_04.jpg'",
+      "image": "../assets/img/ielts7_online_04.jpg",
       "list": [
         { "icon": "exam", "text": "IELTS Exam Knowledge Review" },
         { "icon": "video", "text": "Unlimited Video Lessons" },

@@ -20,7 +20,7 @@ import { MdForum } from 'react-icons/md';
 // grammar
 import { MdEditSquare } from 'react-icons/md';
 
-const Card = ({ card, style, type }) => {
+const Card = ({ card, style, image, type }) => {
   const fetchIcon = (type) => {
     switch (type) {
       case 'grammar':
@@ -42,8 +42,8 @@ const Card = ({ card, style, type }) => {
   };
 
   const Header = {
-    course: function (card) {
-      const { title, level, image, color } = card;
+    course: function (card, image) {
+      const { title, level, color } = card;
 
       return (
         <header className="relative">
@@ -63,7 +63,7 @@ const Card = ({ card, style, type }) => {
             </span>
           </h2> */}
           <h2
-            className="flex justify-between w-full font-semibold text-stone-50 rounded-top-sm "
+            className="flex justify-between w-full font-semibold text-stone-50 rounded-top-sm"
             style={{ backgroundColor: title.color }}
           >
             <span
@@ -212,7 +212,7 @@ const Card = ({ card, style, type }) => {
       className={style.article}
       style={card.fill && { backgroundColor: card.fill }}
     >
-      {Header[type](card)}
+      {Header[type](card, image)}
       {Main[type](card)}
       {Footer[type](card)}
     </article>

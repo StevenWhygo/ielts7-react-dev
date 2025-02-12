@@ -6,11 +6,17 @@ import teachers from '../../data/TEACHERS.json';
 import testimonials from '../../data/TESTIMONIALS.json';
 import courses from '../../data/COURSES.json';
 
+import image1 from '../../assets/img/ielts7_online_01.jpg';
+import image2 from '../../assets/img/ielts7_online_02.jpg';
+import image3 from '../../assets/img/ielts7_online_03.jpg';
+import image4 from '../../assets/img/ielts7_online_04.jpg';
+
 // Icons
 import { FiEdit } from 'react-icons/fi';
 import { FiEye } from 'react-icons/fi';
 
 const Home = () => {
+  const images = [image1, image2, image3, image4];
   return (
     <>
       <Carousel elements={carousel.elements} />
@@ -25,6 +31,7 @@ const Home = () => {
                 <Card
                   key={i}
                   card={card}
+                  image={images[i]}
                   style={courses.scroller.style}
                   type={courses.scroller.type}
                 />
