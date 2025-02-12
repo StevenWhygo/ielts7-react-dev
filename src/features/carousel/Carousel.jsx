@@ -146,7 +146,7 @@ const Carousel = ({ elements }) => {
   }, []);
 
   return (
-    <section className="carousel touch-none">
+    <section className="carousel">
       <div
         className="slider"
         style={{ transform: `translate3d(${-translateX}px, 0, 0)` }}

@@ -23,11 +23,11 @@ import { MdEditSquare } from 'react-icons/md';
 const Card = ({ card, style, type }) => {
   const fetchIcon = (type) => {
     switch (type) {
-      case 'exercise':
+      case 'grammar':
         return <MdForum />;
       case 'exam':
         return <MdAssignmentInd />;
-      case 'grammar':
+      case 'exercise':
         return <MdEditSquare />;
       case 'quiz':
         return <MdQuiz />;
