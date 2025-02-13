@@ -87,7 +87,7 @@ const Card = ({ card, style, type }) => {
       const { title, subtitle, image } = card;
       return (
         <header>
-          <h2 className="py-1 mb-4 font-medium text-2xl text-center  bg-stone-700 text-stone-50 rounded-top-sm">
+          <h2 className="py-2 mb-4 font-medium text-2xl text-center  bg-stone-700 text-stone-50 rounded-top-sm">
             {title}
           </h2>
           <div
