@@ -1,16 +1,7 @@
 {
-  "scroller": {
-    "type": "course",
-    "style": {
-      "section": "media-scroller snaps-inline",
-      "article": "media-element"
-    },
-
-    "title": {
-      "style": "mb-8 px-4 pb-4 text-3xl border-b font-bold",
-      "text": "Courses"
-    }
-  },
+  "type": "course",
+  "title": "Courses",
+  "style": "media-element",
   "cards": [
     {
       "title": {
@@ -31,7 +22,7 @@
           "url": "./courses/grammar-basic"
         },
         "trial": {
-          "text": "Free Trial",
+          "title": "Free Trial",
           "url": "https://www.ielts7.online/main/10"
         }
       }

@@ -1,18 +1,7 @@
 {
-  "scroller": {
-    "type": "teacher",
-    "style": {
-      "section": "media-scroller snaps-inline",
-      "article": "media-element gap-4",
-      "header": "flex justify-between",
-      "subtitle": "text-xs",
-      "image": "w-1/3 aspect-square rounded-full bg-center bg-contain bg-no-repeat bg-slate-100"
-    },
-    "title": {
-      "style": "mb-8 px-4 pb-4 text-3xl border-b font-bold",
-      "text": "Our Teachers"
-    }
-  },
+  "type": "teacher",
+  "title": "Our Teachers",
+  "style": "media-element gap-4",
   "cards": [
     {
       "title": "Steven Tessier",

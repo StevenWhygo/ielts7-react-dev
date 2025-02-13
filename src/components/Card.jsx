@@ -230,7 +230,7 @@ const Card = ({ card, style, type }) => {
       );
     },
     testimony: function (card) {
-      const { title, fill, subtitle, text } = card;
+      const { fill } = card;
       return (
         <footer className="relative" style={{ backgroundColor: fill }}></footer>
       );
@@ -239,7 +239,7 @@ const Card = ({ card, style, type }) => {
 
   return (
     <article
-      className={style.article}
+      className={style}
       style={card.fill && { backgroundColor: card.fill }}
     >
       {Header[type](card)}
