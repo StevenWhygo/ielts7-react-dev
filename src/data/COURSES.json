@@ -45,7 +45,7 @@
       "image": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-advanced.png?t=4e99648",
       "background": "bg-emerald-500",
       "list": [
-        { "icon": "exam", "text": "IELTS Exam Knowledge" },
+        { "icon": "exam", "text": "IELTS Exam Review" },
         { "icon": "video", "text": "Unlimited Video Lessons" },
         { "icon": "words", "text": "2000 IELTS Essential Words" },
         { "icon": "quiz", "text": "Final Quiz" }
@@ -69,7 +69,7 @@
       "image": "https://storage.ieltstaipei.com/public/images/home/product-course-ielts-beginner.png?t=4e99648",
       "background": "bg-amber-500",
       "list": [
-        { "icon": "exam", "text": "IELTS Exam Knowledge Review" },
+        { "icon": "exam", "text": "IELTS Exam Review" },
         { "icon": "video", "text": "Unlimited Video Lessons" },
         { "icon": "words", "text": "2000 IELTS Essential Words" },
         { "icon": "quiz", "text": "Final Quiz" }
@@ -92,7 +92,7 @@
       },
       "image": "https://storage.ieltstaipei.com/public/images/home/product-course-ielts-advanced.png?t=4e99648",
       "list": [
-        { "icon": "exam", "text": "IELTS Exam Knowledge Review" },
+        { "icon": "exam", "text": "IELTS Exam Review" },
         { "icon": "video", "text": "Unlimited Video Lessons" },
         { "icon": "exercise", "text": "Hundreds Of Exercises" },
         { "icon": "quiz", "text": "Final Quiz" }
