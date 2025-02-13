@@ -31,7 +31,9 @@ import { MdScoreboard } from 'react-icons/md';
 // notes
 import { MdNotes } from 'react-icons/md';
 
-const Card = ({ card, style, type }) => {
+const Card = (props) => {
+  const { card, style, type } = props;
+
   const navigate = useNavigate();
 
   const fetchIcon = (type) => {
@@ -82,6 +84,9 @@ const Card = ({ card, style, type }) => {
           </div>
         </header>
       );
+    },
+    test: function (card) {
+      return <header>Header</header>;
     },
     teacher: function (card) {
       const { title, subtitle, image } = card;
@@ -136,6 +141,9 @@ const Card = ({ card, style, type }) => {
           </ul>
         </div>
       );
+    },
+    test: function (card) {
+      return <div>Content</div>;
     },
     teacher: function (card) {
       const { title, text, links } = card;
@@ -214,6 +222,9 @@ const Card = ({ card, style, type }) => {
           </button>
         </footer>
       );
+    },
+    test: function (card) {
+      return <footer>Footer</footer>;
     },
     teacher: function (card) {
       return (

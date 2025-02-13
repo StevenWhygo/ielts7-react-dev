@@ -17,9 +17,9 @@ import Courses from './pages/public/Courses';
 import Course from './pages/public/Course';
 import Teachers from './pages/public/Teachers';
 import Teacher from './pages/public/Teacher';
-import Tests from './pages/public/Tests';
 import MockTests from './pages/public/MockTests';
-import Login from './pages/public/Login';
+import MockTest from './pages/public/MockTest';
+import Signin from './pages/public/Signin';
 import Signup from './pages/public/Signup';
 import Cart from './pages/public/Cart';
 
@@ -40,9 +40,9 @@ const App = () => {
             <Route path="courses/:name" element={<Course />} />
             <Route path="teachers" element={<Teachers />} />
             <Route path="teachers/:name" element={<Teacher />} />
-            <Route path="tests" element={<Tests />} />
             <Route path="mocktests" element={<MockTests />} />
-            <Route path="login" element={<Login />} />
+            <Route path="mocktests/:name" element={<MockTest />} />
+            <Route path="signin" element={<Signin />} />
             <Route path="signup" element={<Signup />} />
             <Route path="cart" element={<Cart />} />
           </Route>

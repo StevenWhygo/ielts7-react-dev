@@ -1,10 +1,10 @@
 import Page from '../../components/Page';
 
-const Login = () => {
+const Signin = () => {
   return (
     <Page>
-      <div>Login</div>
+      <div>Signin</div>
     </Page>
   );
 };
-export default Login;
+export default Signin;

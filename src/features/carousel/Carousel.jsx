@@ -67,10 +67,10 @@ const Carousel = ({ elements }) => {
     },
   ];
 
-  const nextSlide = (e) => {
+  const slideHandler = (slide) => {
     containerRef.current.style.transitionDuration = '300ms';
     // Left arrow
-    if (e.target.name === 'previous') {
+    if (slide === 'previous') {
       if (currentIndex <= 1) {
         setTranslateX(0);
         setCurrentIndex(elements.length);
@@ -80,7 +80,7 @@ const Carousel = ({ elements }) => {
       }
     }
     // Right arrow
-    else if (e.target.name === 'next') {
+    else if (slide === 'next') {
       if (currentIndex >= elements.length) {
         setTranslateX(containerRef.current.clientWidth * (elements.length + 1));
         setCurrentIndex(1);
@@ -91,11 +91,24 @@ const Carousel = ({ elements }) => {
     }
     // Indicators
     else {
-      const indicator = parseInt(e.target.name);
+      const indicator = parseInt(slide);
       setTranslateX(containerRef.current.clientWidth * (indicator + 1));
       setCurrentIndex(indicator + 1);
     }
   };
+
+  // Auto Play
+  useEffect(() => {
+    intervalRef.currentIndex = setInterval(() => {
+      slideHandler('next');
+    }, 5000);
+
+    return () => {
+      if (intervalRef.currentIndex) {
+        clearInterval(intervalRef.currentIndex);
+      }
+    };
+  });
 
   const slides = useMemo(() => {
     const items = elements.map((element, i) => {
@@ -160,7 +173,7 @@ const Carousel = ({ elements }) => {
             <Button
               key={i}
               attributes={{ ...arrow.attributes }}
-              handler={nextSlide}
+              handler={(e) => slideHandler(e.target.name)}
               ref={arrow.ref}
             >
               <IconContext.Provider
@@ -179,7 +192,7 @@ const Carousel = ({ elements }) => {
       <Indicators
         count={elements.length}
         slideIndex={currentIndex}
-        nextSlide={nextSlide}
+        slideHandler={slideHandler}
       />
     </section>
   );
