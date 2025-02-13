@@ -39,7 +39,7 @@ const Home = () => {
           </div>
         </section>
         <section>
-          <h2 className="mb-8 px-4 pb-4 text-3xl border-b font-bold">
+          <h2 className="mb-8 mx-4 px-4 pb-4 text-3xl border-b font-bold">
             {teachers.scroller.title.text}
           </h2>
           <div className={teachers.scroller.style.section}>
@@ -56,7 +56,9 @@ const Home = () => {
           </div>
         </section>
         <section>
-          <h2 className="mb-8 px-4 pb-4 text-3xl border-b font-bold">Tests</h2>
+          <h2 className="mb-8 mx-4 px-4 pb-4 text-3xl border-b font-bold">
+            Tests
+          </h2>
           <div className="media-scroller snaps-inline">
             {testimonials.cards.map((card, i) => {
               return (
@@ -71,7 +73,7 @@ const Home = () => {
           </div>
         </section>
         <section>
-          <h2 className="mb-8 px-4 pb-4 text-3xl border-b font-bold">
+          <h2 className="mb-8 mx-4 px-4 pb-4 text-3xl border-b font-bold">
             {testimonials.scroller.title.text}
           </h2>
           <div className="media-scroller snaps-inline">
