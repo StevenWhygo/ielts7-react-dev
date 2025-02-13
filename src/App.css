@@ -17,7 +17,7 @@
     --radius-1: 2px;
 
     /* box shadow */
-    --shadow-3: 0px 4px 6px 0px rgba(0,0,0,0.3);
+    --shadow-3: 0px 4px 5px 1px rgba(0,0,0,0.3);
 }
 html {
     scroll-behavior: smooth;
@@ -201,6 +201,9 @@ li {
     display: grid;
     grid-template-rows: min-content;
     max-width: 25rem;
+    /* bg-zinc-50 @ tailwind class */
+    background-color: rgb(250, 250, 250);
+    /* border: 1px solid rgba(0,0,0,0.2); */
     border-radius: var(--radius-2);
     box-shadow: var(--shadow-3);
 }
@@ -239,7 +242,7 @@ li {
 }
 
 .course__bg {
-    position: relative;
+    /* position: relative; */
     height: 100%;
     width: 100%;
     background-position: center;
@@ -250,7 +253,8 @@ li {
 }
 
 .list__item:nth-child(even) {
-    background-color: #D6D3D1;
+    /* background-color: rgb(245, 245, 244); */
+    background-color: rgb(231, 229, 228);
 }
 
 .list__item:nth-last-of-type(-n + 1) {

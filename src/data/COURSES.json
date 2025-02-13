@@ -27,11 +27,11 @@
       ],
       "links": {
         "page": {
-          "title": "Learn More",
+          "text": "Learn More",
           "url": "./courses/grammar-basic"
         },
         "trial": {
-          "title": "Free Trial",
+          "text": "Free Trial",
           "url": "https://www.ielts7.online/main/10"
         }
       }
@@ -52,11 +52,11 @@
       ],
       "links": {
         "page": {
-          "title": "Learn More",
+          "text": "Learn More",
           "url": "./courses/grammar-advanced"
         },
         "trial": {
-          "title": "Free Trial",
+          "text": "Free Trial",
           "url": "https://www.ielts7.online/main/11"
         }
       }
@@ -76,11 +76,11 @@
       ],
       "links": {
         "page": {
-          "title": "Learn More",
+          "text": "Learn More",
           "url": "./courses/ielts-basic"
         },
         "trial": {
-          "title": "Free Trial",
+          "text": "Free Trial",
           "url": "https://www.ielts7.online/main/1"
         }
       }
@@ -99,11 +99,11 @@
       ],
       "links": {
         "page": {
-          "title": "Learn More",
+          "text": "Learn More",
           "url": "./courses/ielts-advanced"
         },
         "trial": {
-          "title": "Free Trial",
+          "text": "Free Trial",
           "url": "https://www.ielts7.online/main/2"
         }
       }
@@ -122,7 +122,7 @@
       ],
       "links": {
         "page": {
-          "title": "Learn More",
+          "text": "Learn More",
           "url": "./courses/ielts-advanced"
         }
       }
@@ -141,7 +141,7 @@
       ],
       "links": {
         "page": {
-          "title": "Learn More",
+          "text": "Learn More",
           "url": "./courses/ielts-advanced"
         }
       }

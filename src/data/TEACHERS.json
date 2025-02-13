@@ -19,13 +19,13 @@
       "subtitle": "1755 points / 30 minutes",
       "text": "Steven is a veteran teacher with over 30 years of experience teaching and preparing students for IELTS tests...",
       "links": {
-        "more": {
-          "value": "Learn More",
-          "to": "./teachers/steven"
+        "page": {
+          "text": "Learn More",
+          "url": "./teachers/steven"
         },
         "action": {
-          "value": "Booking",
-          "to": "/"
+          "text": "Booking",
+          "url": "/"
         }
       },
       "image": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/ZDaTNQdqBQWPQVUS.png?t=0f58c8a"
@@ -35,13 +35,13 @@
       "subtitle": "1755 points / 30 minutes",
       "text": "Shad is a senior teacher with over 20 years experience teaching in the United States, China and Taiwan...",
       "links": {
-        "more": {
-          "value": "Learn More",
-          "to": "./teachers/shad"
+        "page": {
+          "text": "Learn More",
+          "url": "./teachers/shad"
         },
         "action": {
-          "value": "Booking",
-          "to": "/"
+          "text": "Booking",
+          "url": "/"
         }
       },
       "image": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/5QXZ7HiiF7ER3rLM.png?t=0f58c8a"
@@ -51,13 +51,13 @@
       "subtitle": "264 points / 30 minutes",
       "text": "Kate has TESOL certificate in English teaching...",
       "links": {
-        "more": {
-          "value": "Learn More",
-          "to": "./teachers/kate"
+        "page": {
+          "text": "Learn More",
+          "url": "./teachers/kate"
         },
         "action": {
-          "value": "Booking",
-          "to": "/"
+          "text": "Booking",
+          "url": "/"
         }
       },
       "image": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/D4nrCI0kapCx2FOk.jpg?t=0f58c8a"

@@ -71,13 +71,13 @@ const Card = ({ card, style, type }) => {
       console.log(image);
 
       return (
-        <header className="relative rounded-t-sm">
-          <div className="w-full h-[200px] overflow-hidden rounded-t-sm">
+        <header className="rounded-t-sm">
+          <div className="w-full h-[200px] overflow-hidden">
             <div
-              className="course__bg  rounded-t-sm"
+              className="course__bg rounded-t-sm"
               style={{ backgroundImage: `url(${image})` }}
               onClick={() => navigate(links.page.url)}
-              title={links.page.title}
+              title={links.page.text}
             ></div>
           </div>
         </header>
@@ -86,8 +86,8 @@ const Card = ({ card, style, type }) => {
     teacher: function (card) {
       const { title, subtitle, image } = card;
       return (
-        <header>
-          <h2 className="py-2 mb-4 font-medium text-2xl text-center  bg-stone-700 text-stone-50 rounded-top-sm">
+        <header className="relative z-20">
+          <h2 className="py-[5px] pb-2 mx-4 mb-4 text-3xl text-center text-stone-700 border-b rounded-top-sm">
             {title}
           </h2>
           <div
@@ -112,17 +112,17 @@ const Card = ({ card, style, type }) => {
       const { list, links } = card;
       return (
         <div className="p-4">
-          <ul className="flex flex-col border rounded-sm">
+          <ul className="flex flex-col border border-b-0 rounded-sm">
             {list.map((item, i) => {
               return (
                 <li
                   key={i}
-                  className="list__item flex items-center w-full py-2"
+                  className="list__item flex items-center w-full py-1"
                 >
                   <span className="px-2">
                     <IconContext.Provider
                       value={{
-                        color: '#1e293b',
+                        color: 'rgb(41, 37, 36)',
                         size: '2rem',
                       }}
                     >
@@ -143,9 +143,14 @@ const Card = ({ card, style, type }) => {
         <div className="flex flex-col justify-between px-4 text-base">
           <p className="leading-snug pl-4 border-l">
             {text}
-            <a className="mx-2" href={links.more.to}>
-              <span className="font-semibold">{links.more.value}</span>
-            </a>
+            <Link
+              className="mx-2"
+              to={{
+                pathname: links.page.url,
+              }}
+            >
+              <span className="font-semibold">{links.page.text}</span>
+            </Link>
           </p>
         </div>
       );
@@ -189,15 +194,15 @@ const Card = ({ card, style, type }) => {
         <footer className="flex gap-2 px-4 pb-4">
           {links.trial && (
             <Link
-              className="relative flex justify-center items-center w-full h-10 text-center border-blue bg-sky-600 text-slate-50 text-base font-semibold opacity-100 rounded-sm"
+              className="relative flex justify-center items-center w-full py-[5px] text-center border-blue bg-sky-600 text-slate-50 text-base font-semibold rounded-sm opacity-100"
               to={{
                 pathname: links.trial.url,
               }}
             >
-              {links.trial.title}
+              {links.trial.text}
             </Link>
           )}
-          <button className="relative flex justify-center items-center w-full h-10 rounded-sm border-yellow bg-yellow-500 text-slate-50 text-base font-bold opacity-100">
+          <button className="relative flex justify-center items-center w-full py-[5px] border-yellow bg-yellow-400 text-slate-50 text-base font-bold rounded-sm opacity-100">
             <IconContext.Provider
               value={{
                 color: '#1e293b',
@@ -216,10 +221,10 @@ const Card = ({ card, style, type }) => {
           <Link
             className="relative mt-auto inline-block w-full py-2 rounded-sm text-center border-blue bg-sky-600 text-slate-50 text-base font-semibold opacity-100"
             to={{
-              pathname: card.links.action.to,
+              pathname: card.links.action.url,
             }}
           >
-            {card.links.action.value}
+            {card.links.action.text}
           </Link>
         </footer>
       );
