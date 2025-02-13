@@ -9,7 +9,7 @@
       "image": "w-1/3 aspect-square rounded-full bg-center bg-contain bg-no-repeat bg-slate-100"
     },
     "title": {
-      "style": "px-4 pb-4 text-3xl border-b font-bold",
+      "style": "mb-8 px-4 pb-4 text-3xl border-b font-bold",
       "text": "Our Teachers"
     }
   },

@@ -22,7 +22,7 @@ const Home = () => {
       <Carousel elements={carousel.elements} />
       <main className="container">
         <section>
-          <h2 className="mb-[30px] px-4 pb-4 text-3xl border-b font-bold">
+          <h2 className="mb-8 mx-4 px-4 pb-4 text-3xl border-b font-bold">
             {courses.scroller.title.text}
           </h2>
           <div className={courses.scroller.style.section}>
@@ -31,7 +31,6 @@ const Home = () => {
                 <Card
                   key={i}
                   card={card}
-                  image={images[i]}
                   style={courses.scroller.style}
                   type={courses.scroller.type}
                 />
@@ -40,7 +39,7 @@ const Home = () => {
           </div>
         </section>
         <section>
-          <h2 className={teachers.scroller.title.style}>
+          <h2 className="mb-8 px-4 pb-4 text-3xl border-b font-bold">
             {teachers.scroller.title.text}
           </h2>
           <div className={teachers.scroller.style.section}>
@@ -57,7 +56,7 @@ const Home = () => {
           </div>
         </section>
         <section>
-          <h2 className="px-4 text-3xl border-b font-bold">Tests</h2>
+          <h2 className="mb-8 px-4 pb-4 text-3xl border-b font-bold">Tests</h2>
           <div className="media-scroller snaps-inline">
             {testimonials.cards.map((card, i) => {
               return (
@@ -72,7 +71,7 @@ const Home = () => {
           </div>
         </section>
         <section>
-          <h2 className={testimonials.scroller.title.style}>
+          <h2 className="mb-8 px-4 pb-4 text-3xl border-b font-bold">
             {testimonials.scroller.title.text}
           </h2>
           <div className="media-scroller snaps-inline">

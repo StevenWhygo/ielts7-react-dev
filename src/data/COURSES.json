@@ -7,7 +7,7 @@
     },
 
     "title": {
-      "style": "mb-[30px] px-4 pb-4 text-3xl border-b font-bold",
+      "style": "mb-8 px-4 pb-4 text-3xl border-b font-bold",
       "text": "Courses"
     }
   },
@@ -17,7 +17,7 @@
         "text": "Grammar Basic",
         "color": "rgb(0, 146, 184)"
       },
-      "image": "../assets/img/ielts7_online_01.jpg",
+      "image": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-beginner.png?t=4e99648",
 
       "list": [
         { "icon": "grammar", "text": "Key Grammar" },
@@ -42,7 +42,7 @@
         "color": "rgb(0, 105, 168)"
       },
 
-      "image": "../assets/img/ielts7_online_02.jpg",
+      "image": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-advanced.png?t=4e99648",
       "background": "bg-emerald-500",
       "list": [
         { "icon": "exam", "text": "IELTS Exam Knowledge" },
@@ -66,7 +66,7 @@
         "text": "IELTS Basic",
         "color": "rgb(0, 153, 102)"
       },
-      "image": "../assets/img/ielts7_online_03.jpg",
+      "image": "https://storage.ieltstaipei.com/public/images/home/product-course-ielts-beginner.png?t=4e99648",
       "background": "bg-amber-500",
       "list": [
         { "icon": "exam", "text": "IELTS Exam Knowledge Review" },
@@ -90,7 +90,7 @@
         "text": "IELTS Advanced",
         "color": "rgb(0, 150, 137)"
       },
-      "image": "../assets/img/ielts7_online_04.jpg",
+      "image": "https://storage.ieltstaipei.com/public/images/home/product-course-ielts-advanced.png?t=4e99648",
       "list": [
         { "icon": "exam", "text": "IELTS Exam Knowledge Review" },
         { "icon": "video", "text": "Unlimited Video Lessons" },
@@ -113,12 +113,12 @@
         "text": "Scored Speaking",
         "color": "rgb(240, 177, 0)"
       },
-      "image": "../assets/img/ielts7_online_04.jpg",
+      "image": "https://storage.ieltstaipei.com/public/images/home/products_IELTS_scored_speaking.png?t=4e99648",
       "list": [
-        { "icon": "exam", "text": "IELTS Exam Knowledge Review" },
-        { "icon": "video", "text": "Unlimited Video Lessons" },
-        { "icon": "exercise", "text": "Hundreds Of Exercises" },
-        { "icon": "quiz", "text": "Final Quiz" }
+        { "icon": "speak", "text": "Speaking Exercises" },
+        { "icon": "group", "text": "Speaking Party" },
+        { "icon": "help", "text": "Teacher Assistance" },
+        { "icon": "feedback", "text": "Personalized Feedback" }
       ],
       "links": {
         "page": {
@@ -132,12 +132,12 @@
         "text": "Scored Essay",
         "color": "rgb(254, 154, 0)"
       },
-      "image": "../assets/img/ielts7_online_04.jpg",
+      "image": "https://storage.ieltstaipei.com/public/images/home/products_IELTS_scored_essay.png?t=4e99648",
       "list": [
-        { "icon": "exam", "text": "IELTS Exam Knowledge Review" },
-        { "icon": "video", "text": "Unlimited Video Lessons" },
-        { "icon": "exercise", "text": "Hundreds Of Exercises" },
-        { "icon": "quiz", "text": "Final Quiz" }
+        { "icon": "notes", "text": "IELTS Essays Best Practice" },
+        { "icon": "score", "text": "Corrected & Scored Essays" },
+        { "icon": "help", "text": "Teacher Assistance" },
+        { "icon": "feedback", "text": "Personalized Feedback" }
       ],
       "links": {
         "page": {

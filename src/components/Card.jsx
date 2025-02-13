@@ -4,7 +4,6 @@ import { IconContext } from 'react-icons';
 
 // review / grammar
 import { MdRateReview } from 'react-icons/md';
-import { MdFeedback } from 'react-icons/md';
 // quiz
 import { MdQuiz } from 'react-icons/md';
 // video
@@ -19,8 +18,20 @@ import { MdForum } from 'react-icons/md';
 import { MdEditSquare } from 'react-icons/md';
 // cart
 import { MdOutlineShoppingCart } from 'react-icons/md';
+// feedback
+import { MdFeedback } from 'react-icons/md';
+// help
+import { MdHelp } from 'react-icons/md';
+// group
+import { MdGroup } from 'react-icons/md';
+// speak
+import { MdSms } from 'react-icons/md';
+// score
+import { MdScoreboard } from 'react-icons/md';
+// notes
+import { MdNotes } from 'react-icons/md';
 
-const Card = ({ card, style, image, type }) => {
+const Card = ({ card, style, type }) => {
   const navigate = useNavigate();
 
   const fetchIcon = (type) => {
@@ -37,34 +48,33 @@ const Card = ({ card, style, image, type }) => {
         return <MdVideoLibrary />;
       case 'words':
         return <MdChecklist />;
-
+      case 'feedback':
+        return <MdFeedback />;
+      case 'help':
+        return <MdHelp />;
+      case 'group':
+        return <MdGroup />;
+      case 'speak':
+        return <MdSms />;
+      case 'score':
+        return <MdScoreboard />;
+      case 'notes':
+        return <MdNotes />;
       default:
         break;
     }
   };
 
   const Header = {
-    course: function (card, image) {
-      const { title, color, links } = card;
+    course: function (card) {
+      const { title, color, image, links } = card;
+      console.log(image);
 
       return (
-        <header className="relative">
-          <h2
-            className="absolute top-[-40px] flex justify-center items-center w-3/5 h-[40px] font-semibold text-stone-50 rounded-top-sm"
-            style={{ backgroundColor: title.color }}
-          >
-            {title.text}
-
-            {/* <span
-              className="flex justify-center items-center w-1/2 h-[40px] rounded-tr-sm"
-              style={{ backgroundColor: level.color }}
-            >
-              {level.text}
-            </span> */}
-          </h2>
-          <div className="w-full h-[175px] overflow-hidden rounded-tr-sm">
+        <header className="relative rounded-t-sm">
+          <div className="w-full h-[200px] overflow-hidden rounded-t-sm">
             <div
-              className="course__bg"
+              className="course__bg  rounded-t-sm"
               style={{ backgroundImage: `url(${image})` }}
               onClick={() => navigate(links.page.url)}
               title={links.page.title}
@@ -102,11 +112,14 @@ const Card = ({ card, style, image, type }) => {
       const { list, links } = card;
       return (
         <div className="p-4">
-          <ul className="flex flex-col gap-2">
+          <ul className="flex flex-col border rounded-sm">
             {list.map((item, i) => {
               return (
-                <li key={i} className="flex items-center gap-4">
-                  <span>
+                <li
+                  key={i}
+                  className="list__item flex items-center w-full py-2"
+                >
+                  <span className="px-2">
                     <IconContext.Provider
                       value={{
                         color: '#1e293b',
@@ -116,7 +129,7 @@ const Card = ({ card, style, image, type }) => {
                       {fetchIcon(item.icon)}
                     </IconContext.Provider>
                   </span>
-                  <span className="text-sm font-semibold">{item.text}</span>
+                  <span className="text-[15px] font-semibold">{item.text}</span>
                 </li>
               );
             })}
@@ -173,10 +186,10 @@ const Card = ({ card, style, image, type }) => {
       const { links } = card;
 
       return (
-        <footer className="px-4 pb-4 flex gap-2">
+        <footer className="flex gap-2 px-4 pb-4">
           {links.trial && (
             <Link
-              className="relative w-full py-2 rounded-sm text-center border-blue bg-sky-600 text-slate-50 text-base font-semibold opacity-100"
+              className="relative flex justify-center items-center w-full h-10 text-center border-blue bg-sky-600 text-slate-50 text-base font-semibold opacity-100 rounded-sm"
               to={{
                 pathname: links.trial.url,
               }}
@@ -184,7 +197,7 @@ const Card = ({ card, style, image, type }) => {
               {links.trial.title}
             </Link>
           )}
-          <button className="relative flex justify-center items-center w-full mx-auto rounded-sm border-yellow bg-yellow-500 text-slate-50 text-base font-bold opacity-100">
+          <button className="relative flex justify-center items-center w-full h-10 rounded-sm border-yellow bg-yellow-500 text-slate-50 text-base font-bold opacity-100">
             <IconContext.Provider
               value={{
                 color: '#1e293b',
@@ -224,7 +237,7 @@ const Card = ({ card, style, image, type }) => {
       className={style.article}
       style={card.fill && { backgroundColor: card.fill }}
     >
-      {Header[type](card, image)}
+      {Header[type](card)}
       {Main[type](card)}
       {Footer[type](card)}
     </article>
