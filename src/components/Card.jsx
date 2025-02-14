@@ -24,14 +24,44 @@ import { MdFeedback } from 'react-icons/md';
 import { MdHelp } from 'react-icons/md';
 // group
 import { MdGroup } from 'react-icons/md';
-// speak
+// speak exercises
 import { MdSms } from 'react-icons/md';
 // score
-import { MdScoreboard } from 'react-icons/md';
+// import { MdNoteAlt } from "react-icons/md";
+import { PiExamFill } from "react-icons/pi";
+// score outline
+import { PiExam } from "react-icons/pi";
 // notes
 import { MdNotes } from 'react-icons/md';
 // price
 import { MdOutlineAttachMoney } from "react-icons/md";
+// comprehension
+// import { MdSpatialAudio } from "react-icons/md";
+// import { MdInsertComment } from "react-icons/md";
+// import { MdChatBubbleOutline } from "react-icons/md";
+import { MdOutlineChat } from "react-icons/md";
+// premium
+import { MdOutlineShield } from "react-icons/md";
+// free
+import { MdOutlineNoAccounts } from "react-icons/md";
+// account
+import { MdOutlineAccountCircle } from "react-icons/md";
+// single
+import { MdOutlineCropPortrait } from "react-icons/md";
+// many
+import { MdOutlineContentCopy } from "react-icons/md";
+// online course
+import { MdDvr } from "react-icons/md";
+// writing
+import { MdOutlineCreate } from "react-icons/md";
+// speak scored
+// import { MdSpeakerNotes } from "react-icons/md";
+// import { MdOutlineSpeakerNotes } from "react-icons/md";
+
+// results
+import { MdBarChart } from "react-icons/md";
+// best practice
+import { MdAssignmentTurnedIn } from "react-icons/md";
 
 const Card = (props) => {
   const { card, style, type } = props;
@@ -60,12 +90,34 @@ const Card = (props) => {
         return <MdGroup />;
       case 'speak':
         return <MdSms />;
+      case 'score_fill':
+        return <PiExamFill />;
       case 'score':
-        return <MdScoreboard />;
+        return <PiExam />;
       case 'essay':
         return <MdNotes />;
       case 'price':
         return <MdOutlineAttachMoney />;
+      case 'unregistered':
+        return <MdOutlineNoAccounts />;
+      case 'registered':
+        return <MdOutlineAccountCircle />;
+      case 'premium':
+        return <MdOutlineShield />;
+      case 'single':
+        return <MdOutlineCropPortrait />;
+      case 'many':
+        return <MdOutlineContentCopy />;
+      case 'course':
+        return <MdDvr />;
+      case 'comprehension':
+        return <MdOutlineChat />;
+      case 'results':
+        return <MdBarChart />;
+      case 'writing':
+        return <MdOutlineCreate />;
+      case 'check':
+        return <MdAssignmentTurnedIn />;
       default:
         break;
     }
@@ -73,9 +125,7 @@ const Card = (props) => {
 
   const Header = {
     course: function (card) {
-      const { title, color, image, links } = card;
-      console.log(image);
-
+      const {image, links } = card;
       return (
         <header className="rounded-t-sm">
           <div className="w-full h-[200px] overflow-hidden">
@@ -90,7 +140,17 @@ const Card = (props) => {
       );
     },
     test: function (card) {
-      return <header>Header</header>;
+      const {image, links} = card;
+      return (<header className="rounded-t-sm">
+        <div className="w-full h-[200px] overflow-hidden">
+          <div
+            className="course__bg rounded-t-sm"
+            style={{ backgroundImage: `url(${image})` }}
+            onClick={() => navigate(links.page.url)}
+            // title={links.page.text}
+          ></div>
+        </div>
+      </header>)
     },
     teacher: function (card) {
       const { title, subtitle, image } = card;
@@ -118,7 +178,7 @@ const Card = (props) => {
 
   const Main = {
     course: function (card) {
-      const { price, list } = card;
+      const { list } = card;
       return (
         <div className="p-4">
           <ul className="flex flex-col border rounded-sm border-b-0">
@@ -147,7 +207,33 @@ const Card = (props) => {
       );
     },
     test: function (card) {
-      return <div>Content</div>;
+      const { list } = card;
+      return (
+        <div className="p-4">
+          <ul className="flex flex-col border rounded-sm">
+            {list.map((item, i) => {
+              return (
+                <li
+                  key={i}
+                  className="list__item flex items-center w-full py-1"
+                >
+                  <span className="px-2">
+                    <IconContext.Provider
+                      value={{
+                        color: 'rgb(41, 37, 36)',
+                        size: '2rem',
+                      }}
+                    >
+                      {fetchIcon(item.icon)}
+                    </IconContext.Provider>
+                  </span>
+                  <span className={`${item.icon === 'price' ? 'text-[17px] font-bold':'text-[15px] font-semibold'} ml-4 `}>{item.text}</span>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      );
     },
     teacher: function (card) {
       const { title, text, links } = card;
@@ -206,7 +292,7 @@ const Card = (props) => {
         <footer className="flex gap-2 px-4 pb-4">
           {links.trial && (
             <Link
-              className="relative flex justify-center items-center w-full py-[5px] text-center border-blue bg-sky-600 text-slate-50 text-base font-semibold rounded-sm opacity-100"
+              className="relative flex justify-center items-center w-full py-1 text-center border-blue bg-sky-600 text-slate-50 text-base font-semibold rounded-sm opacity-100"
               to={{
                 pathname: links.trial.url,
               }}
@@ -214,7 +300,7 @@ const Card = (props) => {
               {links.trial.text}
             </Link>
           )}
-          <button className="relative flex justify-center items-center w-full py-[5px] border-yellow bg-yellow-400 text-slate-50 text-base font-bold rounded-sm opacity-100">
+          <button className="relative flex justify-center items-center w-full py-1 border-yellow bg-yellow-400 text-slate-50 text-base font-bold rounded-sm opacity-100">
             <IconContext.Provider
               value={{
                 color: '#1e293b',
@@ -228,7 +314,33 @@ const Card = (props) => {
       );
     },
     test: function (card) {
-      return <footer>Footer</footer>;
+      const {links} = card;
+      console.log(links);
+      
+      return (      
+         <footer className="flex gap-2 px-4 pb-4">
+      
+        {links.trial ? (
+          <Link
+            className="relative flex justify-center items-center w-full py-2 text-center border-blue bg-sky-600 text-slate-50 text-base font-semibold rounded-sm opacity-100"
+            to={{
+              pathname: links.trial.url,
+            }}
+          >
+            {links.trial.text}
+          </Link>
+        ) :
+     (  
+       <Link
+            className="relative flex justify-center items-center w-full py-2 text-center border-blue bg-green-600 text-slate-50 text-base font-semibold rounded-sm opacity-100"
+            to={{
+              pathname: links.signup.url,
+            }}
+          >
+            {links.signup.text}
+          </Link>
+)}
+      </footer>)
     },
     teacher: function (card) {
       return (
