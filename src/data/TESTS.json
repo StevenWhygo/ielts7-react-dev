@@ -5,21 +5,25 @@
   "cards": [
     {
       "title": {
-        "text": "Free Mock Test",
+        "text": "Free Trial",
         "color": "rgb(0, 146, 184)"
       },
-      "image": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-beginner.png?t=4e99648",
+      "image": "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
       "list": [
-        { "icon": "grammar", "text": "Key Grammar" },
-        { "icon": "video", "text": "Unlimited Video Lessons" },
-        { "icon": "exercise", "text": "Hundreds Of Exercises" },
-        { "icon": "quiz", "text": "Final Quiz" }
+        { "icon": "unregistered", "text": "No Account Necessary" },
+        { "icon": "single", "text": "One Mock Test" },
+        { "icon": "writing", "text": "Writing Exercises" },
+        { "icon": "comprehension", "text": "Comprehension Exercises" }
       ],
       "links": {
         "page": {
-          "text": "Go To Test",
-          "url": "https://www.ielts7.online/freeTrialTest/204"
+          "text": "To Mock Test Page",
+          "url": "./mocktests"
+        },
+        "trial": {
+          "text": "Try Mock Test",
+          "url": "./mocktests"
         }
       }
     },
@@ -28,20 +32,23 @@
         "text": "Basic Plan",
         "color": "rgb(0, 146, 184)"
       },
-      "image": "",
-
+      "image": "https://images.unsplash.com/photo-1531496244015-67bec2b9952b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "list": [
-        { "icon": "grammar", "text": "Key Grammar" },
-        { "icon": "video", "text": "Unlimited Video Lessons" },
-        { "icon": "exercise", "text": "Hundreds Of Exercises" },
-        { "icon": "quiz", "text": "Final Quiz" }
+        { "icon": "registered", "text": "Registered Users Only" },
+        { "icon": "many", "text": "Many Tests" },
+        { "icon": "results", "text": "Saved Results And Progress" },
+        { "icon": "course", "text": "Course Free Trial" }
       ],
       "links": {
+        "page": {
+          "text": "To Mock Test Page",
+          "url": "./mocktests"
+        },
         "signin": {
           "text": "Sign In",
           "url": "./signin"
         },
-        "singup": {
+        "signup": {
           "text": "Sign Up",
           "url": "./signup"
         }
@@ -52,22 +59,25 @@
         "text": "Premium Plan",
         "color": "rgb(0, 146, 184)"
       },
-      "image": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-beginner.png?t=4e99648",
-
+      "image": "https://images.unsplash.com/photo-1579389082289-3d6922d506c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "list": [
-        { "icon": "grammar", "text": "Key Grammar" },
-        { "icon": "video", "text": "Unlimited Video Lessons" },
-        { "icon": "exercise", "text": "Hundreds Of Exercises" },
-        { "icon": "quiz", "text": "Final Quiz" }
+        { "icon": "premium", "text": "Premium Users Only" },
+        { "icon": "many", "text": "Unlimited Test Access" },
+        { "icon": "score", "text": "Srored Essay" },
+        { "icon": "score", "text": "Scored Speaking" }
       ],
       "links": {
         "page": {
           "text": "Learn More",
           "url": "./courses/grammar-basic"
         },
-        "trial": {
-          "text": "Free Trial",
-          "url": "https://www.ielts7.online/main/10"
+        "signin": {
+          "text": "Sign In",
+          "url": "./signin"
+        },
+        "signup": {
+          "text": "Sign Up",
+          "url": "./signup"
         }
       }
     }

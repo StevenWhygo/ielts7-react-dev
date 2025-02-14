@@ -127,8 +127,8 @@
       },
       "image": "https://storage.ieltstaipei.com/public/images/home/products_IELTS_scored_essay.png?t=4e99648",
       "list": [
-        { "icon": "essay", "text": "IELTS Essays Best Practice" },
-        { "icon": "score", "text": "Corrected & Scored Essays" },
+        { "icon": "check", "text": "IELTS Essays Best Practice" },
+        { "icon": "score_fill", "text": "Scored Essays" },
         { "icon": "help", "text": "Teacher Assistance" },
         { "icon": "feedback", "text": "Personalized Feedback" },
         { "icon": "price", "text": "176 Points / Test" }
