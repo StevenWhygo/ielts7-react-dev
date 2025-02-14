@@ -9,12 +9,12 @@
         "color": "rgb(0, 146, 184)"
       },
       "image": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-beginner.png?t=4e99648",
-
       "list": [
         { "icon": "grammar", "text": "Key Grammar" },
         { "icon": "video", "text": "Unlimited Video Lessons" },
         { "icon": "exercise", "text": "Hundreds Of Exercises" },
-        { "icon": "quiz", "text": "Final Quiz" }
+        { "icon": "quiz", "text": "Final Quiz" },
+        { "icon": "price", "text": "702 points / Month" }
       ],
       "links": {
         "page": {
@@ -34,12 +34,12 @@
       },
 
       "image": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-advanced.png?t=4e99648",
-      "background": "bg-emerald-500",
       "list": [
         { "icon": "exam", "text": "IELTS Exam Review" },
         { "icon": "video", "text": "Unlimited Video Lessons" },
         { "icon": "words", "text": "2000 IELTS Essential Words" },
-        { "icon": "quiz", "text": "Final Quiz" }
+        { "icon": "quiz", "text": "Final Quiz" },
+        { "icon": "price", "text": "702 points / Month" }
       ],
       "links": {
         "page": {
@@ -58,12 +58,12 @@
         "color": "rgb(0, 153, 102)"
       },
       "image": "https://storage.ieltstaipei.com/public/images/home/product-course-ielts-beginner.png?t=4e99648",
-      "background": "bg-amber-500",
       "list": [
         { "icon": "exam", "text": "IELTS Exam Review" },
         { "icon": "video", "text": "Unlimited Video Lessons" },
         { "icon": "words", "text": "2000 IELTS Essential Words" },
-        { "icon": "quiz", "text": "Final Quiz" }
+        { "icon": "quiz", "text": "Final Quiz" },
+        { "icon": "price", "text": "702 points / Month" }
       ],
       "links": {
         "page": {
@@ -86,7 +86,8 @@
         { "icon": "exam", "text": "IELTS Exam Review" },
         { "icon": "video", "text": "Unlimited Video Lessons" },
         { "icon": "exercise", "text": "Hundreds Of Exercises" },
-        { "icon": "quiz", "text": "Final Quiz" }
+        { "icon": "quiz", "text": "Final Quiz" },
+        { "icon": "price", "text": "702 points / Month" }
       ],
       "links": {
         "page": {
@@ -109,7 +110,8 @@
         { "icon": "speak", "text": "Speaking Exercises" },
         { "icon": "group", "text": "Speaking Party" },
         { "icon": "help", "text": "Teacher Assistance" },
-        { "icon": "feedback", "text": "Personalized Feedback" }
+        { "icon": "feedback", "text": "Personalized Feedback" },
+        { "icon": "price", "text": "176 Points / Test" }
       ],
       "links": {
         "page": {
@@ -125,10 +127,11 @@
       },
       "image": "https://storage.ieltstaipei.com/public/images/home/products_IELTS_scored_essay.png?t=4e99648",
       "list": [
-        { "icon": "notes", "text": "IELTS Essays Best Practice" },
+        { "icon": "essay", "text": "IELTS Essays Best Practice" },
         { "icon": "score", "text": "Corrected & Scored Essays" },
         { "icon": "help", "text": "Teacher Assistance" },
-        { "icon": "feedback", "text": "Personalized Feedback" }
+        { "icon": "feedback", "text": "Personalized Feedback" },
+        { "icon": "price", "text": "176 Points / Test" }
       ],
       "links": {
         "page": {
