@@ -30,6 +30,8 @@ import { MdSms } from 'react-icons/md';
 import { MdScoreboard } from 'react-icons/md';
 // notes
 import { MdNotes } from 'react-icons/md';
+// price
+import { MdOutlineAttachMoney } from "react-icons/md";
 
 const Card = (props) => {
   const { card, style, type } = props;
@@ -60,8 +62,10 @@ const Card = (props) => {
         return <MdSms />;
       case 'score':
         return <MdScoreboard />;
-      case 'notes':
+      case 'essay':
         return <MdNotes />;
+      case 'price':
+        return <MdOutlineAttachMoney />;
       default:
         break;
     }
@@ -114,10 +118,10 @@ const Card = (props) => {
 
   const Main = {
     course: function (card) {
-      const { list, links } = card;
+      const { price, list } = card;
       return (
         <div className="p-4">
-          <ul className="flex flex-col border border-b-0 rounded-sm">
+          <ul className="flex flex-col border rounded-sm border-b-0">
             {list.map((item, i) => {
               return (
                 <li
@@ -134,7 +138,7 @@ const Card = (props) => {
                       {fetchIcon(item.icon)}
                     </IconContext.Provider>
                   </span>
-                  <span className="text-[15px] font-semibold">{item.text}</span>
+                  <span className={`${item.icon === 'price' ? 'text-[17px] font-bold':'text-[15px] font-semibold'} ml-4 `}>{item.text}</span>
                 </li>
               );
             })}
