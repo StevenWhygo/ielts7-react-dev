@@ -1,14 +1,75 @@
 {
-    "scroller": {
-        "type": "test",
-        "style": {
-            "section": "media-scroller snaps-inline",
-            "article": "media-element"
-        },
-    
-    "title": {
-      "style": "mb-[30px] px-4 pb-4 text-3xl border-b font-bold",
-      "text": "Tests"
+  "type": "test",
+  "title": "Mock Tests",
+  "style": "media-element",
+  "cards": [
+    {
+      "title": {
+        "text": "Free Mock Test",
+        "color": "rgb(0, 146, 184)"
+      },
+      "image": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-beginner.png?t=4e99648",
+
+      "list": [
+        { "icon": "grammar", "text": "Key Grammar" },
+        { "icon": "video", "text": "Unlimited Video Lessons" },
+        { "icon": "exercise", "text": "Hundreds Of Exercises" },
+        { "icon": "quiz", "text": "Final Quiz" }
+      ],
+      "links": {
+        "page": {
+          "text": "Go To Test",
+          "url": "https://www.ielts7.online/freeTrialTest/204"
         }
+      }
+    },
+    {
+      "title": {
+        "text": "Basic Plan",
+        "color": "rgb(0, 146, 184)"
+      },
+      "image": "",
+
+      "list": [
+        { "icon": "grammar", "text": "Key Grammar" },
+        { "icon": "video", "text": "Unlimited Video Lessons" },
+        { "icon": "exercise", "text": "Hundreds Of Exercises" },
+        { "icon": "quiz", "text": "Final Quiz" }
+      ],
+      "links": {
+        "signin": {
+          "text": "Sign In",
+          "url": "./signin"
+        },
+        "singup": {
+          "text": "Sign Up",
+          "url": "./signup"
+        }
+      }
+    },
+    {
+      "title": {
+        "text": "Premium Plan",
+        "color": "rgb(0, 146, 184)"
+      },
+      "image": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-beginner.png?t=4e99648",
+
+      "list": [
+        { "icon": "grammar", "text": "Key Grammar" },
+        { "icon": "video", "text": "Unlimited Video Lessons" },
+        { "icon": "exercise", "text": "Hundreds Of Exercises" },
+        { "icon": "quiz", "text": "Final Quiz" }
+      ],
+      "links": {
+        "page": {
+          "text": "Learn More",
+          "url": "./courses/grammar-basic"
+        },
+        "trial": {
+          "text": "Free Trial",
+          "url": "https://www.ielts7.online/main/10"
+        }
+      }
     }
+  ]
 }

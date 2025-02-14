@@ -1,30 +1,20 @@
 {
-  "scroller": {
-    "type": "teacher",
-    "style": {
-      "article": "media-element element-gap p-4",
-      "header": "flex justify-between",
-      "subtitle": "text-xs",
-      "image": "w-1/3 aspect-square rounded-full bg-center bg-contain bg-no-repeat bg-slate-100"
-    },
-    "title": {
-      "style": "px-4 pb-4 text-3xl border-b font-bold",
-      "text": "Our Teachers"
-    }
-  },
+  "type": "teacher",
+  "title": "Our Teachers",
+  "style": "media-element gap-4",
   "cards": [
     {
       "title": "Steven Tessier",
       "subtitle": "1755 points / 30 minutes",
-      "text": "Steven Tessier is a veteran teacher with over 30 years of experience teaching and preparing students for IELTS tests...",
+      "text": "Steven is a veteran teacher with over 30 years of experience teaching and preparing students for IELTS tests...",
       "links": {
-        "more": {
-          "value": "Learn More",
-          "to": "./teachers/steven"
+        "page": {
+          "text": "Learn More",
+          "url": "./teachers/steven"
         },
         "action": {
-          "value": "Booking",
-          "to": "/"
+          "text": "Booking",
+          "url": "/"
         }
       },
       "image": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/ZDaTNQdqBQWPQVUS.png?t=0f58c8a"
@@ -32,15 +22,15 @@
     {
       "title": "Shad Gilbert",
       "subtitle": "1755 points / 30 minutes",
-      "text": "Shad is a senior teacher with over 20 years experience teaching in the United States, China and Taiwan.",
+      "text": "Shad is a senior teacher with over 20 years experience teaching in the United States, China and Taiwan...",
       "links": {
-        "more": {
-          "value": "Learn More",
-          "to": "./teachers/shad"
+        "page": {
+          "text": "Learn More",
+          "url": "./teachers/shad"
         },
         "action": {
-          "value": "Booking",
-          "to": "/"
+          "text": "Booking",
+          "url": "/"
         }
       },
       "image": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/5QXZ7HiiF7ER3rLM.png?t=0f58c8a"
@@ -48,15 +38,15 @@
     {
       "title": "Kate Licup",
       "subtitle": "264 points / 30 minutes",
-      "text": "Kate has TESOL certificate in English teaching.",
+      "text": "Kate has TESOL certificate in English teaching...",
       "links": {
-        "more": {
-          "value": "Learn More",
-          "to": "./teachers/kate"
+        "page": {
+          "text": "Learn More",
+          "url": "./teachers/kate"
         },
         "action": {
-          "value": "Booking",
-          "to": "/"
+          "text": "Booking",
+          "url": "/"
         }
       },
       "image": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/D4nrCI0kapCx2FOk.jpg?t=0f58c8a"

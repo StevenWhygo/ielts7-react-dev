@@ -1,133 +1,155 @@
 {
-  "scroller": {
-    "type": "course",
-    "style": {
-      "section": "media-scroller snaps-inline",
-      "article": "media-element"
-    },
-    
-    "title": {
-      "style": "px-4 pb-4 text-3xl border-b font-bold",
-      "text": "Courses"
-    }
-  },
+  "type": "course",
+  "title": "Courses",
+  "style": "media-element",
   "cards": [
     {
       "title": {
-        "text": "IELTS Grammar",
+        "text": "Grammar Basic",
         "color": "rgb(0, 146, 184)"
       },
-      "level": {
-        "text": "Beginners",
-        "color": "rgb(254, 154, 0)"
-      },
-      "image": "'/src/assets/img/ielts7_online_01.jpg'",
+      "image": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-beginner.png?t=4e99648",
 
       "list": [
         { "icon": "grammar", "text": "Key Grammar" },
-        { "icon": "words", "text": "Unlimited Video Lessons" },
+        { "icon": "video", "text": "Unlimited Video Lessons" },
         { "icon": "exercise", "text": "Hundreds Of Exercises" },
         { "icon": "quiz", "text": "Final Quiz" }
       ],
       "links": {
-        "more": {
-          "value": "Learn More",
-          "to": "./courses/ielts-grammar-basic"
+        "page": {
+          "text": "Learn More",
+          "url": "./courses/grammar-basic"
         },
-        "action": {
-          "value": "Free Trial",
-          "to": "/courses/trial/ielts-grammar-basic"
+        "trial": {
+          "text": "Free Trial",
+          "url": "https://www.ielts7.online/main/10"
         }
-      },
-      "isCart": "true"
+      }
     },
     {
       "title": {
-        "text": "IELTS Grammar",
-        "color": "rgb(0, 146, 184)"
-      },
-      "level": {
-        "text": "Advanced",
-        "color": "rgb(255, 105, 0)"
+        "text": "Grammar Advanced",
+        "color": "rgb(0, 105, 168)"
       },
 
-      "image": "'/src/assets/img/ielts7_online_02.jpg'",
+      "image": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-advanced.png?t=4e99648",
       "background": "bg-emerald-500",
       "list": [
-        { "icon": "exam", "text": "IELTS Exam Knowledge" },
+        { "icon": "exam", "text": "IELTS Exam Review" },
         { "icon": "video", "text": "Unlimited Video Lessons" },
         { "icon": "words", "text": "2000 IELTS Essential Words" },
         { "icon": "quiz", "text": "Final Quiz" }
       ],
       "links": {
-        "more": {
-          "value": "Learn More",
-          "to": "./courses/ielts-grammar-advanced"
+        "page": {
+          "text": "Learn More",
+          "url": "./courses/grammar-advanced"
         },
-        "action": {
-          "value": "Free Trial",
-          "to": "/courses/trial/ielts-grammar-advanced"
+        "trial": {
+          "text": "Free Trial",
+          "url": "https://www.ielts7.online/main/11"
         }
-      },
-      "isCart": "true"
+      }
     },
     {
       "title": {
-        "text": "IELTS",
-        "color": "rgb(0, 95, 120)"
+        "text": "IELTS Basic",
+        "color": "rgb(0, 153, 102)"
       },
-      "level": {
-        "text": "Beginners",
-        "color": "rgb(254, 154, 0)"
-      },
-      "image": "'/src/assets/img/ielts7_online_03.jpg'",
+      "image": "https://storage.ieltstaipei.com/public/images/home/product-course-ielts-beginner.png?t=4e99648",
       "background": "bg-amber-500",
       "list": [
-        { "icon": "exam", "text": "IELTS Exam Knowledge Review" },
+        { "icon": "exam", "text": "IELTS Exam Review" },
         { "icon": "video", "text": "Unlimited Video Lessons" },
         { "icon": "words", "text": "2000 IELTS Essential Words" },
         { "icon": "quiz", "text": "Final Quiz" }
       ],
       "links": {
-        "more": {
-          "value": "Learn More",
-          "to": "./courses/ielts-basic"
+        "page": {
+          "text": "Learn More",
+          "url": "./courses/ielts-basic"
         },
-        "action": {
-          "value": "Free Trial",
-          "to": "/courses/trial/ielts-basic"
+        "trial": {
+          "text": "Free Trial",
+          "url": "https://www.ielts7.online/main/1"
         }
-      },
-      "isCart": "true"
+      }
     },
     {
       "title": {
-        "text": "IELTS",
-        "color": "rgb(0, 95, 120)"
+        "text": "IELTS Advanced",
+        "color": "rgb(0, 150, 137)"
       },
-      "level": {
-        "text": "Advanced",
-        "color": "rgb(255, 105, 0)"
-      },
-      "image": "'/src/assets/img/ielts7_online_04.jpg'",
+      "image": "https://storage.ieltstaipei.com/public/images/home/product-course-ielts-advanced.png?t=4e99648",
       "list": [
-        { "icon": "exam", "text": "IELTS Exam Knowledge Review" },
+        { "icon": "exam", "text": "IELTS Exam Review" },
         { "icon": "video", "text": "Unlimited Video Lessons" },
         { "icon": "exercise", "text": "Hundreds Of Exercises" },
         { "icon": "quiz", "text": "Final Quiz" }
       ],
       "links": {
-        "more": {
-          "value": "Learn More",
-          "to": "./courses/ielts-advanced"
+        "page": {
+          "text": "Learn More",
+          "url": "./courses/ielts-advanced"
         },
-        "action": {
-          "value": "Free Trial",
-          "to": "/courses/trial/ielts-advanced"
+        "trial": {
+          "text": "Free Trial",
+          "url": "https://www.ielts7.online/main/2"
         }
+      }
+    },
+    {
+      "title": {
+        "text": "Scored Speaking",
+        "color": "rgb(240, 177, 0)"
       },
-      "isCart": "true"
+      "image": "https://storage.ieltstaipei.com/public/images/home/products_IELTS_scored_speaking.png?t=4e99648",
+      "list": [
+        { "icon": "speak", "text": "Speaking Exercises" },
+        { "icon": "group", "text": "Speaking Party" },
+        { "icon": "help", "text": "Teacher Assistance" },
+        { "icon": "feedback", "text": "Personalized Feedback" }
+      ],
+      "links": {
+        "page": {
+          "text": "Learn More",
+          "url": "./courses/ielts-advanced"
+        }
+      }
+    },
+    {
+      "title": {
+        "text": "Scored Essay",
+        "color": "rgb(254, 154, 0)"
+      },
+      "image": "https://storage.ieltstaipei.com/public/images/home/products_IELTS_scored_essay.png?t=4e99648",
+      "list": [
+        { "icon": "notes", "text": "IELTS Essays Best Practice" },
+        { "icon": "score", "text": "Corrected & Scored Essays" },
+        { "icon": "help", "text": "Teacher Assistance" },
+        { "icon": "feedback", "text": "Personalized Feedback" }
+      ],
+      "links": {
+        "page": {
+          "text": "Learn More",
+          "url": "./courses/ielts-advanced"
+        }
+      }
     }
   ],
-  "pages": {}
+  "pages": {
+    "grammar-basic": {
+      "name": "Grammar Basic"
+    },
+    "grammar-advanced": {
+      "name": "Grammar Advanced"
+    },
+    "ielts-basic": {
+      "name": "IELTS Basic"
+    },
+    "ielts-advanced": {
+      "name": "IELTS Advanced"
+    }
+  }
 }

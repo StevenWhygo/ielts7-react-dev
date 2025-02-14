@@ -1,17 +1,7 @@
 {
-  "scroller": {
-    "type": "testimony",
-    "style": {
-      "article": "media-element",
-      "header": "flex justify-between",
-      "subtitle": "text-xs",
-      "image": "w-1/3 aspect-square rounded-full bg-center bg-contain bg-no-repeat bg-slate-100"
-    },
-    "title": {
-      "style": "px-4 pb-4 text-3xl border-b font-bold",
-      "text": "Testimonials"
-    }
-  },
+  "type": "testimony",
+  "title": "Testimonials",
+  "style": "media-element",
   "cards": [
     {
       "title": "Catherine",

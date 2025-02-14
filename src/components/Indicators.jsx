@@ -2,7 +2,7 @@ import Button from './Button';
 import { IconContext } from 'react-icons';
 import { GoDotFill } from 'react-icons/go';
 
-const Indicators = ({ count, slideIndex, nextSlide }) => {
+const Indicators = ({ count, slideIndex, slideHandler }) => {
   return (
     <div className="indicators">
       {[...Array(count).keys()].map((key) => {
@@ -14,7 +14,7 @@ const Indicators = ({ count, slideIndex, nextSlide }) => {
               name: key,
               className: 'indicator',
             }}
-            handler={nextSlide}
+            handler={(e) => slideHandler(e.target.name)}
           >
             {slideIndex === key + 1 ? (
               <IconContext.Provider

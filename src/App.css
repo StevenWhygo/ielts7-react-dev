@@ -17,7 +17,7 @@
     --radius-1: 2px;
 
     /* box shadow */
-    --shadow-3: 0px 4px 6px 0px rgba(0,0,0,0.3);
+    --shadow-3: 0px 4px 5px 1px rgba(0,0,0,0.3);
 }
 html {
     scroll-behavior: smooth;
@@ -52,7 +52,7 @@ li {
   .container {
     margin-inline: auto;
     max-width: 1563px;
-    padding: 1rem;
+    padding-block: 1rem;
   }
 
   /* Hamburger */
@@ -146,7 +146,8 @@ li {
     scrollbar-width: none;
     scroll-snap-type: inline mandatory;
     overscroll-behavior-inline: contain;
-    padding-block-end: var(--spacer-4)
+    padding-block-end: var(--spacer-4);
+    touch-action: pan-y
 }
 
 .slider {
@@ -156,22 +157,22 @@ li {
 }
 
 .slide {
-   flex: 0 0 auto;
-   position: relative;
-   width: 100%;
-   height: auto;
+    flex: 0 0 auto;
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .indicators {
-position: absolute;
-  bottom: 2rem;
-  left: 0;
-  right: 0;
-  display: flex;
-  gap: 1rem;
-  margin-inline: auto;
-  width: fit-content;
-  z-index: 1;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 1rem;
+    margin-inline: auto;
+    width: fit-content;
+    z-index: 1;
 }
 
 .indicators button {
@@ -187,13 +188,11 @@ position: absolute;
     display: grid;
     gap: 2rem;
     grid-auto-flow: column;
-    grid-auto-columns: 87%;
+    grid-auto-columns: 92%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
-    padding-top: 30px;
+    /* padding-top: 40px; */
     padding-bottom: 1rem;
-    /* padding: var(--spacer-10) var(--spacer-4) var(--spacer); */
-    /* padding-block-start: var(--spacer-10);*/
     padding-inline: var(--spacer);
 }
 
@@ -202,6 +201,9 @@ position: absolute;
     display: grid;
     grid-template-rows: min-content;
     max-width: 25rem;
+    /* bg-zinc-50 @ tailwind class */
+    background-color: rgb(250, 250, 250);
+    /* border: 1px solid rgba(0,0,0,0.2); */
     border-radius: var(--radius-2);
     box-shadow: var(--shadow-3);
 }
@@ -225,18 +227,37 @@ position: absolute;
 }
 
 /* Custom Utility Classes */
-
-.rounded-top-sm {
-    border-top-right-radius: 4px !important;
-    border-top-left-radius: 4px !important;
-}
-
 .dark-clr {
     color: rgba(31, 41, 55, 1)
 }
 
 .light-clr {
     color: rgba(249, 250, 251, 1)
+}
+
+/* .gap-4 {
+    gap: var(--spacer-4);
+} */
+
+.course__bg {
+    /* position: relative; */
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.list__item:nth-child(even) {
+    /* background-color: rgb(245, 245, 244); */
+    background-color: rgb(231, 229, 228);
+}
+
+.list__item:nth-last-of-type(-n + 1) {
+    border-bottom-right-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
 }
 
 
@@ -254,12 +275,16 @@ position: absolute;
 
 /* md max-width:  768px */
 @media screen and (width >= 640px) {
-
+    .course__bg:hover {
+        transform: scale(1.1);
+     }
 }
 
 /* lg max-width:  1024px */
 @media screen and (width >= 768px) {
-
+    .carousel {
+        touch-action: none;
+    }
 }
 
 /* xl max-width: 1280px */
