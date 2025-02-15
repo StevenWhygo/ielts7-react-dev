@@ -147,7 +147,7 @@ const Card = (props) => {
         <header className="rounded-t-sm">
           <h2
             style={{ backgroundColor: title.color }}
-            className="absolute -top-10 flex justify-center items-center w-2/5 min-h-10 text-lg font-thin text-stone-50 rounded-t-md"
+            className="absolute -top-10 flex justify-center items-center w-1/2 min-h-10 text-lg font-thin text-stone-50 rounded-t-md"
           >
             {title.text}
           </h2>
