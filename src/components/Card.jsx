@@ -125,7 +125,7 @@ const Card = (props) => {
 
   const Header = {
     course: function (card) {
-      const {image, links } = card;
+      const { image, links } = card;
       return (
         <header className="rounded-t-sm">
           <div className="w-full h-[200px] overflow-hidden">
@@ -140,17 +140,27 @@ const Card = (props) => {
       );
     },
     test: function (card) {
-      const {image, links} = card;
-      return (<header className="rounded-t-sm">
-        <div className="w-full h-[200px] overflow-hidden">
-          <div
-            className="course__bg rounded-t-sm"
-            style={{ backgroundImage: `url(${image})` }}
-            onClick={() => navigate(links.page.url)}
-            // title={links.page.text}
-          ></div>
-        </div>
-      </header>)
+      const { image, links, title } = card;
+      console.log(title);
+
+      return (
+        <header className="rounded-t-sm">
+          <h2
+            style={{ backgroundColor: title.color }}
+            className="absolute -top-10 flex justify-center items-center w-2/5 min-h-10 text-lg font-thin text-stone-50 rounded-t-md"
+          >
+            {title.text}
+          </h2>
+          <div className="w-full h-[200px] overflow-hidden">
+            <div
+              className="course__bg rounded-tr-sm"
+              style={{ backgroundImage: `url(${image})` }}
+              onClick={() => navigate(links.page.url)}
+              // title={links.page.text}
+            ></div>
+          </div>
+        </header>
+      );
     },
     teacher: function (card) {
       const { title, subtitle, image } = card;
@@ -198,7 +208,15 @@ const Card = (props) => {
                       {fetchIcon(item.icon)}
                     </IconContext.Provider>
                   </span>
-                  <span className={`${item.icon === 'price' ? 'text-[17px] font-bold':'text-[15px] font-semibold'} ml-4 `}>{item.text}</span>
+                  <span
+                    className={`${
+                      item.icon === 'price'
+                        ? 'text-[17px] font-bold'
+                        : 'text-[15px] font-semibold'
+                    } ml-4 `}
+                  >
+                    {item.text}
+                  </span>
                 </li>
               );
             })}
@@ -227,7 +245,15 @@ const Card = (props) => {
                       {fetchIcon(item.icon)}
                     </IconContext.Provider>
                   </span>
-                  <span className={`${item.icon === 'price' ? 'text-[17px] font-bold':'text-[15px] font-semibold'} ml-4 `}>{item.text}</span>
+                  <span
+                    className={`${
+                      item.icon === 'price'
+                        ? 'text-[17px] font-bold'
+                        : 'text-[15px] font-semibold'
+                    } ml-4 `}
+                  >
+                    {item.text}
+                  </span>
                 </li>
               );
             })}
@@ -287,7 +313,6 @@ const Card = (props) => {
   const Footer = {
     course: function (card) {
       const { links } = card;
-
       return (
         <footer className="flex gap-2 px-4 pb-4">
           {links.trial && (
@@ -314,33 +339,32 @@ const Card = (props) => {
       );
     },
     test: function (card) {
-      const {links} = card;
+      const { links } = card;
       console.log(links);
-      
-      return (      
-         <footer className="flex gap-2 px-4 pb-4">
-      
-        {links.trial ? (
-          <Link
-            className="relative flex justify-center items-center w-full py-2 text-center border-blue bg-sky-600 text-slate-50 text-base font-semibold rounded-sm opacity-100"
-            to={{
-              pathname: links.trial.url,
-            }}
-          >
-            {links.trial.text}
-          </Link>
-        ) :
-     (  
-       <Link
-            className="relative flex justify-center items-center w-full py-2 text-center border-blue bg-green-600 text-slate-50 text-base font-semibold rounded-sm opacity-100"
-            to={{
-              pathname: links.signup.url,
-            }}
-          >
-            {links.signup.text}
-          </Link>
-)}
-      </footer>)
+
+      return (
+        <footer className="flex gap-2 px-4 pb-4">
+          {links.trial ? (
+            <Link
+              className="relative flex justify-center items-center w-full py-2 text-center border-blue bg-sky-600 text-slate-50 text-base font-semibold rounded-sm opacity-100"
+              to={{
+                pathname: links.trial.url,
+              }}
+            >
+              {links.trial.text}
+            </Link>
+          ) : (
+            <Link
+              className="relative flex justify-center items-center w-full py-2 text-center border-blue bg-green-600 text-slate-50 text-base font-semibold rounded-sm opacity-100"
+              to={{
+                pathname: links.signup.url,
+              }}
+            >
+              {links.signup.text}
+            </Link>
+          )}
+        </footer>
+      );
     },
     teacher: function (card) {
       return (
