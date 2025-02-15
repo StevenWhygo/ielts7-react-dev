@@ -1,18 +1,18 @@
 {
   "type": "test",
   "title": "Mock Tests",
-  "style": "media-element",
+  "style": "media-element label",
   "cards": [
     {
       "title": {
         "text": "Free Trial",
-        "color": "rgb(0, 146, 184)"
+        "color": "rgb(68, 64, 59)"
       },
       "image": "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
       "list": [
-        { "icon": "unregistered", "text": "No Account Necessary" },
-        { "icon": "single", "text": "One Mock Test" },
+        { "icon": "unregistered", "text": "No account necessary" },
+        { "icon": "single", "text": "Single Test" },
         { "icon": "writing", "text": "Writing Exercises" },
         { "icon": "comprehension", "text": "Comprehension Exercises" }
       ],
@@ -34,10 +34,10 @@
       },
       "image": "https://images.unsplash.com/photo-1531496244015-67bec2b9952b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "list": [
-        { "icon": "registered", "text": "Registered Users Only" },
-        { "icon": "many", "text": "Many Tests" },
-        { "icon": "results", "text": "Saved Results And Progress" },
-        { "icon": "course", "text": "Course Free Trial" }
+        { "icon": "registered", "text": "Registered Users" },
+        { "icon": "many", "text": "Multiple Tests" },
+        { "icon": "results", "text": "Saved Progress" },
+        { "icon": "course", "text": "Courses Free Trial" }
       ],
       "links": {
         "page": {
@@ -57,14 +57,14 @@
     {
       "title": {
         "text": "Premium Plan",
-        "color": "rgb(0, 146, 184)"
+        "color": "rgb(0, 130, 54)"
       },
       "image": "https://images.unsplash.com/photo-1579389082289-3d6922d506c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "list": [
-        { "icon": "premium", "text": "Premium Users Only" },
-        { "icon": "many", "text": "Unlimited Test Access" },
+        { "icon": "premium", "text": "Premium Users" },
+        { "icon": "many", "text": "Unlimited Tests" },
         { "icon": "score", "text": "Srored Essay" },
-        { "icon": "score", "text": "Scored Speaking" }
+        { "icon": "score", "text": "Scored Speaking Test" }
       ],
       "links": {
         "page": {

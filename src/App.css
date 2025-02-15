@@ -208,6 +208,16 @@ li {
     box-shadow: var(--shadow-3);
 }
 
+.label {
+    top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.margin-bottom-8 {
+    margin-block-end: 2rem;
+}
+
+
 .auto-rows {
     grid-auto-rows: 1fr;
 }
