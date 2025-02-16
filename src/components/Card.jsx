@@ -125,39 +125,35 @@ const Card = (props) => {
 
   const Header = {
     course: function (card) {
-      const { image, links } = card;
+      const { title, image, links } = card;
       return (
         <header className="rounded-t-sm">
-          <div className="w-full h-[200px] overflow-hidden">
-            <div
-              className="course__bg rounded-t-sm"
-              style={{ backgroundImage: `url(${image})` }}
-              onClick={() => navigate(links.page.url)}
-              title={links.page.text}
-            ></div>
+          <div className="w-full">
+            <img
+              className="w-full rounded-t-sm cursor-pointer hover:opacity-80"
+              src={image}
+              alt={`${title} Image`}
+            />
           </div>
         </header>
       );
     },
     test: function (card) {
-      const { image, links, title } = card;
-      console.log(title);
-
+      const { title, image, links } = card;
       return (
-        <header className="rounded-t-sm">
+        <header className="rounded-tr-sm">
           <h2
             style={{ backgroundColor: title.color }}
             className="absolute -top-10 flex justify-center items-center w-1/2 min-h-10 text-lg font-thin text-stone-50 rounded-t-md"
           >
             {title.text}
           </h2>
-          <div className="w-full h-[200px] overflow-hidden">
-            <div
-              className="course__bg rounded-tr-sm"
-              style={{ backgroundImage: `url(${image})` }}
-              onClick={() => navigate(links.page.url)}
-              // title={links.page.text}
-            ></div>
+          <div className="w-full aspect-1.5/1">
+            <img
+              className="w-full h-auto rounded-tr-sm cursor-pointer hover:opacity-80"
+              src={image}
+              alt={`${title} Image`}
+            />
           </div>
         </header>
       );

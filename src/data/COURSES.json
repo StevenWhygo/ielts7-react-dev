@@ -5,8 +5,7 @@
   "cards": [
     {
       "title": {
-        "text": "Grammar Basic",
-        "color": "rgb(0, 146, 184)"
+        "text": "Grammar Basic"
       },
       "image": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-beginner.png?t=4e99648",
       "list": [
@@ -29,8 +28,7 @@
     },
     {
       "title": {
-        "text": "Grammar Advanced",
-        "color": "rgb(0, 105, 168)"
+        "text": "Grammar Advanced"
       },
 
       "image": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-advanced.png?t=4e99648",
@@ -54,8 +52,7 @@
     },
     {
       "title": {
-        "text": "IELTS Basic",
-        "color": "rgb(0, 153, 102)"
+        "text": "IELTS Basic"
       },
       "image": "https://storage.ieltstaipei.com/public/images/home/product-course-ielts-beginner.png?t=4e99648",
       "list": [
@@ -78,8 +75,7 @@
     },
     {
       "title": {
-        "text": "IELTS Advanced",
-        "color": "rgb(0, 150, 137)"
+        "text": "IELTS Advanced"
       },
       "image": "https://storage.ieltstaipei.com/public/images/home/product-course-ielts-advanced.png?t=4e99648",
       "list": [
@@ -102,8 +98,7 @@
     },
     {
       "title": {
-        "text": "Scored Speaking",
-        "color": "rgb(240, 177, 0)"
+        "text": "Scored Speaking"
       },
       "image": "https://storage.ieltstaipei.com/public/images/home/products_IELTS_scored_speaking.png?t=4e99648",
       "list": [
@@ -122,8 +117,7 @@
     },
     {
       "title": {
-        "text": "Scored Essay",
-        "color": "rgb(254, 154, 0)"
+        "text": "Scored Essay"
       },
       "image": "https://storage.ieltstaipei.com/public/images/home/products_IELTS_scored_essay.png?t=4e99648",
       "list": [
