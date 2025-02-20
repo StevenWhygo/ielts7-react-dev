@@ -1,0 +1,381 @@
+
+  [
+     {
+    "type": "course",
+    "title": "Courses",
+    "style": "media-element",
+    "cards": [
+      {
+        "title": {
+          "text": "Grammar Basic"
+        },
+        "image": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-beginner.png?t=4e99648",
+          "alt": "IELTS beginners grammar course image"
+        },
+        "list": [
+          { "icon": "grammar", "text": "Key Grammar" },
+          { "icon": "video", "text": "Unlimited Video Lessons" },
+          { "icon": "exercise", "text": "Hundreds Of Exercises" },
+          { "icon": "quiz", "text": "Final Quiz" },
+          { "icon": "price", "text": "702 points / Month" }
+        ],
+        "links": {
+          "page": {
+            "text": "Learn More",
+            "url": "./courses/grammar-basic"
+          },
+          "trial": {
+            "text": "Free Trial",
+            "url": "https://www.ielts7.online/main/10"
+          }
+        }
+      },
+      {
+        "title": {
+          "text": "Grammar Advanced"
+        },
+        "image": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-advanced.png?t=4e99648",
+          "alt": "IELTS advanced grammar course image"
+        },
+        "list": [
+          { "icon": "exam", "text": "IELTS Exam Review" },
+          { "icon": "video", "text": "Unlimited Video Lessons" },
+          { "icon": "words", "text": "2000 IELTS Essential Words" },
+          { "icon": "quiz", "text": "Final Quiz" },
+          { "icon": "price", "text": "702 points / Month" }
+        ],
+        "links": {
+          "page": {
+            "text": "Learn More",
+            "url": "./courses/grammar-advanced"
+          },
+          "trial": {
+            "text": "Free Trial",
+            "url": "https://www.ielts7.online/main/11"
+          }
+        }
+      },
+      {
+        "title": {
+          "text": "IELTS Basic"
+        },
+        "image": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/product-course-ielts-beginner.png?t=4e99648",
+          "alt": "IELTS beginners course image"
+        },
+        "list": [
+          { "icon": "exam", "text": "IELTS Exam Review" },
+          { "icon": "video", "text": "Unlimited Video Lessons" },
+          { "icon": "words", "text": "2000 IELTS Essential Words" },
+          { "icon": "quiz", "text": "Final Quiz" },
+          { "icon": "price", "text": "702 points / Month" }
+        ],
+        "links": {
+          "page": {
+            "text": "Learn More",
+            "url": "./courses/ielts-basic"
+          },
+          "trial": {
+            "text": "Free Trial",
+            "url": "https://www.ielts7.online/main/1"
+          }
+        }
+      },
+      {
+        "title": {
+          "text": "IELTS Advanced"
+        },
+        "image": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/product-course-ielts-advanced.png?t=4e99648",
+          "alt": "IELTS advanced course image"
+        },
+        "list": [
+          { "icon": "exam", "text": "IELTS Exam Review" },
+          { "icon": "video", "text": "Unlimited Video Lessons" },
+          { "icon": "exercise", "text": "Hundreds Of Exercises" },
+          { "icon": "quiz", "text": "Final Quiz" },
+          { "icon": "price", "text": "702 points / Month" }
+        ],
+        "links": {
+          "page": {
+            "text": "Learn More",
+            "url": "./courses/ielts-advanced"
+          },
+          "trial": {
+            "text": "Free Trial",
+            "url": "https://www.ielts7.online/main/2"
+          }
+        }
+      },
+      {
+        "title": {
+          "text": "Scored Speaking"
+        },
+        "image": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/products_IELTS_scored_speaking.png?t=4e99648",
+          "alt": "IELTS scored speaking course image"
+        },
+        "list": [
+          { "icon": "speak", "text": "Speaking Exercises" },
+          { "icon": "group", "text": "Speaking Party" },
+          { "icon": "help", "text": "Teacher Assistance" },
+          { "icon": "feedback", "text": "Personalized Feedback" },
+          { "icon": "price", "text": "176 Points / Test" }
+        ],
+        "links": {
+          "page": {
+            "text": "Learn More",
+            "url": "./courses/ielts-advanced"
+          }
+        }
+      },
+      {
+        "title": {
+          "text": "Scored Essay"
+        },
+        "image": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/products_IELTS_scored_essay.png?t=4e99648",
+          "alt": "IELTS scored essay course image"
+        },
+        "list": [
+          { "icon": "check", "text": "IELTS Essays Best Practice" },
+          { "icon": "score_fill", "text": "Scored Essays" },
+          { "icon": "help", "text": "Teacher Assistance" },
+          { "icon": "feedback", "text": "Personalized Feedback" },
+          { "icon": "price", "text": "176 Points / Test" }
+        ],
+        "links": {
+          "page": {
+            "text": "Learn More",
+            "url": "./courses/ielts-advanced"
+          }
+        }
+      }
+    ]
+  },
+ {
+    "type": "mocktest",
+    "title": "Mock Tests",
+    "style": "media-element label",
+    "cards": [
+      {
+        "title": "Free Trial",
+        "color": "rgb(68, 64, 59)",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+          "alt": "Man watching laptop with headphones"
+        },
+        "list": [
+          { "icon": "unregistered", "text": "No account necessary" },
+          { "icon": "single", "text": "One Test" },
+          { "icon": "writing", "text": "Writing Exercises" },
+          { "icon": "comprehension", "text": "Comprehension Exercises" }
+        ],
+        "links": {
+          "page": {
+            "text": "To Mock Test Page",
+            "url": "./mocktests"
+          },
+          "trial": {
+            "text": "Try Mock Test",
+            "url": "./mocktests"
+          }
+        }
+      },
+      {
+        "title": "Basic Plan",
+        "color": "rgb(13, 84, 43)",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1565598621680-94ac0c22b148?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+          "alt": "Two young women watching computer screen"
+        },
+        "list": [
+          { "icon": "registered", "text": "Registered Users" },
+          { "icon": "many", "text": "Several Tests" },
+          { "icon": "results", "text": "Saved Progress" },
+          { "icon": "course", "text": "Courses Free Trial" }
+        ],
+        "links": {
+          "page": {
+            "text": "To Mock Test Page",
+            "url": "./mocktests"
+          },
+          "signin": {
+            "text": "Sign In",
+            "url": "./signin"
+          },
+          "signup": {
+            "text": "Sign Up",
+            "url": "./signup"
+          }
+        }
+      },
+      {
+        "title": "Premium Plan",
+        "color": "rgb(16, 78, 100)",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1579389082289-3d6922d506c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+          "alt": "Man sitting at a table wathicng his phone"
+        },
+        "list": [
+          { "icon": "premium", "text": "Premium Users" },
+          { "icon": "many", "text": "Unlimited Tests" },
+          { "icon": "score", "text": "Srored Essay" },
+          { "icon": "score", "text": "Scored Speaking Test" }
+        ],
+        "links": {
+          "page": {
+            "text": "Learn More",
+            "url": "./courses/grammar-basic"
+          },
+          "signin": {
+            "text": "Sign In",
+            "url": "./signin"
+          },
+          "signup": {
+            "text": "Sign Up",
+            "url": "./signup"
+          }
+        }
+      }
+    ]
+  },
+ {
+      "type": "teacher",
+      "title": "Our Teachers",
+      "style": "media-element gap-4",
+      "cards": [
+          {
+              "title": "Steven Tessier",
+              "rate": "1755 points / 30 minutes",
+              "text": "Steven is a veteran teacher with over 30 years of experience teaching and preparing students for IELTS tests...",
+              "image": {
+                "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/ZDaTNQdqBQWPQVUS.png?t=0f58c8a",
+                "alt": "Steven Tessier Thumb"
+              },
+              "links": {
+                "page": {
+                  "text": "Learn More",
+                  "url": "./teachers/steven"
+                },
+                "action": {
+                  "text": "Booking",
+                  "url": "/"
+                }
+              }
+            },
+            {
+              "title": "Shad Gilbert",
+              "rate": "1755 points / 30 minutes",
+              "text": "Shad is a senior teacher with over 20 years experience teaching in the United States, China and Taiwan...",
+              "image": {
+                "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/5QXZ7HiiF7ER3rLM.png?t=0f58c8a",
+                "alt": "Shad Gilber Thumb"
+              },
+              "links": {
+                "page": {
+                  "text": "Learn More",
+                  "url": "./teachers/shad"
+                },
+                "action": {
+                  "text": "Booking",
+                  "url": "/"
+                }
+              }
+            },
+            {
+              "title": "Kate Licup",
+              "rate": "264 points / 30 minutes",
+              "text": "Kate has TESOL certificate in English teaching...",
+              "image": {
+                "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/5QXZ7HiiF7ER3rLM.png?t=0f58c8a",
+                "alt": "Shad Gilber Thumb"
+              },
+              "links": {
+                "page": {
+                  "text": "Learn More",
+                  "url": "./teachers/kate"
+                },
+                "action": {
+                  "text": "Booking",
+                  "url": "/"
+                }
+              }
+            }
+      ]
+  },{
+    "type": "testimonial",
+    "title": "Testimonials",
+    "style": "media-element",
+    "cards": [
+      {
+        "title": "Catherine",
+        "color": "dark-clr",
+        "subtitle": "IELTS 7.0",
+        "fill": "rgba(223, 209, 206, 1)",
+        "text": "The video lessons are great! They provide us with a variety of lessons.",
+        "sources": [
+          {
+            "media": "(max-width: 576px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/Image_testimonials_01.webp"
+          },
+          {
+            "media": "(min-width: 577px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/Image_testimonials_01.jpg"
+          }
+        ],
+        "image": {
+          "style": "rounded-top-sm w-full",
+          "src": "https://storage.ieltstaipei.com/public/images/home/Image_testimonials_01.jpg",
+          "alt": "Image of young woman"
+        }
+      },
+      {
+        "title": "Unna",
+        "color": "light-clr",
+        "subtitle": "IETLS 7.0",
+        "fill": "rgba(153,204,233,1)",
+        "text": "I really like the teacher's way. It allows us to practice what the teachers taught us immediately.",
+        "sources": [
+          {
+            "media": "(max-width: 576px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/Image_testimonials_02.webp"
+          },
+          {
+            "media": "(min-width: 577px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/Image_testimonials_02.jpg"
+          }
+        ],
+        "image": {
+          "style": "rounded-top-sm w-full",
+          "src": "https://storage.ieltstaipei.com/public/images/home/Image_testimonials_02.jpg",
+          "alt": "Image of a young woman"
+        }
+      },
+      {
+        "title": "Michelle Tseng",
+        "color": "light-clr",
+        "subtitle": "IELTS 7.5",
+        "fill": "rgba(254, 146, 51, 1)",
+        "text": "IELTS7Online is the best site! It has great courses, an all-English model and north american teachers.",
+        "sources": [
+          {
+            "media": "(max-width: 576px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/Image_testimonials_03.webp"
+          },
+          {
+            "media": "(min-width: 577px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/Image_testimonials_03.jpg"
+          }
+        ],
+        "image": {
+          "style": "rounded-top-sm w-full",
+          "src": "https://storage.ieltstaipei.com/public/images/home/Image_testimonials_03.jpg",
+          "alt": "Image of a young woman"
+        }
+      }
+    ]
+  }
+]

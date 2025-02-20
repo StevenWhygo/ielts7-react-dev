@@ -1,0 +1,112 @@
+{
+    "slides": [
+      {
+        "sources": [
+          {
+            "type": "image/webp",
+            "media": "(max-width: 576px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_02_mobile.webp"
+          },
+          {
+            "type": "image/webp",
+            "media": "(min-width: 577px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_02.webp"
+          },
+          {
+            "type": "image/jpeg",
+            "media": "(max-width: 576px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_02_mobile.jpg"
+          },
+          {
+            "type": "image/jpeg",
+            "media": "(min-width: 577px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_02.jpg"
+          }
+        ],
+        "image": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_02.jpg",
+          "alt": "Test Your Skills Slide"
+        },
+        "card": {
+          "title": "IELTS Mock Tests Like No Other",
+          "text": "The best way to be IELTS-prepared!",
+          "link": {
+            "text": "Try Now!",
+            "url": "/tests"
+          }
+        }
+      },
+      {
+        "sources": [
+          {
+            "type": "image/webp",
+            "media": "(max-width: 576px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01_mobile.webp"
+          },
+          {
+            "type": "image/webp",
+            "media": "(min-width: 577px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01.webp"
+          },
+          {
+            "type": "image/jpeg",
+            "media": "(max-width: 576px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01_mobile.jpg"
+          },
+          {
+            "type": "image/jpeg",
+            "media": "(min-width: 577px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01.jpg"
+          }
+        ],
+        "image": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01.jpg",
+          "alt": "Flexibility To Fit Your Needs Slide"
+        },
+        "card": {
+          "title": "Flexibility To Fit Your Needs",
+          "text": "Unlimited access to online courses and exercises.",
+          "link": {
+            "text": "Learn More",
+            "url": "/courses"
+          }
+        }
+      },
+      {
+        "sources": [
+          {
+            "type": "image/webp",
+            "media": "(max-width: 576px)",
+            "imageset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03_mobile.webp"
+          },
+          {
+            "type": "image/webp",
+            "media": "(min-width: 577px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03.webp"
+          },
+          {
+            "type": "image/jpeg",
+            "media": "(max-width: 576px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03_mobile.jpg"
+          },
+          {
+            "type": "image/jpeg",
+            "media": "(min-width: 577px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03.jpg"
+          }
+        ],
+        "image": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03.jpg",
+          "alt": "Everything You Need To Succeed Slide"
+        },
+        "card": {
+          "title": "Everything You Need To Succeed",
+          "text": "Basic to Advanced Courses.",
+          "link": {
+            "text": "Sing Up",
+            "url": "/signup"
+          }
+        }
+      }
+    ]
+  }

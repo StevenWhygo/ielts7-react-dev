@@ -64,7 +64,7 @@ import { MdBarChart } from "react-icons/md";
 import { MdAssignmentTurnedIn } from "react-icons/md";
 
 const Card = (props) => {
-  const { card, style, type } = props;
+  const { type, style, card } = props;
 
   const navigate = useNavigate();
 
@@ -125,58 +125,58 @@ const Card = (props) => {
 
   const Header = {
     course: function (card) {
-      const { title, image, links } = card;
+      const { image } = card;
       return (
         <header className="rounded-t-sm">
           <div className="w-full">
             <img
               className="w-full rounded-t-sm cursor-pointer hover:opacity-80"
-              src={image}
-              alt={`${title} Image`}
+              src={image.src}
+              alt={image.alt}
             />
           </div>
         </header>
       );
     },
-    test: function (card) {
-      const { title, image, links } = card;
+    mocktest: function (card) {
+      const { title, color, image } = card;
       return (
         <header className="rounded-tr-sm">
           <h2
-            style={{ backgroundColor: title.color }}
+            style={{ backgroundColor: color }}
             className="absolute -top-10 flex justify-center items-center w-1/2 min-h-10 text-lg font-thin text-stone-50 rounded-t-md"
           >
-            {title.text}
+            {title}
           </h2>
           <div className="w-full aspect-1.5/1">
             <img
               className="w-full h-auto rounded-tr-sm cursor-pointer hover:opacity-80"
-              src={image}
-              alt={`${title} Image`}
+              src={image.src}
+              alt={image.alt}
             />
           </div>
         </header>
       );
     },
     teacher: function (card) {
-      const { title, subtitle, image } = card;
+      const { title, image } = card;
       return (
         <header className="relative z-20">
           <h2 className="py-[5px] pb-2 mx-4 mb-4 text-3xl text-center text-stone-700 border-b rounded-top-sm">
             {title}
           </h2>
           <div
-            style={{ backgroundImage: `url(${image})` }}
+            style={{ backgroundImage: `url(${image.src})` }}
             className="mx-auto max-w-[175px] h-fit aspect-square rounded-full bg-center bg-contain bg-no-repeat bg-slate-100"
           ></div>
         </header>
       );
     },
-    testimony: function (card) {
+    testimonial: function (card) {
       const { sources, image } = card;
       return (
         <header>
-          <Picture style={'relative'} sources={sources} image={image} />
+          <Picture sources={sources} image={image} />
         </header>
       );
     },
@@ -220,7 +220,7 @@ const Card = (props) => {
         </div>
       );
     },
-    test: function (card) {
+    mocktest: function (card) {
       const { list } = card;
       return (
         <div className="p-4">
@@ -258,7 +258,7 @@ const Card = (props) => {
       );
     },
     teacher: function (card) {
-      const { title, text, links } = card;
+      const { text, links, rate } = card;
       return (
         <div className="flex flex-col justify-between px-4 text-base">
           <p className="leading-snug pl-4 border-l">
@@ -272,10 +272,11 @@ const Card = (props) => {
               <span className="font-semibold">{links.page.text}</span>
             </Link>
           </p>
+          <div>{rate}</div>
         </div>
       );
     },
-    testimony: function (card) {
+    testimonial: function (card) {
       const { fill, title, color, subtitle, text } = card;
 
       return (
@@ -334,7 +335,7 @@ const Card = (props) => {
         </footer>
       );
     },
-    test: function (card) {
+    mocktest: function (card) {
       const { links } = card;
       console.log(links);
 
@@ -376,7 +377,7 @@ const Card = (props) => {
         </footer>
       );
     },
-    testimony: function (card) {
+    testimonial: function (card) {
       const { fill } = card;
       return (
         <footer className="relative" style={{ backgroundColor: fill }}></footer>
@@ -387,6 +388,7 @@ const Card = (props) => {
   return (
     <article
       className={style}
+      // testimonial card background color
       style={card.fill && { backgroundColor: card.fill }}
     >
       {Header[type](card)}

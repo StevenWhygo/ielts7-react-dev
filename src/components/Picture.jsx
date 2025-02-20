@@ -1,6 +1,7 @@
-const Picture = ({ style, sources, image }) => {
+const Picture = ({ sources, image }) => {
+  const { style, src, alt } = image;
   return (
-    <picture className={style}>
+    <picture className="relative">
       {sources.map((source, i) => {
         return (
           <source
@@ -11,7 +12,7 @@ const Picture = ({ style, sources, image }) => {
           />
         );
       })}
-      <img className={image.style} src={image.src} alt={image.alt} />
+      <img className={style} src={src} alt={alt} />
     </picture>
   );
 };

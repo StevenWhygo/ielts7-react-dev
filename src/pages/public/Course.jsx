@@ -1,16 +1,14 @@
 import { useParams } from 'react-router-dom';
-import courses from '../../data/COURSES.json';
 
 const Course = () => {
-    const route = useParams();
-    console.log(courses.pages[route.name].name);
-    
-    return (
+  const route = useParams();
+
+  return (
     <section>
-        <header>
-            <h2>{courses.pages[route.name].name}</h2>
-        </header>
+      <header>
+        <h2>{route.name.charAt(0).toUpperCase() + route.name.substring(1)}</h2>
+      </header>
     </section>
-    )
+  );
 };
 export default Course;
