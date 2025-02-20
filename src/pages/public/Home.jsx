@@ -1,20 +1,33 @@
+import { useState, useEffect } from 'react';
 import Page from '../../components/Page';
 import Carousel from '../../features/carousel/Carousel';
 import Scroller from '../../components/Scroller';
 import Card from '../../components/Card';
-import carousel from '../../data/CAROUSEL.json';
-import courses from '../../data/COURSES.json';
-import tests from '../../data/TESTS.json';
-import teachers from '../../data/TEACHERS.json';
-import testimonials from '../../data/TESTIMONIALS.json';
+import useLang from '../../hooks/context/useLang';
+import useTranslation from '../../hooks/useTranslation';
 
 const Home = () => {
-  const scrollers = [courses, tests, teachers, testimonials];
+  const { setLanguage } = useLang();
+  const { translate } = useTranslation('global');
+  console.log(translate('scroller'));
+
   return (
     <>
-      <Carousel elements={carousel.elements} />
+      <Carousel elements={translate('carousel.slides')} />
+      <button
+        className="border px-10 py-2 mx-2"
+        onClick={() => setLanguage('en')}
+      >
+        En
+      </button>
+      <button
+        className="border px-10 py-2 mx-2"
+        onClick={() => setLanguage('zh')}
+      >
+        Zh
+      </button>
       <main className="container">
-        {scrollers.map((scroller, i) => {
+        {translate('scroller').map((scroller, i) => {
           return <Scroller key={i} {...scroller} />;
         })}
       </main>

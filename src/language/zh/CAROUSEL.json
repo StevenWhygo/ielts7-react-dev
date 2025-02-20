@@ -1,0 +1,112 @@
+{
+    "slides": [
+      {
+        "sources": [
+          {
+            "type": "image/webp",
+            "media": "(max-width: 576px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_02_mobile.webp"
+          },
+          {
+            "type": "image/webp",
+            "media": "(min-width: 577px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_02.webp"
+          },
+          {
+            "type": "image/jpeg",
+            "media": "(max-width: 576px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_02_mobile.jpg"
+          },
+          {
+            "type": "image/jpeg",
+            "media": "(min-width: 577px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_02.jpg"
+          }
+        ],
+        "image": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_02.jpg",
+          "alt": "Test Your Skills Slide"
+        },
+        "card": {
+          "title": "獨一無二的IELTS模擬測驗",
+          "text": "最好的方式來準備IELTS！",
+          "link": {
+            "text": "現在試試！",
+            "url": "/tests"
+          }
+        }
+      },
+      {
+        "sources": [
+          {
+            "type": "image/webp",
+            "media": "(max-width: 576px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01_mobile.webp"
+          },
+          {
+            "type": "image/webp",
+            "media": "(min-width: 577px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01.webp"
+          },
+          {
+            "type": "image/jpeg",
+            "media": "(max-width: 576px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01_mobile.jpg"
+          },
+          {
+            "type": "image/jpeg",
+            "media": "(min-width: 577px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01.jpg"
+          }
+        ],
+        "image": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_01.jpg",
+          "alt": "Flexibility To Fit Your Needs Slide"
+        },
+        "card": {
+          "title": "彈性適應你的需求",
+          "text": "無限訪問線上課程與練習。",
+          "link": {
+            "text": "了解更多",
+            "url": "/courses"
+          }
+        }
+      },
+      {
+        "sources": [
+          {
+            "type": "image/webp",
+            "media": "(max-width: 576px)",
+            "imageset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03_mobile.webp"
+          },
+          {
+            "type": "image/webp",
+            "media": "(min-width: 577px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03.webp"
+          },
+          {
+            "type": "image/jpeg",
+            "media": "(max-width: 576px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03_mobile.jpg"
+          },
+          {
+            "type": "image/jpeg",
+            "media": "(min-width: 577px)",
+            "srcset": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03.jpg"
+          }
+        ],
+        "image": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/IELTS_online_home_im_03.jpg",
+          "alt": "Everything You Need To Succeed Slide"
+        },
+        "card": {
+          "title": "成功所需的一切",
+          "text": "從基礎到進階課程。",
+          "link": {
+            "text": "註冊",
+            "url": "/signup"
+          }
+        }
+      }
+    ]
+  }

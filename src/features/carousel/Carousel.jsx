@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import Picture from '../../components/Picture';
 import Indicators from '../../components/Indicators';
 import Button from '../../components/Button';
+
 import { IconContext } from 'react-icons';
 import { TfiAngleLeft } from 'react-icons/tfi';
 import { TfiAngleRight } from 'react-icons/tfi';
@@ -22,23 +23,24 @@ const Carousel = ({ elements }) => {
   const [currentIndex, setCurrentIndex] = useState(1);
   const [translateX, setTranslateX] = useState(0);
 
-  const Label = ({ card }) => {
+  const Card = ({ card }) => {
+    const { title, text, link } = card;
     return (
       <div className="absolute top-0 flex justify-center w-full min-h-44 min-w-80 p-4 z-10 rounded">
         <div className="absolute p-4 w-11/12 min-h-44 max-w-md min-w-80 bg-slate-50 opacity-40 z-0"></div>
         <div className="absolute p-4 w-11/12 min-h-44 max-w-md min-w-80 flex flex-col">
           <header className="pb-2 mb-2 border-b border-slate-950">
-            <h2 className="font-bold text-xl">{card.title}</h2>
+            <h2 className="font-bold text-xl">{title}</h2>
           </header>
-          <p className="text-sm mb-2">{card.text}</p>
+          <p className="text-sm mb-2">{text}</p>
           <div className="mt-auto text-right">
             <Link
               className="inline-block w-32 py-2 text-sm text-center border-blue bg-sky-600 text-slate-50 font-bold hover:opacity-80"
               to={{
-                pathname: `${card.link.to}`,
+                pathname: `${link.url}`,
               }}
             >
-              {card.link.value}
+              {link.text}
             </Link>
           </div>
         </div>
@@ -115,7 +117,7 @@ const Carousel = ({ elements }) => {
       return (
         <div key={i} className="slide">
           <Picture sources={element.sources} image={element.image} />
-          <Label card={element.card} />
+          <Card card={element.card} />
         </div>
       );
     });
@@ -126,12 +128,10 @@ const Carousel = ({ elements }) => {
           sources={elements[elements.length - 1].sources}
           image={elements[elements.length - 1].image}
         />
-        <Label card={elements[elements.length - 1].card} />
       </div>,
       ...items,
       <div key={elements.length + 2} className="slide">
         <Picture sources={elements[0].sources} image={elements[0].image} />
-        <Label card={elements[0].card} />
       </div>,
     ];
   }, [elements]);
