@@ -1,0 +1,71 @@
+{
+  "auth": [],
+  "public": [
+    {
+      "text": "Courses",
+      "url": "../courses",
+      "submenu": [
+        {
+          "text": "IELTS Grammar Basics",
+          "url": "./courses/ielts-grammar-basics"
+        },
+        {
+          "text": "IELTS Grammar Advanced",
+          "url": "./courses/ielts-grammar-advanced"
+        },
+        {
+          "text": "IELTS Basics",
+          "url": "./courses/ielts-basics"
+        },
+        {
+          "text": "IELTS Advanced",
+          "url": "./courses/ielts-advanced"
+        },
+        {
+          "text": "IELTS Scored Speaking",
+          "url": "./courses/ielts-scored-speaking"
+        },
+        {
+          "text": "IELTS Scored Essay",
+          "url": "./courses/ielts-scored-essay"
+        }
+      ]
+    },
+    {
+      "text": "Mock Tests",
+      "url": "../mocktests",
+      "submenu": [
+        {
+          "text": "Free Trial",
+          "url": "./mocktests"
+        },
+        {
+          "text": "Basic Account",
+          "url": "./mocktests/basic-account"
+        },
+        {
+          "text": "Premium Account",
+          "url": "./mocktests/premium-account"
+        }
+      ]
+    },
+    {
+      "text": "Teachers",
+      "url": "../teachers",
+      "submenu": [
+        {
+          "text": "Steven Tessier",
+          "url": "./teachers/steven-tessier"
+        },
+        {
+          "text": "Shad Gilbert",
+          "url": "./teachers/shad-gilbert"
+        },
+        {
+          "text": "Kate Licup",
+          "url": "./teachers/kate-licup"
+        }
+      ]
+    }
+  ]
+}

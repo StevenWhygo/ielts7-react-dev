@@ -6,7 +6,10 @@ const Teacher = () => {
   return (
     <section>
       <header>
-        <h2>{route.name.charAt(0).toUpperCase() + route.name.substring(1)}</h2>
+        <h2>
+          {route.name.charAt(0).toUpperCase() +
+            route.name.substring(1).split('-')[0]}
+        </h2>
       </header>
     </section>
   );

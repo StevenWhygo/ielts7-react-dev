@@ -11,6 +11,11 @@ export const navReducer = (state, action) => {
         displayMenu: action.payload.displayMenu,
         openHamburger: action.payload.openHamburger,
       };
+    case 'submenu':
+      return {
+        ...state,
+        displaySubmenu: action.payload,
+      };
     case 'auth-menu':
       return {
         ...state,

@@ -8,7 +8,6 @@ import {
 } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext.jsx';
 import { LangProvider } from './contexts/LangContext.jsx';
-import { NavProvider } from './contexts/NavContext.jsx';
 import { ViewportProvider } from './contexts/ViewportContext.jsx';
 import App from './App.jsx';
 
@@ -23,9 +22,7 @@ root.render(
     <LangProvider>
       <AuthProvider>
         <ViewportProvider>
-          <NavProvider>
-            <RouterProvider router={router} />
-          </NavProvider>
+          <RouterProvider router={router} />
         </ViewportProvider>
       </AuthProvider>
     </LangProvider>

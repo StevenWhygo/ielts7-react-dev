@@ -337,8 +337,6 @@ const Card = (props) => {
     },
     mocktest: function (card) {
       const { links } = card;
-      console.log(links);
-
       return (
         <footer className="flex gap-2 px-4 pb-4">
           {links.trial ? (
