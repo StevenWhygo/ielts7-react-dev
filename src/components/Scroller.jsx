@@ -2,7 +2,6 @@ import Card from './Card';
 
 const Scroller = (props) => {
   const { title, cards, ...rest } = props;
-  console.log(props);
 
   return (
     <section>

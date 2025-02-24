@@ -11,7 +11,7 @@ const SignIn = () => {
       className="signin-btn flex items-center justify-center w-7 h-7 bg-transparent hover:opacity-80"
       type="button"
       title="Login"
-      onClick={() => navigate('/login')}
+      onClick={() => navigate('/signin')}
     >
       <IconContext.Provider
         value={{

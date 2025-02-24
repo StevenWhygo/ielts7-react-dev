@@ -1,10 +1,11 @@
+import { useRef } from 'react';
 import Button from '../../components/Button';
-import useNavContext from '../../hooks/context/useNav';
-import useNavIcon from '../../hooks/useNavIcon';
+import useMobileMenu from '../../hooks/useMobileMenu';
+import useViewport from '../../hooks/context/useViewport';
 
 const Hamburger = () => {
-  const { hamburgerRef, openHamburger } = useNavContext();
-  const { handleHamburger } = useNavIcon();
+  const { hamburgerRef } = useMobileMenu();
+  const { displayMenu, setDisplayMenu } = useViewport();
 
   const attributes = {
     id: 'hamburger',
@@ -14,12 +15,21 @@ const Hamburger = () => {
     ariaLabel: 'open menu',
   };
 
-  const handleClick = () => {
-    handleHamburger(!openHamburger);
+  const handleMenu = () => {
+    setDisplayMenu(!displayMenu);
   };
 
   return (
-    <Button attributes={attributes} handler={handleClick} ref={hamburgerRef}>
+    <button
+      // attributes={attributes}
+      onClick={() => handleMenu()}
+      aria-expanded="false"
+      aria-label="open menu"
+      aria-controls="navigation"
+      className="hamburger"
+      id="hamburger"
+      ref={hamburgerRef}
+    >
       {
         <svg viewBox="0 0 100 100" width="30">
           <rect
@@ -48,7 +58,7 @@ const Hamburger = () => {
           ></rect>
         </svg>
       }
-    </Button>
+    </button>
   );
 };
 export default Hamburger;

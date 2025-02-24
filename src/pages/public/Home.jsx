@@ -9,7 +9,6 @@ import useTranslation from '../../hooks/useTranslation';
 const Home = () => {
   const { setLanguage } = useLang();
   const { translate } = useTranslation('global');
-  console.log(translate('scroller'));
 
   return (
     <>

@@ -5,6 +5,7 @@ export const ViewportContext = createContext(null);
 export const ViewportProvider = ({ children }) => {
   const [isMobile, setIsMobile] = useState(false);
   const [isTouch, setIsTouch] = useState(false);
+  const [displayMenu, setDisplayMenu] = useState(false);
   const [viewportWidth, setViewportWidth] = useState('');
 
   useEffect(() => {
@@ -29,6 +30,8 @@ export const ViewportProvider = ({ children }) => {
       value={{
         isMobile,
         isTouch,
+        displayMenu,
+        setDisplayMenu,
       }}
     >
       {children}
