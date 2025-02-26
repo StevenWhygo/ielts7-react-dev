@@ -1,9 +1,11 @@
 import Page from '../../components/Page';
-
+import useTranslation from '../../hooks/useTranslation';
+import Title from '../../components/Title';
 const Signin = () => {
+  const { translate } = useTranslation('global');
   return (
     <Page>
-      <div>Signin</div>
+      <Title>{translate('signin.title')}</Title>
     </Page>
   );
 };
