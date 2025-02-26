@@ -132,8 +132,6 @@ li {
     transition: all 0.2s ease;
 }
 
-.plus
-
 .scroll-none {
     overflow: hidden !important;
     touch-action: none;

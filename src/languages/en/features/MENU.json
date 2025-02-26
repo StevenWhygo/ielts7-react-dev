@@ -67,7 +67,13 @@
         }
       ]
     },
-    { "text": "About", "url": "/about" },
-    { "text": "Contact", "url": "/contact" }
+    {
+      "text": "About Us",
+      "url": "/about"
+    },
+    {
+      "text": "Contact",
+      "url": "/contact"
+    }
   ]
 }
