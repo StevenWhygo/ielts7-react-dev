@@ -5,7 +5,7 @@ import Footer from './Footer';
 const PublicLayout = () => {
 
   return (
-    <div className="h-full">
+    <div className="flex flex-col h-full min-h-screen">
       <Header />
       <Outlet />
       <Footer />

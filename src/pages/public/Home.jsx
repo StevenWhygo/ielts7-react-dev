@@ -11,7 +11,7 @@ const Home = () => {
   const { translate } = useTranslation('global');
 
   return (
-    <>
+    <Page>
       <Carousel elements={translate('carousel.slides')} />
       <button
         className="border px-10 py-2 mx-2"
@@ -30,7 +30,7 @@ const Home = () => {
           return <Scroller key={i} {...scroller} />;
         })}
       </main>
-    </>
+    </Page>
   );
 };
 export default Home;

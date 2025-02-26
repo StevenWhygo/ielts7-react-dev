@@ -14,9 +14,15 @@ const Navbar = () => {
         <ShoppingCart />
         <Hamburger />
       </div>
-      <nav className="absolute top-12 h-0 w-0 z-10">
-        {isMobile ? <MobileMenu /> : <Menu />}
-      </nav>
+      {isMobile ? (
+        <nav className="absolute top-12 h-0 w-0 z-10">
+          <MobileMenu />
+        </nav>
+      ) : (
+        <nav className="">
+          <Menu />
+        </nav>
+      )}
     </div>
   );
 };

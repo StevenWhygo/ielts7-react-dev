@@ -4,7 +4,7 @@ import Button from '../../components/Button';
 const ExpandBtn = ({handleClick}) => {
 const expandIconRef = useRef(null);
   const attributes = {
-    className: 'expand w-[3.2rem] h-12 border-l bg-red-400',
+    className: 'expand__btn w-[3.2rem] h-12 border-l bg-red-400',
     ariaControls: 'navigation',
     ariaExpanded: 'false',
     ariaLabel: 'open submenu',

@@ -1,5 +1,5 @@
 const Page = ({ children }) => {
-  return <div className="flex-1 flex-col gap-4">{children}</div>;
+  return <div className="flex-auto">{children}</div>;
 };
 export default Page;
  

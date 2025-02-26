@@ -11,6 +11,8 @@ import AuthRoutes from './routes/AuthRoutes';
 
 // Public pages
 import Home from './pages/public/Home';
+import About from './pages/public/About';
+import Contact from './pages/public/Contact';
 import Dashboard from './pages/private/Dashboard';
 import NotFound from './pages/NotFound';
 import Courses from './pages/public/Courses';
@@ -36,6 +38,8 @@ const App = () => {
           <Route element={<PublicLayout />}>
             <Route index element={<Home />} />
             <Route path="home" element={<Navigate to="/" replace />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
             <Route path="courses" element={<Courses />} />
             <Route path="courses/:name" element={<Course />} />
             <Route path="teachers" element={<Teachers />} />

@@ -1,71 +1,73 @@
 {
   "auth": [],
   "public": [
-      {
-        "text": "課程",
-        "url": "../courses",
-        "submenu": [
-          {
-            "text": "IELTS 文法基礎",
-            "url": "./courses/ielts-grammar-basics"
-          },
-          {
-            "text": "IELTS 文法進階",
-            "url": "./courses/ielts-grammar-advanced"
-          },
-          {
-            "text": "IELTS 基礎",
-            "url": "./courses/ielts-basics"
-          },
-          {
-            "text": "IELTS 進階",
-            "url": "./courses/ielts-advanced"
-          },
-          {
-            "text": "IELTS 口說測試",
-            "url": "./courses/ielts-scored-speaking"
-          },
-          {
-            "text": "IELTS 作文測試",
-            "url": "./courses/ielts-scored-essay"
-          }
-        ]
-      },
-      {
-        "text": "模擬測驗",
-        "url": "../mocktests",
-        "submenu": [
-          {
-            "text": "免費試用",
-            "url": "./mocktests"
-          },
-          {
-            "text": "基礎帳戶",
-            "url": "./mocktests/basic-account"
-          },
-          {
-            "text": "高級帳戶",
-            "url": "./mocktests/premium-account"
-          }
-        ]
-      },
-      {
-        "text": "老師",
-        "url": "../teachers",
-        "submenu": [
-          {
-            "text": "Steven Tessier",
-            "url": "./teachers/steven-tessier"
-          },
-          {
-            "text": "Shad Gilbert",
-            "url": "./teachers/shad-gilbert"
-          },
-          {
-            "text": "Kate Licup",
-            "url": "./teachers/kate-licup"
-          }
-        ]
-      }
+    {
+      "text": "課程",
+      "url": "../courses",
+      "submenu": [
+        {
+          "text": "IELTS 文法基礎",
+          "url": "./courses/ielts-grammar-basics"
+        },
+        {
+          "text": "IELTS 文法進階",
+          "url": "./courses/ielts-grammar-advanced"
+        },
+        {
+          "text": "IELTS 基礎",
+          "url": "./courses/ielts-basics"
+        },
+        {
+          "text": "IELTS 進階",
+          "url": "./courses/ielts-advanced"
+        },
+        {
+          "text": "IELTS 口說測試",
+          "url": "./courses/ielts-scored-speaking"
+        },
+        {
+          "text": "IELTS 作文測試",
+          "url": "./courses/ielts-scored-essay"
+        }
+      ]
+    },
+    {
+      "text": "模擬測驗",
+      "url": "../mocktests",
+      "submenu": [
+        {
+          "text": "免費試用",
+          "url": "./mocktests/free-trial"
+        },
+        {
+          "text": "基礎帳戶",
+          "url": "./mocktests/basic-account"
+        },
+        {
+          "text": "高級帳戶",
+          "url": "./mocktests/premium-account"
+        }
+      ]
+    },
+    {
+      "text": "老師",
+      "url": "../teachers",
+      "submenu": [
+        {
+          "text": "Steven Tessier",
+          "url": "./teachers/steven-tessier"
+        },
+        {
+          "text": "Shad Gilbert",
+          "url": "./teachers/shad-gilbert"
+        },
+        {
+          "text": "Kate Licup",
+          "url": "./teachers/kate-licup"
+        }
+      ]
+    },
+    { "text": "關於", "url": "/about" },
+    { "text": "聯絡我們", "url": "/contact" }
   ]
 }

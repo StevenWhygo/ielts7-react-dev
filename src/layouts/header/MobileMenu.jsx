@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import ExpandBtn from './ExpandBtn';
 import Submenu from './Submenu';
+import ListItem from '../../components/ListItem';
 import useMobileMenu from '../../hooks/useMobileMenu';
 import useLang from '../../hooks/context/useLang';
 import useTranslation from '../../hooks/useTranslation';
@@ -22,24 +23,19 @@ const MobileMenu = () => {
     >
       {translate('menu.public').map((option, i) => {
         return (
-          <li key={i} className="flex items-center border-b  border-slate-200">
+          <ListItem
+            key={i}
+            style={'flex items-center border-b border-slate-200'}
+            options={option.submenu && option.submenu}
+          >
             <NavLink
               className="flex-1 min-h-12 h-full text-xl pl-3 leading-[3rem]"
               to={option.url}
             >
               {option.text}
             </NavLink>
-            {option.submenu ? (
-              <>
-                <ExpandBtn />
-                <Submenu options={option.submenu} />
-              </>
-            ) : (
-              <NavLink className="block text-xl pl-3" to={option.url}>
-                {option.text}
-              </NavLink>
-            )}
-          </li>
+            {option.submenu && <ExpandBtn />}
+          </ListItem>
         );
       })}
     </ul>
