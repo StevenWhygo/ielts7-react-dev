@@ -67,7 +67,13 @@
         }
       ]
     },
-    { "text": "關於", "url": "/about" },
-    { "text": "聯絡我們", "url": "/contact" }
+    {
+      "text": "關於我們",
+      "url": "/about"
+    },
+    {
+      "text": "聯絡我們",
+      "url": "/contact"
+    }
   ]
 }

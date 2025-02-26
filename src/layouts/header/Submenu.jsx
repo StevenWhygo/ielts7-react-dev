@@ -6,10 +6,7 @@ const Submenu = ({options}) => {
     console.log(options);
 
     return (
-      <ul
-        className="submenu hidden w-full bg-slate-100 border-t border-slate-200"
-        ref={submenuRef}
-      >
+      <ul className="submenu w-full bg-slate-100" ref={submenuRef}>
         {options.map((option, i) => {
           return (
             <li
