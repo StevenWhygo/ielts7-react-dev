@@ -37,7 +37,7 @@
       "submenu": [
         {
           "text": "Free Trial",
-          "url": "./mocktests"
+          "url": "./mocktests/free-trial"
         },
         {
           "text": "Basic Account",
@@ -66,6 +66,8 @@
           "url": "./teachers/kate-licup"
         }
       ]
-    }
+    },
+    { "text": "About", "url": "/about" },
+    { "text": "Contact", "url": "/contact" }
   ]
 }

@@ -20,7 +20,7 @@ const RootLayout = () => {
   }, [pathname]);
 
   return (
-    <div id="wrapper" className="flex flex-col min-h-screen w-full">
+    <div className="min-h-screen w-full">
       {global && (
         <>
           {<Modal open={open}>{content}</Modal>}
