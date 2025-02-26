@@ -1,6 +1,6 @@
 import {useState, useEffect, createContext} from 'react'
-import en from '../language/en/index'
-import zh from '../language/zh/index'
+import en from '../languages/en/index';
+import zh from '../languages/zh/index';
 
 export const LangContext = createContext(null);
 

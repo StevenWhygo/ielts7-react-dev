@@ -10,20 +10,20 @@ import PublicRoutes from './routes/PublicRoutes';
 import AuthRoutes from './routes/AuthRoutes';
 
 // Public pages
-import Home from './pages/public/Home';
 import About from './pages/public/About';
+import Cart from './pages/public/Cart';
 import Contact from './pages/public/Contact';
-import Dashboard from './pages/private/Dashboard';
-import NotFound from './pages/NotFound';
-import Courses from './pages/public/Courses';
 import Course from './pages/public/Course';
-import Teachers from './pages/public/Teachers';
-import Teacher from './pages/public/Teacher';
-import MockTests from './pages/public/MockTests';
+import Courses from './pages/public/Courses';
+import Dashboard from './pages/private/Dashboard';
+import Home from './pages/public/Home';
 import MockTest from './pages/public/MockTest';
+import MockTests from './pages/public/MockTests';
+import NotFound from './pages/public/NotFound';
 import Signin from './pages/public/Signin';
 import Signup from './pages/public/Signup';
-import Cart from './pages/public/Cart';
+import Teacher from './pages/public/Teacher';
+import Teachers from './pages/public/Teachers';
 
 // CSS
 import './App.css';
