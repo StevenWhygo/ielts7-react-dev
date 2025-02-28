@@ -249,7 +249,7 @@
       "cards": [
         {
           "title": "Steven Tessier",
-          "rate": "1755 points / 30 minutes",
+          "rate": { "title": "Rate", "text": "1755 points / 30 minutes" },
           "text": "Steven is a veteran teacher with over 30 years of experience teaching and preparing students for IELTS tests...",
           "image": {
             "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/ZDaTNQdqBQWPQVUS.png?t=0f58c8a",
@@ -268,7 +268,7 @@
         },
         {
           "title": "Shad Gilbert",
-          "rate": "1755 points / 30 minutes",
+          "rate": { "title": "Rate", "text": "1755 points / 30 minutes" },
           "text": "Shad is a senior teacher with over 20 years experience teaching in the United States, China and Taiwan...",
           "image": {
             "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/5QXZ7HiiF7ER3rLM.png?t=0f58c8a",
@@ -287,7 +287,7 @@
         },
         {
           "title": "Kate Licup",
-          "rate": "264 points / 30 minutes",
+          "rate": { "title": "Rate", "text": "264 points / 30 minutes" },
           "text": "Kate has TESOL certificate in English teaching...",
           "image": {
             "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/D4nrCI0kapCx2FOk.jpg?t=0f58c8a",

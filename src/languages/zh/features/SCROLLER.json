@@ -248,7 +248,7 @@
       "cards": [
         {
           "title": "Steven Tessier",
-          "rate": "1755 點數 / 30 分鐘",
+          "rate": { "title": "價錢", "text": "1755 點數 / 30 分鐘" },
           "text": "Steven 是一位有超過 30 年經驗的資深教師，專門教授和準備學生參加 IELTS 測驗...",
           "image": {
             "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/ZDaTNQdqBQWPQVUS.png?t=0f58c8a",
@@ -267,7 +267,7 @@
         },
         {
           "title": "Shad Gilbert",
-          "rate": "1755 點數 / 30 分鐘",
+          "rate": { "title": "價錢", "text": "1755 點數 / 30 分鐘" },
           "text": "Shad 是一位有超過 20 年教學經驗的資深教師，在美國、中國和台灣都有教學經歷...",
           "image": {
             "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/5QXZ7HiiF7ER3rLM.png?t=0f58c8a",
@@ -286,7 +286,7 @@
         },
         {
           "title": "Kate Licup",
-          "rate": "264 點數 / 30 分鐘",
+          "rate": { "title": "價錢", "text": "264 點數 / 30 分鐘" },
           "text": "Kate 擁有 TESOL 英語教學證書...",
           "image": {
             "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/5QXZ7HiiF7ER3rLM.png?t=0f58c8a",
