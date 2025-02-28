@@ -11,7 +11,8 @@ const useMobileMenu = () => {
     displayMenu,
     setDisplayMenu,
     currentIndex,
-    isDisplay,
+    displaySubmenu,
+    delay,
     className,
     initialState,
     dispatch,
@@ -23,46 +24,45 @@ const useMobileMenu = () => {
     menu.classList.toggle(className);
   }
 
-  function hideSubmenu(menu) {
-    // console.log(menu);
-
-    menu.classList.toggle(className);
-  }
-
-  function displaySubmenu(menu) {
-    menu.classList.add(className);
-  }
-
+  // submenus handling function
   function handleClick(index) {
-    if (index === currentIndex && isDisplay) {
+    // close submenu & reset state
+    if (index === currentIndex && displaySubmenu) {
       toggleVisibility(submenuRefs.current[index]);
       dispatch({
         type: 'reset',
         payload: initialState,
       });
+      // update display and index state
     } else if (currentIndex === -1) {
       dispatch({
-        type: 'index',
-        payload: index,
+        type: 'initialize',
+        payload: {
+          index: index,
+          display: true,
+        },
       });
     } else {
+      // close submenu & update index
       toggleVisibility(submenuRefs.current[currentIndex]);
       dispatch({
-        type: 'index',
-        payload: index,
+        type: 'update',
+        payload: {
+          index: index,
+          delay: 400,
+        },
       });
     }
   }
 
+  // open current submenu selected
   useEffect(() => {
     if (currentIndex !== -1) {
-      toggleVisibility(submenuRefs.current[currentIndex]);
-      dispatch({
-        type: 'display',
-        payload: true,
-      });
+      setTimeout(() => {
+        toggleVisibility(submenuRefs.current[currentIndex]);
+      }, delay);
     }
-  }, [currentIndex]);
+  }, [currentIndex, delay]);
 
   // hide menu on location change
   useEffect(() => {
@@ -82,7 +82,7 @@ const useMobileMenu = () => {
       hamburgerRef.current?.setAttribute('aria-expanded', 'false');
       menuRef.current?.classList.remove('mobile-menu');
 
-      if (isDisplay) {
+      if (displaySubmenu) {
         toggleVisibility(submenuRefs.current[currentIndex]);
         dispatch({
           type: 'reset',
@@ -91,8 +91,6 @@ const useMobileMenu = () => {
       }
     }
   }, [displayMenu]);
-
-  // handle submenu btn and menu
 
   return { hamburgerRef, menuRef, handleClick };
 };

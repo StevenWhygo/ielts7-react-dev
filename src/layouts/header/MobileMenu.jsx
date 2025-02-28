@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import ExpandBtn from './ExpandBtn';
 import Submenu from './Submenu';
 import ListItem from '../../components/ListItem';
-import useMenuContext from '../../hooks/useMobileMenu';
+import useMobileMenu from '../../hooks/useMobileMenu';
 import useLang from '../../hooks/context/useLanguageContext';
 import useTranslation from '../../hooks/useTranslation';
 
@@ -12,7 +12,7 @@ import { IconContext } from 'react-icons';
 
 const MobileMenu = ({ options }) => {
   const { translate } = useTranslation('global');
-  const { menuRef } = useMenuContext();
+  const { menuRef } = useMobileMenu();
 
   return (
     <ul
@@ -24,7 +24,7 @@ const MobileMenu = ({ options }) => {
         return (
           <ListItem
             key={i}
-            style="flex items-center border-b border-slate-200"
+            style="relative flex items-center border-b border-slate-200"
             submenu={
               option.submenu
                 ? {
