@@ -1,8 +1,12 @@
-import { useState, useRef } from 'react';
+import { useEffect } from 'react';
 import Button from '../../components/Button';
+import useMobileMenu from '../../hooks/useMobileMenu';
+import useMenuContext from '../../hooks/context/useMenuContext';
 
-const ExpandBtn = ({handleClick}) => {
-const expandIconRef = useRef(null);
+const ExpandBtn = ({ index }) => {
+  const { btnRefs } = useMenuContext();
+  const { handleClick } = useMobileMenu();
+
   const attributes = {
     className: 'expand__btn w-[3.2rem] h-12 border-l bg-red-400',
     ariaControls: 'navigation',
@@ -10,13 +14,17 @@ const expandIconRef = useRef(null);
     ariaLabel: 'open submenu',
   };
 
-  const handleSubmenu = (e) => {
-    console.log(e.target);
-    
-  }
-
   return (
-    <Button attributes={attributes} handler={(e) => handleSubmenu(e)} ref={expandIconRef}>
+    <button
+      // <Button attributes={attributes} handler={(e) => handleSubmenu(e)} ref={expandIconRef}>
+      name={`btn-${index}`}
+      className="expand__btn w-[3.2rem] h-12 border-l bg-red-400"
+      aria-controls="navigation"
+      aria-expanded="false"
+      aria-label="open submenu"
+      onClick={() => handleClick(index)}
+      ref={(el) => (btnRefs.current[index] = el)}
+    >
       {
         <svg className="mx-auto" viewBox="0 0 100 100" width="30">
           <rect
@@ -45,7 +53,8 @@ const expandIconRef = useRef(null);
           ></rect> */}
         </svg>
       }
-    </Button>
-  )
+      {/* </Button> */}
+    </button>
+  );
 };
 export default ExpandBtn;

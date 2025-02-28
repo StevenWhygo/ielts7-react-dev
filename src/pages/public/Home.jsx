@@ -3,11 +3,11 @@ import Page from '../../components/Page';
 import Carousel from '../../features/carousel/Carousel';
 import Scroller from '../../components/Scroller';
 import Card from '../../components/Card';
-import useLang from '../../hooks/context/useLang';
+import useLanguageContext from '../../hooks/context/useLanguageContext';
 import useTranslation from '../../hooks/useTranslation';
 
 const Home = () => {
-  const { setLanguage } = useLang();
+  const { setLanguage } = useLanguageContext();
   const { translate } = useTranslation('global');
 
   return (

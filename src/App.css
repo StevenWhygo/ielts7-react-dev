@@ -142,6 +142,10 @@ li {
     left: 0;
 }  
 
+.mobile-submenu {
+    height: 100%;
+}
+
 
 .arrow {
     display: block;

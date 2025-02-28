@@ -7,7 +7,8 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext.jsx';
-import { LangProvider } from './contexts/LangContext.jsx';
+import { LanguageProvider } from './contexts/LanguageContext.jsx';
+import { MenuProvider } from './contexts/MenuContext.jsx';
 import { ViewportProvider } from './contexts/ViewportContext.jsx';
 import App from './App.jsx';
 
@@ -19,12 +20,14 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <StrictMode>
-    <LangProvider>
+    <LanguageProvider>
       <AuthProvider>
         <ViewportProvider>
-          <RouterProvider router={router} />
+          <MenuProvider>
+            <RouterProvider router={router} />
+          </MenuProvider>
         </ViewportProvider>
       </AuthProvider>
-    </LangProvider>
+    </LanguageProvider>
   </StrictMode>
 );

@@ -2,7 +2,7 @@ import {useState, useEffect, createContext} from 'react'
 import en from '../languages/en/index';
 import zh from '../languages/zh/index';
 
-export const LangContext = createContext(null);
+export const LanguageContext = createContext(null);
 
 const init = {
     fallback: 'en',
@@ -14,7 +14,7 @@ const init = {
     current: ''
 }
 
-export const LangProvider = ({children}) => {
+export const LanguageProvider = ({children}) => {
     const [language, setLanguage] = useState(null);
     const [global,  setGlobal] = useState(null);
 
@@ -36,13 +36,13 @@ export const LangProvider = ({children}) => {
     }, [language])
 
     return (
-        <LangContext.Provider value={{
+        <LanguageContext.Provider value={{
             language,
             setLanguage,
             global,
             setGlobal
         }}>
             {children}
-        </LangContext.Provider>
+        </LanguageContext.Provider>
     )
 }

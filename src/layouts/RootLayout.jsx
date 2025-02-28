@@ -4,12 +4,12 @@ import Header from './header/Header';
 import Footer from './Footer';
 import Modal from '../features/modal/Modal';
 import useModal from '../features/modal/hook/useModal';
-import useAuth from '../hooks/context/useAuth';
-import useLang from '../hooks/context/useLang';
+import useAuthContext from '../hooks/context/useAuthContext';
+import useLanguageContext from '../hooks/context/useLanguageContext';
 
 const RootLayout = () => {
-  const { isAuth } = useAuth();
-  const { global } = useLang();
+  const { isAuth } = useAuthContext();
+  const { global } = useLanguageContext();
   const { open, content, handleClearModal } = useModal();
   const { pathname } = useLocation();
 

@@ -1,11 +1,11 @@
 import { useRef } from 'react';
 import Button from '../../components/Button';
 import useMobileMenu from '../../hooks/useMobileMenu';
-import useViewport from '../../hooks/context/useViewport';
+import useMenuContext from '../../hooks/context/useMenuContext';
 
 const Hamburger = () => {
   const { hamburgerRef } = useMobileMenu();
-  const { displayMenu, setDisplayMenu } = useViewport();
+  const { displayMenu, setDisplayMenu } = useMenuContext();
 
   const attributes = {
     id: 'hamburger',
@@ -15,14 +15,10 @@ const Hamburger = () => {
     ariaLabel: 'open menu',
   };
 
-  const handleMenu = () => {
-    setDisplayMenu(!displayMenu);
-  };
-
   return (
     <button
       // attributes={attributes}
-      onClick={() => handleMenu()}
+      onClick={() => setDisplayMenu(!displayMenu)}
       aria-expanded="false"
       aria-label="open menu"
       aria-controls="navigation"

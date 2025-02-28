@@ -1,10 +1,11 @@
-import Submenu from '../layouts/header/Submenu';
-
-const ListItem = ({children, style, options = null}) => {
+const ListItem = ({ children, style, submenu }) => {
   return (
     <>
-      <li className={style}>{children}</li>
-      {options && <Submenu options={options} />}
+      <li className={style}>
+        {children}
+        {submenu && submenu.button}
+      </li>
+      {submenu && submenu.menu}
     </>
   );
 };
