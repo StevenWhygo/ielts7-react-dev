@@ -1,6 +1,7 @@
-import MobileMenu from './MobileMenu';
 import Menu from './Menu';
+import MobileMenu from './MobileMenu';
 import Hamburger from './Hamburger';
+import Language from './Language';
 import SignIn from './SignIn';
 import ShoppingCart from './ShoppingCart';
 import useViewportContext from '../../hooks/context/useViewportContext';
@@ -13,6 +14,7 @@ const Navbar = () => {
   return (
     <div className="ml-auto">
       <div className="flex items-center gap-x-4 w-full">
+        <Language />
         <SignIn />
         <ShoppingCart />
         <Hamburger />

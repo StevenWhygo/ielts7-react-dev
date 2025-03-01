@@ -15,7 +15,7 @@ const ShoppingCart = () => {
     >
       <IconContext.Provider
         value={{
-          color: '#1F2937',
+          color: '#0C0A09',
           size: '100%',
         }}
       >
