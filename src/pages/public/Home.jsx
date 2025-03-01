@@ -13,21 +13,9 @@ const Home = () => {
   return (
     <Page>
       <Carousel elements={translate('carousel.slides')} />
-      <button
-        className="border px-10 py-2 mx-2"
-        onClick={() => setLanguage('en')}
-      >
-        En
-      </button>
-      <button
-        className="border px-10 py-2 mx-2"
-        onClick={() => setLanguage('zh')}
-      >
-        Zh
-      </button>
       <main className="container">
-        {translate('scroller').map((scroller, i) => {
-          return <Scroller key={i} {...scroller} />;
+        {translate('card').map((item, i) => {
+          return <Scroller key={i} {...item} />;
         })}
       </main>
     </Page>

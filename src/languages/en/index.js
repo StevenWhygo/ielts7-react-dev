@@ -1,6 +1,6 @@
-import menu from './features/MENU.json'
-import carousel from './features/CAROUSEL.json'
-import scroller from './features/SCROLLER.json'
+import menu from './components/MENU.json'
+import carousel from './components/CAROUSEL.json'
+import card from './components/CARD.json'
 import about from './pages/ABOUT.json'
 import cart from './pages/CART.json'
 import contact from './pages/CONTACT.json'
@@ -15,7 +15,7 @@ import teachers from './pages/TEACHERS.json'
 const global = { 
     menu, 
     carousel, 
-    scroller, 
+    card, 
     about, 
     cart, 
     contact, 

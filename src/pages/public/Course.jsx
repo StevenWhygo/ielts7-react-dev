@@ -1,16 +1,18 @@
 import { useParams } from 'react-router-dom';
 import Title from '../../components/Title';
+import Page from '../../components/Page';
+
 const Course = () => {
   const route = useParams();
-
+  const name = route.name.split('-');
   return (
-    <section>
-      <header>
-        <Title>
-          {route.name.charAt(0).toUpperCase() + route.name.substring(1)}
-        </Title>
-      </header>
-    </section>
+    <Page>
+      <Title>
+        {name.map(
+          (part) => `${part.charAt(0).toUpperCase() + part.substring(1)} `
+        )}
+      </Title>
+    </Page>
   );
 };
 export default Course;
