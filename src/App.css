@@ -98,12 +98,17 @@ li {
     -webkit-transform: rotate(-45deg);
  }
 
+ .expand__btn .line {
+    transition: 
+     y 150ms ease-in,
+   }
 
- .expand__btn[aria-expanded="true"] .top {
-    
- }
- .expand__btn[aria-expanded="true"] .bottom {
+ /* .expand__btn[aria-expanded="true"] .line {
+    transition: y 150ms ease-in-out 100ms,
+   } */
 
+ .expand__btn[aria-expanded="true"] :is(.top, .bottom) {
+    y: 45px
  }
 
  .expand__btn * {
