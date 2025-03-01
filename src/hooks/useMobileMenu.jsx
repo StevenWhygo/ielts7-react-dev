@@ -81,13 +81,13 @@ const useMobileMenu = () => {
     if (displayMenu) {
       // set hamburger animation from stack to X [opened]
       hamburgerRef.current?.setAttribute('aria-expanded', 'true');
-      menuRef.current?.classList.toggle('mobile-menu');
-      document.body.classList.toggle('scroll-none');
+      menuRef.current?.classList.add('mobile-menu');
+      document.body.classList.add('scroll-none');
     } else {
       // set hamburger animation from X to stack [closed]
       hamburgerRef.current?.setAttribute('aria-expanded', 'false');
-      menuRef.current?.classList.toggle('mobile-menu');
-      document.body.classList.toggle('scroll-none');
+      menuRef.current?.classList.remove('mobile-menu');
+      document.body.classList.remove('scroll-none');
       if (displaySubmenu) {
         toggleVisibility(submenuRefs.current[currentIndex]);
         btnRefs.current[currentIndex].setAttribute('aria-expanded', 'false');
