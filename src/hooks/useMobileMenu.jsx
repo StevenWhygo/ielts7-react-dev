@@ -26,15 +26,18 @@ const useMobileMenu = () => {
 
   // submenus handling function
   function handleClick(index) {
+    console.log(btnRefs.current[index]);
     // close submenu & reset state
     if (index === currentIndex && displaySubmenu) {
       toggleVisibility(submenuRefs.current[index]);
+      btnRefs.current[index].setAttribute('aria-expanded', 'false');
       dispatch({
         type: 'reset',
         payload: initialState,
       });
       // update display and index state
     } else if (currentIndex === -1) {
+      btnRefs.current[index].setAttribute('aria-expanded', 'true');
       dispatch({
         type: 'initialize',
         payload: {
@@ -45,11 +48,13 @@ const useMobileMenu = () => {
     } else {
       // close submenu & update index
       toggleVisibility(submenuRefs.current[currentIndex]);
+      btnRefs.current[currentIndex].setAttribute('aria-expanded', 'false');
+      btnRefs.current[index].setAttribute('aria-expanded', 'true');
       dispatch({
         type: 'update',
         payload: {
           index: index,
-          delay: 400,
+          delay: 100,
         },
       });
     }
@@ -76,14 +81,16 @@ const useMobileMenu = () => {
     if (displayMenu) {
       // set hamburger animation from stack to X [opened]
       hamburgerRef.current?.setAttribute('aria-expanded', 'true');
-      menuRef.current?.classList.add('mobile-menu');
+      menuRef.current?.classList.toggle('mobile-menu');
+      document.body.classList.toggle('scroll-none');
     } else {
       // set hamburger animation from X to stack [closed]
       hamburgerRef.current?.setAttribute('aria-expanded', 'false');
-      menuRef.current?.classList.remove('mobile-menu');
-
+      menuRef.current?.classList.toggle('mobile-menu');
+      document.body.classList.toggle('scroll-none');
       if (displaySubmenu) {
         toggleVisibility(submenuRefs.current[currentIndex]);
+        btnRefs.current[currentIndex].setAttribute('aria-expanded', 'false');
         dispatch({
           type: 'reset',
           payload: initialState,

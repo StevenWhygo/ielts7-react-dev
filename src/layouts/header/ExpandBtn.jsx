@@ -32,6 +32,30 @@ const ExpandBtn = ({ index }) => {
             width="90"
             height="12"
             x="5"
+            y="15"
+            rx="5"
+          ></rect>
+          <rect
+            className="line middle"
+            width="90"
+            height="12"
+            x="5"
+            y="45"
+            rx="5"
+          ></rect>
+          <rect
+            className="line bottom"
+            width="90"
+            height="12"
+            x="5"
+            y="75"
+            rx="5"
+          ></rect>
+          {/* <rect
+            className="line top"
+            width="90"
+            height="12"
+            x="5"
             y="30"
             rx="5"
           ></rect>
@@ -42,7 +66,7 @@ const ExpandBtn = ({ index }) => {
             x="5"
             y="60"
             rx="5"
-          ></rect>
+          ></rect> */}
           {/* <rect
             className="line bottom"
             width="90"
