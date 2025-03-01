@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { IconContext } from 'react-icons';
 import { FaUserCircle } from 'react-icons/fa';
 
-const SignIn = () => {
+const SignIn = ({ icon }) => {
   const navigate = useNavigate();
 
   return (
@@ -13,14 +13,7 @@ const SignIn = () => {
       title="Login"
       onClick={() => navigate('/signin')}
     >
-      <IconContext.Provider
-        value={{
-          color: '#0C0A09',
-          size: '100%',
-        }}
-      >
-        <FaUserCircle />
-      </IconContext.Provider>
+      {icon}
     </button>
   );
 };

@@ -13,7 +13,7 @@ import { MdForum } from 'react-icons/md';
 // grammar
 import { MdEditSquare } from 'react-icons/md';
 // cart
-import { MdOutlineShoppingCart } from 'react-icons/md';
+// import { MdOutlineShoppingCart } from 'react-icons/md';
 // feedback
 import { MdFeedback } from 'react-icons/md';
 // help
@@ -50,7 +50,10 @@ import { MdOutlineCreate } from "react-icons/md";
 import { MdBarChart } from "react-icons/md";
 // best practice
 import { MdAssignmentTurnedIn } from "react-icons/md";
-
+// cart fa
+import { FiShoppingCart } from 'react-icons/fi';
+// sign in
+import { FaUserCircle } from 'react-icons/fa';
 
 const icons = {
         'grammar': <MdForum />,
@@ -77,7 +80,8 @@ const icons = {
          'results': <MdBarChart />,
          'writing': <MdOutlineCreate />,
          'check': <MdAssignmentTurnedIn />,
-         'cart': <MdOutlineShoppingCart />
+         'cart': <FiShoppingCart />,
+         'signin': <FaUserCircle />
 }
 
 export default icons

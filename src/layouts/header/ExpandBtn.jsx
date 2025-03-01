@@ -18,7 +18,7 @@ const ExpandBtn = ({ index }) => {
     <button
       // <Button attributes={attributes} handler={(e) => handleSubmenu(e)} ref={expandIconRef}>
       name={`btn-${index}`}
-      className="expand__btn w-[3.2rem] h-12 border-l bg-red-400"
+      className="expand__btn w-[3.2rem] h-12 bg-stone-100"
       aria-controls="navigation"
       aria-expanded="false"
       aria-label="open submenu"

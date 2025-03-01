@@ -2,6 +2,7 @@
   "auth": [],
   "public": [
     {
+      "type": "course",
       "text": "Courses",
       "url": "../courses",
       "submenu": [
@@ -32,6 +33,7 @@
       ]
     },
     {
+      "type": "mocktest",
       "text": "Mock Tests",
       "url": "../mocktests",
       "submenu": [
@@ -50,28 +52,43 @@
       ]
     },
     {
+      "type": "teacher",
       "text": "Teachers",
       "url": "../teachers",
       "submenu": [
         {
-          "text": "Steven Tessier",
-          "url": "./teachers/steven-tessier"
+          "text": "Steven",
+          "url": "./teachers/steven-tessier",
+          "image": {
+            "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/ZDaTNQdqBQWPQVUS.png?t=0f58c8a",
+            "alt": "Steven Tessier image"
+          }
         },
         {
-          "text": "Shad Gilbert",
-          "url": "./teachers/shad-gilbert"
+          "text": "Shad",
+          "url": "./teachers/shad-gilbert",
+          "image": {
+            "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/5QXZ7HiiF7ER3rLM.png?t=0f58c8a",
+            "alt": "Shad Gilbert image"
+          }
         },
         {
-          "text": "Kate Licup",
-          "url": "./teachers/kate-licup"
+          "text": "Kate",
+          "url": "./teachers/kate-licup",
+          "image": {
+            "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/D4nrCI0kapCx2FOk.jpg?t=0f58c8a",
+            "alt": "Kate Licup image"
+          }
         }
       ]
     },
     {
+      "type": "about",
       "text": "About Us",
       "url": "/about"
     },
     {
+      "type": "contact",
       "text": "Contact",
       "url": "/contact"
     }
