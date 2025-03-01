@@ -2,6 +2,7 @@
   "auth": [],
   "public": [
     {
+      "type": "course",
       "text": "課程",
       "url": "../courses",
       "submenu": [
@@ -32,6 +33,7 @@
       ]
     },
     {
+      "type": "mocktest",
       "text": "模擬測驗",
       "url": "../mocktests",
       "submenu": [
@@ -50,28 +52,43 @@
       ]
     },
     {
+      "type": "teacher",
       "text": "老師",
       "url": "../teachers",
       "submenu": [
         {
           "text": "Steven Tessier",
-          "url": "./teachers/steven-tessier"
+          "url": "./teachers/steven-tessier",
+          "image": {
+            "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/ZDaTNQdqBQWPQVUS.png?t=0f58c8a",
+            "alt": "Steven Tessier 縮圖"
+          }
         },
         {
           "text": "Shad Gilbert",
-          "url": "./teachers/shad-gilbert"
+          "url": "./teachers/shad-gilbert",
+          "image": {
+            "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/5QXZ7HiiF7ER3rLM.png?t=0f58c8a",
+            "alt": "Shad Gilbert 縮圖"
+          }
         },
         {
           "text": "Kate Licup",
-          "url": "./teachers/kate-licup"
+          "url": "./teachers/kate-licup",
+          "image": {
+            "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/D4nrCI0kapCx2FOk.jpg?t=0f58c8a",
+            "alt": "Kate Licup 縮圖"
+          }
         }
       ]
     },
     {
+      "type": "about",
       "text": "關於我們",
       "url": "/about"
     },
     {
+      "type": "contact",
       "text": "聯絡我們",
       "url": "/contact"
     }

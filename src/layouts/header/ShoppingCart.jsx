@@ -1,9 +1,8 @@
 import { useNavigate } from 'react-router-dom';
-import { IconContext } from 'react-icons';
-import { FiShoppingCart } from 'react-icons/fi';
 
-const ShoppingCart = () => {
+const ShoppingCart = ({ icon }) => {
   const navigate = useNavigate();
+  console.log(icon);
 
   return (
     <button
@@ -13,14 +12,7 @@ const ShoppingCart = () => {
       title="Login"
       onClick={() => navigate('/cart')}
     >
-      <IconContext.Provider
-        value={{
-          color: '#0C0A09',
-          size: '100%',
-        }}
-      >
-        <FiShoppingCart />
-      </IconContext.Provider>
+      {icon}
     </button>
   );
 };
