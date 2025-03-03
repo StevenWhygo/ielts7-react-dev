@@ -1,10 +1,10 @@
 import { useRef } from 'react';
 import Button from '../../components/Button';
-import useMobileMenu from '../../hooks/useMobileMenu';
+import useMenu from '../../hooks/useMenu';
 import useMenuContext from '../../hooks/context/useMenuContext';
 
 const Hamburger = () => {
-  const { hamburgerRef } = useMobileMenu();
+  const { hamburgerRef } = useMenu();
   const { displayMenu, setDisplayMenu } = useMenuContext();
 
   const attributes = {

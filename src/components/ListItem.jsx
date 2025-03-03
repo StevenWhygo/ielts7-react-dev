@@ -1,11 +1,20 @@
-const ListItem = ({ children, style, submenu }) => {
+import Submenu from '../layouts/header/Submenu';
+import ExpandBtn from '../layouts/header/ExpandBtn';
+
+const ListItem = ({ children, index, style, submenu = null }) => {
   return (
     <>
-      <li className={style}>
-        {children}
-        {submenu && submenu.button}
-      </li>
-      {submenu && submenu.menu}
+      {submenu ? (
+        <>
+          <li className={style}>
+            {children}
+            <ExpandBtn index={index} />
+          </li>
+          <Submenu index={index} options={submenu} />
+        </>
+      ) : (
+        <li className={style}>{children}</li>
+      )}
     </>
   );
 };
