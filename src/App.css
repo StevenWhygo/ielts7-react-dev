@@ -99,23 +99,34 @@ li {
  }
 
  .expandbtn .line {
-    transition: 
-     y 200ms ease-in 100ms
+    transition: all 200ms ease-in;
+    transform-origin: center;
+   }
+  
+
+ .expandbtn .left {
+    transform: rotate(-45deg);
+ }
+
+ .expandbtn .right {
+    transform: rotate(45deg); 
+ }
+
+ .expandbtn[aria-expanded="true"] .line {
+    transition: transform 175ms ease-out 50ms
    }
 
-   .expandbtn[aria-expanded="true"] .line {
-    transition: 
-     y 200ms ease-out
-   }
+ .expandbtn[aria-expanded="true"] .right {
+    transform: rotate(0) translate(-15px, -15px) scaleX(0.9);
+ }
 
- .expandbtn[aria-expanded="true"] :is(.top, .bottom) {
-    y: 45px
+ .expandbtn[aria-expanded="true"] .left {
+    transform: rotate(0) translate(15px, -15px) scaleX(0.9);
  }
 
  .expandbtn * {
     pointer-events: none;
  }
-
 
 /* Menu */
 .menu {

@@ -13,17 +13,21 @@ const ExpandBtn = ({ index }) => {
       // is current : open
       if (previousIndex === -1) {
         btnRefs.current[index].setAttribute('aria-expanded', 'true');
+        submenuRefs.current[index].style.maxHeight = '100vh';
       } else {
         setTimeout(() => {
           btnRefs.current[index].setAttribute('aria-expanded', 'true');
+          submenuRefs.current[index].style.maxHeight = '100vh';
         }, delay);
       }
     } else if (previousIndex === index) {
       // is previous : close
       btnRefs.current[index].setAttribute('aria-expanded', 'false');
+      submenuRefs.current[index].style.maxHeight = '0';
     } else {
       // reset : close
       btnRefs.current[index].setAttribute('aria-expanded', 'false');
+      submenuRefs.current[index].style.maxHeight = '0';
     }
   }, [currentIndex, previousIndex]);
 
@@ -36,69 +40,34 @@ const ExpandBtn = ({ index }) => {
 
   return (
     <button
-      // <Button attributes={attributes} handler={(e) => handleSubmenu(e)} ref={expandIconRef}>
       name={`btn-${index}`}
-      className="expandbtn w-[3.2rem] h-12 bg-stone-100"
+      className="expandbtn min-w-12 min-h-12 bg-stone-100"
       aria-controls="navigation"
       aria-expanded="false"
       aria-label="open submenu"
       onClick={() => handleClick(index)}
       ref={(el) => (btnRefs.current[index] = el)}
-      // ref={btnRef}
     >
       {
         <svg className="mx-auto" viewBox="0 0 100 100" width="30">
           <rect
-            className="line top"
-            width="90"
+            className="line left"
+            width="50"
             height="12"
-            x="5"
-            y="15"
-            rx="5"
-          ></rect>
-          <rect
-            className="line middle"
-            width="90"
-            height="12"
-            x="5"
-            y="45"
-            rx="5"
-          ></rect>
-          <rect
-            className="line bottom"
-            width="90"
-            height="12"
-            x="5"
-            y="75"
-            rx="5"
-          ></rect>
-          {/* <rect
-            className="line top"
-            width="90"
-            height="12"
-            x="5"
-            y="30"
-            rx="5"
-          ></rect>
-          <rect
-            className="line bottom"
-            width="90"
-            height="12"
-            x="5"
+            x="30"
             y="60"
             rx="5"
-          ></rect> */}
-          {/* <rect
-            className="line bottom"
-            width="90"
+          ></rect>
+          <rect
+            className="line right"
+            width="50"
             height="12"
-            x="5"
-            y="75"
+            x="20"
+            y="60"
             rx="5"
-          ></rect> */}
+          ></rect>
         </svg>
       }
-      {/* </Button> */}
     </button>
   );
 };
