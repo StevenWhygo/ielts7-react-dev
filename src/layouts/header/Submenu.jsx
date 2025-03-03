@@ -1,15 +1,36 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import useViewportContext from '../../hooks/context/useViewportContext';
 import useMenuContext from '../../hooks/context/useMenuContext';
 
 const Submenu = ({ index, options }) => {
-  const { isMobile } = useViewportContext();
-  const { submenuRefs } = useMenuContext();
+  const { currentIndex, previousIndex, className, delay, submenuRefs } =
+    useMenuContext();
+
+  useEffect(() => {
+    if (currentIndex === index) {
+      // is current : open
+      if (previousIndex === -1) {
+        // submenuRefs.current[index].classList.add(className);
+        submenuRefs.current[index].style.maxHeight = '100vh';
+      } else {
+        setTimeout(() => {
+          // submenuRefs.current[index].classList.add(className);
+          submenuRefs.current[index].style.maxHeight = '100vh';
+        }, delay);
+      }
+    } else if (previousIndex === index) {
+      // is previous : close
+      // submenuRefs.current[index].classList.remove(className);
+      submenuRefs.current[index].style.maxHeight = '0';
+    } else {
+      // reset : close
+      // submenuRefs.current[index].classList.remove(className);
+      submenuRefs.current[index].style.maxHeight = '0';
+    }
+  }, [currentIndex, previousIndex]);
 
   return (
     <ul
-      id={`subemenu-${index}`}
       className="submenu w-full bg-slate-100"
       ref={(el) => (submenuRefs.current[index] = el)}
     >

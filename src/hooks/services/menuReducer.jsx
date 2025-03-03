@@ -3,14 +3,14 @@ export const menuReducer = (state = initialState, action) => {
     case 'initialize':
       return {
         ...state,
-        currentIndex: action.payload.index,
+        currentIndex: action.payload.current,
         displaySubmenu: action.payload.display,
       };
     case 'update':
       return {
         ...state,
-        currentIndex: action.payload.index,
-        delay: action.payload.delay,
+        currentIndex: action.payload.current,
+        previousIndex: action.payload.previous,
       };
     case 'reset':
       return {

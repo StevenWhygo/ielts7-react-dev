@@ -3,13 +3,13 @@ import { NavLink } from 'react-router-dom';
 import ExpandBtn from './ExpandBtn';
 import Submenu from './Submenu';
 import ListItem from '../../components/ListItem';
-import useMobileMenu from '../../hooks/useMobileMenu';
+import useMenu from '../../hooks/useMenu';
 
 import { FiChevronDown } from 'react-icons/fi';
 import { IconContext } from 'react-icons';
 
 const MobileMenu = ({ options }) => {
-  const { menuRef } = useMobileMenu();
+  const { menuRef } = useMenu();
 
   return (
     <ul
@@ -22,15 +22,9 @@ const MobileMenu = ({ options }) => {
           return (
             <ListItem
               key={i}
+              index={i}
               style="relative flex items-center border-b border-slate-200"
-              submenu={
-                option.submenu
-                  ? {
-                      button: <ExpandBtn index={i} />,
-                      menu: <Submenu index={i} options={option.submenu} />,
-                    }
-                  : null
-              }
+              submenu={option.submenu ? option.submenu : null}
             >
               <NavLink
                 className="flex-1 min-h-12 h-full text-xl pl-3 leading-[3rem]"

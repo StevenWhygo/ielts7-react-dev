@@ -1,4 +1,4 @@
-import Menu from './Menu';
+// import Menu from './Menu';
 import MobileMenu from './MobileMenu';
 import Hamburger from './Hamburger';
 import Language from './Language';
@@ -31,9 +31,7 @@ const Navbar = () => {
           <MobileMenu options={translate('menu.public')} />
         </nav>
       ) : (
-        <nav className="">
-          <Menu />
-        </nav>
+        <nav className="">{/* <Menu /> */}</nav>
       )}
     </div>
   );
