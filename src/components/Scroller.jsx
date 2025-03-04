@@ -9,8 +9,8 @@ const Scroller = (props) => {
         {title}
       </h2>
       <div className="media-scroller snaps-inline">
-        {cards.map((card, i) => {
-          return <Card key={i} card={card} {...rest} />;
+        {cards.map((data, i) => {
+          return <Card key={i} data={data} {...rest} />;
         })}
       </div>
     </section>
