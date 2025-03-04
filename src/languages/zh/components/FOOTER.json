@@ -4,13 +4,13 @@
     "name": "information",
     "title": "IELTS7",
     "items": [
-      { "text": "Contact", "url": "./contact" },
-      { "text": "About", "url": "./about" },
-      { "text": "FAQ", "url": "./faq" },
-      { "text": "Terms & Conditions", "url": "./terms" },
-      { "text": "Privacy Policy", "url": "./privacy" },
-      { "text": "Careers", "url": "./careers" },
-      { "text": "Site Map", "url": "./map" }
+      { "text": "Contact", "url": "../contact" },
+      { "text": "About", "url": "../about" },
+      { "text": "FAQ", "url": "../faq" },
+      { "text": "Terms & Conditions", "url": "../terms" },
+      { "text": "Privacy Policy", "url": "../privacy" },
+      { "text": "Careers", "url": "../careers" },
+      { "text": "Site Map", "url": "../map" }
     ]
   },
   {
@@ -37,8 +37,8 @@
   },
   {
     "name": "connect",
-    "title": "Stay Connected!",
-    "text": "Subscribe to our newsletters to get all the latest information and events."
+    "title": "Stay Connected",
+    "text": "Subscribe to our newsletters to get all the latest information and events!"
   }
 ]
-   
+ 
