@@ -53,35 +53,48 @@ import { MdAssignmentTurnedIn } from "react-icons/md";
 // cart fa
 import { FiShoppingCart } from 'react-icons/fi';
 // sign in
-import { FaUserCircle } from 'react-icons/fa';
+import { FaInstagram, FaUserCircle } from 'react-icons/fa';
+
+// facebook
+import { FaFacebook } from 'react-icons/fa6';
+// youtube
+import { FaYoutube } from 'react-icons/fa6';
+// instagram
+import { FaSquareInstagram } from 'react-icons/fa6';
+// linkedin
+import { FaLinkedin } from 'react-icons/fa6';
 
 const icons = {
-        'grammar': <MdForum />,
-         'exam': <MdAssignmentInd />,
-         'exercise': <MdEditSquare />,
-         'quiz': <MdQuiz />,
-         'video': <MdVideoLibrary />,
-         'words': <MdChecklist />,
-         'feedback': <MdFeedback />,
-         'help': <MdHelp />,
-         'group': <MdGroup />,
-         'speak': <MdSms />,
-         'score_fill': <PiExamFill />,
-         'score': <PiExam />,
-         'essay': <MdNotes />,
-         'price': <MdOutlineAttachMoney />,
-         'unregistered': <MdOutlineNoAccounts />,
-         'registered': <MdOutlineAccountCircle />,
-         'premium': <MdOutlineShield />,
-         'single': <MdOutlineCropPortrait />,
-         'many': <MdOutlineContentCopy />,
-         'course': <MdDvr />,
-         'comprehension': <MdOutlineChat />,
-         'results': <MdBarChart />,
-         'writing': <MdOutlineCreate />,
-         'check': <MdAssignmentTurnedIn />,
-         'cart': <FiShoppingCart />,
-         'signin': <FaUserCircle />
-}
+  'grammar': <MdForum />,
+  'exam': <MdAssignmentInd />,
+  'exercise': <MdEditSquare />,
+  'quiz': <MdQuiz />,
+  'video': <MdVideoLibrary />,
+  'words': <MdChecklist />,
+  'feedback': <MdFeedback />,
+  'help': <MdHelp />,
+  'group': <MdGroup />,
+  'speak': <MdSms />,
+  'score_fill': <PiExamFill />,
+  'score': <PiExam />,
+  'essay': <MdNotes />,
+  'price': <MdOutlineAttachMoney />,
+  'unregistered': <MdOutlineNoAccounts />,
+  'registered': <MdOutlineAccountCircle />,
+  'premium': <MdOutlineShield />,
+  'single': <MdOutlineCropPortrait />,
+  'many': <MdOutlineContentCopy />,
+  'course': <MdDvr />,
+  'comprehension': <MdOutlineChat />,
+  'results': <MdBarChart />,
+  'writing': <MdOutlineCreate />,
+  'check': <MdAssignmentTurnedIn />,
+  'cart': <FiShoppingCart />,
+  'signin': <FaUserCircle />,
+  'facebook': <FaFacebook />,
+  'instagram': <FaSquareInstagram />,
+  'youtube': <FaYoutube />,
+  'linkedin': <FaLinkedin />,
+};
 
 export default icons

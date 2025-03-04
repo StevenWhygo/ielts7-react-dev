@@ -2,13 +2,13 @@ import { Link } from 'react-router-dom';
 import useCard from '../hooks/useCard';
 
 const Card = (props) => {
-  const { type, style, card } = props;
-  const { fetchCard } = useCard(card);
+  const { type, style, data } = props;
+  const { fetchCard } = useCard(data);
   return (
     <article
       className={style}
       // testimonial card background color
-      style={card.fill && { backgroundColor: card.fill }}
+      style={data.fill && { backgroundColor: data.fill }}
     >
       {fetchCard(type)}
     </article>
