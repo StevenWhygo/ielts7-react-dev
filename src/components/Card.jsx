@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import useCard from '../hooks/useCard';
 
 const Card = (props) => {
