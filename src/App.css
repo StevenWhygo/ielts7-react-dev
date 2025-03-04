@@ -99,11 +99,10 @@ li {
  }
 
  .expandbtn .line {
-    transition: all 200ms ease-in;
+    transition: all 175ms ease-in 100ms;
     transform-origin: center;
    }
   
-
  .expandbtn .left {
     transform: rotate(-45deg);
  }

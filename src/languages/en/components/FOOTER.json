@@ -1,0 +1,31 @@
+
+[
+    {
+        "section": "information",
+        "title": "IELTS7",
+        "items": [
+            {"text": "Contact", "link": "./contact"},
+            {"text": "About", "link": "./about"},
+            {"text": "FAQ", "link": "./faq"},
+            {"text": "Terms & Conditions", "link": "./terms"},
+            {"text": "Privacy Policy", "link": "./privacy"},
+            {"text": "Careers", "link": "./careers"},
+            {"text": "Site Map", "link": "./map"}
+        ]
+    },
+    {
+    "section": "social",
+    "title": "Social",
+    "items" :[
+            {"title:": "Link to facebook page","icon": "facebook", "link": "facebook.com"},
+            {"title:": "Link to instagram page","icon": "instagram", "link": "instagram.com"},
+            {"title:": "Link to linkedin page","icon": "linkedin", "link": "linkedin.com"},
+            {"title:": "Link to youtube page","icon": "youtube", "link": "youtube.com"}
+        ]},
+    { 
+    "section": "connect",
+    "title": "Stay Connected!", 
+    "text": "Subscribe to our newsletters to get all the latest information and events."
+    }
+]
+ 
