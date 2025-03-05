@@ -7,7 +7,7 @@ const SignIn = ({ icon }) => {
   return (
     <button
       id="signin"
-      className="signin-btn flex items-center justify-center w-7 h-7 bg-transparent hover:opacity-80"
+      className="flex items-center justify-center w-7 h-7 bg-transparent"
       type="button"
       title="Login"
       onClick={() => navigate('/signin')}

@@ -56,11 +56,6 @@ li {
 .hamburger * {
     pointer-events: none;
 }
-
-.hamburger {
-    background: transparent;
-    color: var(--clr-grey);
- }
  
  .hamburger .line {
   transition: 
@@ -70,7 +65,12 @@ li {
   transform-origin: center;
  }
 
-
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(4, 48px);
+    justify-items: center;
+    width: 100%;
+}
  
  /* Open Menu/Searchbar hamburger [X] animation rules */ 
  .hamburger[aria-expanded="true"] .line {

@@ -1,21 +1,20 @@
-
 [
   {
     "name": "information",
-    "title": "IELTS7",
+    "title": "IELTS7 線上學習",
     "items": [
-      { "text": "Contact", "url": "../contact" },
-      { "text": "About", "url": "../about" },
-      { "text": "FAQ", "url": "../faq" },
-      { "text": "Terms & Conditions", "url": "../terms" },
-      { "text": "Privacy Policy", "url": "../privacy" },
-      { "text": "Careers", "url": "../careers" },
-      { "text": "Site Map", "url": "../map" }
+      { "text": "聯絡我們", "url": "../contact" },
+      { "text": "關於我們", "url": "../about" },
+      { "text": "常見問題", "url": "../faq" },
+      { "text": "條款與細則", "url": "../terms" },
+      { "text": "隱私政策", "url": "../privacy" },
+      { "text": "人才招募", "url": "../careers" },
+      { "text": "網站地圖", "url": "../map" }
     ]
   },
   {
     "name": "social",
-    "title": "Follow Us",
+    "title": "關注我們",
     "items": [
       {
         "icon": "Facebook",
@@ -30,15 +29,14 @@
         "url": "https://www.linkedin.com"
       },
       {
-        "icon": "Youtube",
+        "icon": "YouTube",
         "url": "https://www.youtube.com"
       }
     ]
   },
   {
     "name": "connect",
-    "title": "Stay Connected",
-    "text": "Subscribe to our newsletter to get the latest information and upcoming events!"
+    "title": "保持聯繫",
+    "text": "訂閱我們的電子報，獲取最新資訊與即將舉辦的活動消息"
   }
 ]
- 

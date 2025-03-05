@@ -6,22 +6,20 @@ import SignIn from './SignIn';
 import ShoppingCart from './ShoppingCart';
 import useViewportContext from '../../hooks/context/useViewportContext';
 import useTranslation from '../../hooks/useTranslation';
-
+const iconStyle = {
+  color: '#0C0A09',
+  size: '100%',
+};
 const Navbar = () => {
   const { isMobile } = useViewportContext();
   const { translate } = useTranslation('global');
 
-  const style = {
-    color: '#0C0A09',
-    size: '100%',
-  };
-
   return (
     <div className="ml-auto">
-      <div className="flex items-center gap-x-4 w-full">
+      <div className="navbar">
         <Language />
-        <SignIn icon={{ type: 'signin', value: style }} />
-        <ShoppingCart icon={{ type: 'cart', value: style }} />
+        <SignIn icon={{ type: 'signin', value: iconStyle }} />
+        <ShoppingCart icon={{ type: 'cart', value: iconStyle }} />
         <Hamburger />
       </div>
       {isMobile ? (
