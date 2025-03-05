@@ -1,15 +1,18 @@
-import useCard from '../hooks/useCard';
+import CardHeader from './services/CardHeader';
+import CardBody from './services/CardBody';
+import CardFooter from './services/CardFooter';
 
 const Card = (props) => {
-  const { type, style, data } = props;
-  const { fetchCard } = useCard(data);
+  const { style, fill, ...rest } = props;
   return (
     <article
       className={style}
       // testimonial card background color
-      style={data.fill && { backgroundColor: data.fill }}
+      style={fill && { backgroundColor: fill }}
     >
-      {fetchCard(type)}
+      <CardHeader {...rest} />
+      <CardBody {...rest} fill={fill} />
+      <CardFooter {...rest} />
     </article>
   );
 };

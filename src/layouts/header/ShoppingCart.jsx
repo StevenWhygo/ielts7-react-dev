@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
+import Icon from '../../components/Icon';
 
 const ShoppingCart = ({ icon }) => {
   const navigate = useNavigate();
-  console.log(icon);
 
   return (
     <button
@@ -12,7 +12,7 @@ const ShoppingCart = ({ icon }) => {
       title="Login"
       onClick={() => navigate('/cart')}
     >
-      {icon}
+      <Icon {...icon} />
     </button>
   );
 };

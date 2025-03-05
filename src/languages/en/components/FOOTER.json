@@ -2,7 +2,7 @@
 [
   {
     "name": "information",
-    "title": "IELTS7",
+    "title": "IELTS7 Online",
     "items": [
       { "text": "Contact", "url": "../contact" },
       { "text": "About", "url": "../about" },
@@ -38,7 +38,7 @@
   {
     "name": "connect",
     "title": "Stay Connected",
-    "text": "Subscribe to our newsletters to get all the latest information and events!"
+    "text": "Subscribe to our newsletter to get the latest information and upcoming events!"
   }
 ]
  
