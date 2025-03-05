@@ -37,6 +37,10 @@ li {
     list-style-type: none;
 }
 
+button * {
+    pointer-events: none;
+}
+
 .layout {
     display: flex;
     flex-direction: column;
@@ -53,10 +57,6 @@ li {
 
   /* Hamburger */
 /* source @ https://www.youtube.com/watch?v=R00QiudbD4Y&t=3167s */
-.hamburger * {
-    pointer-events: none;
-}
- 
  .hamburger .line {
   transition: 
    y 100ms ease-in 100ms,
@@ -125,10 +125,6 @@ li {
     transform: rotate(0) translate(15px, -15px) scaleX(0.9);
  }
 
- .expandbtn * {
-    pointer-events: none;
- }
-
 /* Menu */
 .menu {
     position: fixed;
@@ -160,19 +156,6 @@ li {
 
 .mobile-submenu {
     max-height: 100vh;
-}
-
-
-.arrow {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    cursor: pointer;
-}
-
-.arrow * {
-    pointer-events: none;
 }
 
 /* Slider */
@@ -216,10 +199,6 @@ li {
 
 .indicators button {
     padding: 5px;
-}
-
-.indicators button * {
-    pointer-events: none;
 }
 
 .media-scroller {
