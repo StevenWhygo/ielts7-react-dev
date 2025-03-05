@@ -1,5 +1,5 @@
 const Page = ({ children }) => {
-  return <div className="flex-auto">{children}</div>;
+  return <div className="min-h-screen">{children}</div>;
 };
 export default Page;
  

@@ -6,14 +6,14 @@ const Section = ({ data }) => {
 
   return (
     <section className="mb-8">
-      <h2 className="border-b pb-2 mb-6 text-lg font-semibold">{title}</h2>
+      <h2 className="border-b pb-2 mb-4 text-2xl font-semibold">{title}</h2>
       {name === 'information' ? (
         <ul className="pl-2">
           {items.map((item, i) => {
             return (
               <li key={i}>
                 <Link
-                  className="inline-block py-2 w-full"
+                  className="inline-block py-2 w-full text-lg"
                   to={{
                     pathname: item.url,
                   }}
