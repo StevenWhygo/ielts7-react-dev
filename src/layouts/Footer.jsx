@@ -6,7 +6,7 @@ const Footer = ({ sections }) => {
 
   return (
     <footer className="w-full min-w-[375px] max-w-[1563px] min-h-12 p-4 mx-auto mt-4 bg-slate-800 text-slate-100">
-      <div className="w-full flex flex-col">
+      <div className="w-full flex flex-col my-4">
         {sections.map((section, i) => {
           return <Section key={i} data={section} />;
         })}
