@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { IconContext } from 'react-icons';
-import { FaUserCircle } from 'react-icons/fa';
+import Icon from '../../components/Icon';
 
 const SignIn = ({ icon }) => {
   const navigate = useNavigate();
@@ -13,7 +12,7 @@ const SignIn = ({ icon }) => {
       title="Login"
       onClick={() => navigate('/signin')}
     >
-      {icon}
+      <Icon {...icon} />
     </button>
   );
 };

@@ -33,7 +33,6 @@ import Terms from './pages/public/Terms';
 // CSS
 import './App.css';
 import './index.css';
-import './assets/css/utilities.css';
 
 const App = () => {
   return (

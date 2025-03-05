@@ -1,18 +1,11 @@
 import { Link } from 'react-router-dom';
-import useIcons from '../useIcons';
+import Icon from '../Icon';
 
-const cardFooter = (type, card) => {
-    const {fetchIcon} = useIcons();
-
-    const {links, fill} = card;
-    switch (type) {
-      case 'course':
-        const style = {
-          color: '#1e293b',
-          size: '2rem',
-        };
-        return (
-          <footer className="flex gap-2 px-4 pb-4">
+const CardFooter = (props) => {
+    const {fill, links, type } = props;
+    return (
+        type === 'course' ? (
+            <footer className="flex gap-2 px-4 pb-4">
             {links.trial && (
               <Link
                 className="relative flex justify-center items-center w-full py-1 text-center border-blue bg-sky-600 text-slate-50 text-base font-semibold rounded-sm opacity-100"
@@ -24,13 +17,12 @@ const cardFooter = (type, card) => {
               </Link>
             )}
             <button className="relative flex justify-center items-center w-full py-1 border-yellow bg-yellow-400 text-slate-50 text-base font-bold rounded-sm opacity-100">
-              {fetchIcon('cart', style)}
+              <Icon type='cart' value={{color: '#1e293b', size: '2rem'}} />
             </button>
           </footer>
-        );
-      case 'mocktest':
-        return (
-          <footer className="flex gap-2 px-4 pb-4">
+        ) : 
+        type === 'mocktest' ? (
+            <footer className="flex gap-2 px-4 pb-4">
             {links.trial ? (
               <Link
                 className="relative flex justify-center items-center w-full py-2 text-center border-blue bg-sky-600 text-slate-50 text-base font-semibold rounded-sm opacity-100"
@@ -51,10 +43,9 @@ const cardFooter = (type, card) => {
               </Link>
             )}
           </footer>
-        );
-      case 'teacher':
-        return (
-          <footer className="flex px-4 pb-4">
+        ) : 
+        type === 'teacher' ? (
+            <footer className="flex px-4 pb-4">
             <Link
               className="relative mt-auto inline-block w-full py-2 rounded-sm text-center border-blue bg-sky-600 text-slate-50 text-base font-semibold opacity-100"
               to={{
@@ -64,17 +55,12 @@ const cardFooter = (type, card) => {
               {links.action.text}
             </Link>
           </footer>
-        );
-      case 'testimonial':
-        return (
-          <footer
+        ) : (
+            <footer
             className="relative"
             style={{ backgroundColor: fill }}
-          ></footer>
-        );
-      default:
-        break;
-    }
-}
-
-export default cardFooter
+            ></footer>
+        )
+      )
+};
+export default CardFooter;
