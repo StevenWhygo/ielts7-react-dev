@@ -7,15 +7,15 @@ import ShoppingCart from './ShoppingCart';
 import useViewportContext from '../../hooks/context/useViewportContext';
 import useTranslation from '../../hooks/useTranslation';
 const iconStyle = {
-  color: '#0C0A09',
-  size: '100%',
+  color: '#F1F5F9',
+  size: '30px',
 };
 const Navbar = () => {
   const { isMobile } = useViewportContext();
   const { translate } = useTranslation('global');
 
   return (
-    <div className="ml-auto">
+    <div className="ml-auto h-full">
       <div className="navbar">
         <Language />
         <SignIn icon={{ type: 'signin', value: iconStyle }} />

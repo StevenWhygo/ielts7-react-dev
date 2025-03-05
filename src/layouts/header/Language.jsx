@@ -2,7 +2,8 @@ import useLanguageContext from '../../hooks/context/useLanguageContext';
 
 const Language = () => {
     const {language, setLanguage} = useLanguageContext();
-    const style = "text-sm font-semibold border-[2px] border-stone-950 rounded-sm py-[6px] min-w-[35px] text-center text-stone-950 leading-none"
+    const style =
+      'text-sm font-semibold border-[2px] borde-slate-100 rounded-sm py-[6px] min-w-[30px] text-center text-slate-100 leading-none';
   return (
         <>
             {language === 'zh' ? (

@@ -22,12 +22,12 @@ const Hamburger = () => {
       aria-expanded="false"
       aria-label="open menu"
       aria-controls="navigation"
-      className="hamburger bg-transparent text-stone-950 border border-red-50"
+      className="hamburger flex items-center justify-center w-full h-full bg-transparent"
       id="hamburger"
       ref={hamburgerRef}
     >
       {
-        <svg viewBox="0 0 100 100" width="30">
+        <svg viewBox="0 0 100 100" fill="#F1F5F9" width="30">
           <rect
             className="line top"
             width="90"

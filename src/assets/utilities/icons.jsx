@@ -54,6 +54,10 @@ import { MdAssignmentTurnedIn } from "react-icons/md";
 import { FiShoppingCart } from 'react-icons/fi';
 // sign in
 import { FaInstagram, FaUserCircle } from 'react-icons/fa';
+// left arrow
+import { TfiAngleLeft } from 'react-icons/tfi';
+// right arrow
+import { TfiAngleRight } from 'react-icons/tfi';
 
 // facebook
 import { FaFacebook } from 'react-icons/fa6';
@@ -96,6 +100,8 @@ const icons = {
   'instagram': <FaSquareInstagram />,
   'youtube': <FaYoutube />,
   'linkedin': <FaLinkedin />,
+  'left': <TfiAngleLeft />,
+  'right': <TfiAngleRight />
 };
 
 export default icons

@@ -69,6 +69,8 @@ li {
     display: grid;
     grid-template-columns: repeat(4, 48px);
     justify-items: center;
+    align-items: center;
+    height: 100%;
     width: 100%;
 }
  
