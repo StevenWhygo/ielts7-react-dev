@@ -64,6 +64,7 @@ import { FaSquareInstagram } from 'react-icons/fa6';
 // linkedin
 import { FaLinkedin } from 'react-icons/fa6';
 
+
 const icons = {
   'grammar': <MdForum />,
   'exam': <MdAssignmentInd />,

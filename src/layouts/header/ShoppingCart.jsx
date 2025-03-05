@@ -6,8 +6,8 @@ const ShoppingCart = ({ icon }) => {
 
   return (
     <button
-      id="signin"
-      className="signin-btn flex items-center justify-center w-7 h-7 bg-transparent hover:opacity-80"
+      id="cart"
+      className="flex items-center justify-center w-7 h-7 bg-transparent"
       type="button"
       title="Login"
       onClick={() => navigate('/cart')}

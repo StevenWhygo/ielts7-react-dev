@@ -22,7 +22,7 @@ const Hamburger = () => {
       aria-expanded="false"
       aria-label="open menu"
       aria-controls="navigation"
-      className="hamburger"
+      className="hamburger bg-transparent text-stone-950 border border-red-50"
       id="hamburger"
       ref={hamburgerRef}
     >
