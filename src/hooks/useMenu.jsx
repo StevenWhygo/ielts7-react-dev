@@ -1,16 +1,16 @@
 import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import useMenuContext from './context/useMenuContext';
+import useLanguageContext from './context/useLanguageContext';
 
 const useMenu = () => {
   const hamburgerRef = useRef(null);
   const menuRef = useRef(null);
   const params = useLocation();
 
-  const {
-    displayMenu,
-    setDisplayMenu,
-  } = useMenuContext();
+  const { language } = useLanguageContext();
+
+  const { displayMenu, setDisplayMenu } = useMenuContext();
 
   // hide menu on location change
   useEffect(() => {
@@ -18,6 +18,10 @@ const useMenu = () => {
       setDisplayMenu(false);
     }
   }, [params]);
+
+  useEffect(() => {
+    setDisplayMenu(false);
+  }, [language]);
 
   // handle hamburger animation & mobile menu visibility
   useEffect(() => {

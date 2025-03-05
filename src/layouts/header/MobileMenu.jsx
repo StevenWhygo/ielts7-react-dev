@@ -14,7 +14,7 @@ const MobileMenu = ({ options }) => {
   return (
     <ul
       id="menu"
-      className="menu w-full bg-slate-100 border-t border-slate-200"
+      className="menu w-full bg-slate-100 border-t border-slate-300"
       ref={menuRef}
     >
       <>

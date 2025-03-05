@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import Picture from '../../components/Picture';
 import Indicators from '../../components/Indicators';
 import Button from '../../components/Button';
+import Icon from '../../components/Icon';
 
 import { IconContext } from 'react-icons';
 import { TfiAngleLeft } from 'react-icons/tfi';
@@ -47,27 +48,6 @@ const Carousel = ({ elements }) => {
       </div>
     );
   };
-
-  const arrows = [
-    {
-      attributes: {
-        name: 'previous',
-        className: 'arrow transition-opacity pr-3/12 hover:opacity-60',
-        ariaLabel: `View Image ${currentIndex}`,
-      },
-      ref: leftArrowRef,
-      icon: <TfiAngleLeft />,
-    },
-    {
-      attributes: {
-        name: 'next',
-        className: 'arrow right-0 pl-3/12 transition-opacity hover:opacity-60',
-        ariaLabel: `View Image ${currentIndex}`,
-      },
-      ref: rightArrowRef,
-      icon: <TfiAngleRight />,
-    },
-  ];
 
   const slideHandler = (slide) => {
     containerRef.current.style.transitionDuration = '300ms';
@@ -158,6 +138,27 @@ const Carousel = ({ elements }) => {
     setTranslateX(containerRef.current.clientWidth * currentIndex);
   }, []);
 
+  const arrows = [
+    {
+      attributes: {
+        name: 'previous',
+        className: 'arrow transition-opacity pr-3/12 hover:opacity-60',
+        ariaLabel: `View Image ${currentIndex}`,
+      },
+      ref: leftArrowRef,
+      icon: <TfiAngleLeft />,
+    },
+    {
+      attributes: {
+        name: 'next',
+        className: 'arrow right-0 pl-3/12 transition-opacity hover:opacity-60',
+        ariaLabel: `View Image ${currentIndex}`,
+      },
+      ref: rightArrowRef,
+      icon: <TfiAngleRight />,
+    },
+  ];
+
   return (
     <section className="carousel">
       <div
@@ -168,25 +169,34 @@ const Carousel = ({ elements }) => {
         {slides}
       </div>
       <>
-        {arrows.map((arrow, i) => {
-          return (
-            <Button
-              key={i}
-              attributes={{ ...arrow.attributes }}
-              handler={(e) => slideHandler(e.target.name)}
-              ref={arrow.ref}
-            >
-              <IconContext.Provider
-                value={{
-                  color: '#1e293b',
-                  size: '3rem',
-                }}
-              >
-                <div>{arrow.icon}</div>
-              </IconContext.Provider>
-            </Button>
-          );
-        })}
+        <button
+          name="previous"
+          className="block absolute top-0 bottom-0 cursor-pointer transition-opacity pr-3/12 hover:opacity-60"
+          onClick={(e) => slideHandler(e.target.name)}
+          // aria-label={`View Image ${currentIndex}`}
+        >
+          <Icon
+            type="left"
+            value={{
+              color: '#1e293b',
+              size: '3rem',
+            }}
+          />
+        </button>
+        <button
+          name="next"
+          className="block absolute top-0 bottom-0 right-0 cursor-pointer transition-opacity pr-3/12 hover:opacity-60"
+          onClick={(e) => slideHandler(e.target.name)}
+          // aria-label={`View Image ${currentIndex}`}
+        >
+          <Icon
+            type="right"
+            value={{
+              color: '#1e293b',
+              size: '3rem',
+            }}
+          />
+        </button>
       </>
 
       <Indicators

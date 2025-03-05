@@ -7,7 +7,7 @@ const ShoppingCart = ({ icon }) => {
   return (
     <button
       id="cart"
-      className="flex items-center justify-center w-7 h-7 bg-transparent"
+      className="flex items-center justify-center w-full h-full bg-transparent"
       type="button"
       title="Login"
       onClick={() => navigate('/cart')}
