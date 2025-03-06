@@ -3,43 +3,13 @@ import Icon from '../../components/Icon';
 import useSubmenu from '../../hooks/useSubmenu';
 import useMenuContext from '../../hooks/context/useMenuContext';
 const ExpandBtn = ({ index }) => {
-  const { currentIndex, previousIndex, delay, btnRefs, submenuRefs } =
-    useMenuContext();
-  const { handleClick } = useSubmenu();
-  useEffect(() => {
-    if (currentIndex === index) {
-      // is current : open
-      if (previousIndex === -1) {
-        btnRefs.current[index].setAttribute('aria-expanded', 'true');
-        submenuRefs.current[index].style.maxHeight = '100vh';
-      } else {
-        setTimeout(() => {
-          btnRefs.current[index].setAttribute('aria-expanded', 'true');
-          submenuRefs.current[index].style.maxHeight = '100vh';
-        }, delay);
-      }
-    } else if (previousIndex === index) {
-      // is previous : close
-      btnRefs.current[index].setAttribute('aria-expanded', 'false');
-      submenuRefs.current[index].style.maxHeight = '0';
-    } else {
-      // reset : close
-      btnRefs.current[index].setAttribute('aria-expanded', 'false');
-      submenuRefs.current[index].style.maxHeight = '0';
-    }
-  }, [currentIndex, previousIndex]);
-
-  const attributes = {
-    className: 'expandbtn w-[3.2rem] h-12 border-l bg-red-400',
-    ariaControls: 'navigation',
-    ariaExpanded: 'false',
-    ariaLabel: 'open submenu',
-  };
+  const { btnRefs } = useMenuContext();
+  const { handleClick } = useSubmenu(index);
 
   return (
     <button
       name={`btn-${index}`}
-      className="expandbtn flex items-center justify-center w-12 h-12 bg-slate-200"
+      className="expandbtn flex items-center justify-center w-12 h-12 bg-slate-100 border-b border-slate-200"
       aria-controls="navigation"
       aria-expanded="false"
       aria-label="open submenu"
@@ -47,6 +17,7 @@ const ExpandBtn = ({ index }) => {
       ref={(el) => (btnRefs.current[index] = el)}
     >
       <svg fill="#1D293D" viewBox="0 0 100 100" width="30">
+        {/* <svg fill="#F1F5F9" viewBox="0 0 100 100" width="30"> */}
         <rect
           className="line left"
           width="50"

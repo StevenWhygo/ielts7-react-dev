@@ -1,12 +1,17 @@
 import { useEffect } from 'react';
 import useMenuContext from './context/useMenuContext';
 
-const useSubmenu = () => {
+const useSubmenu = (index) => {
   const {
     displayMenu,
+    setDisplayMenu,
     currentIndex,
-    initialState,
+    previousIndex,
+    delay,
     dispatch,
+    initialState,
+    btnRefs,
+    submenuRefs,
   } = useMenuContext();
 
   // submenus handling function
@@ -16,7 +21,7 @@ const useSubmenu = () => {
         type: 'reset',
         payload: initialState,
       });
-    } else if (currentIndex === -1) {     
+    } else if (currentIndex === -1) {
       dispatch({
         type: 'initialize',
         payload: {
@@ -34,14 +39,38 @@ const useSubmenu = () => {
     }
   }
 
+  // animate expand btn & display/hide submenu on current index change
   useEffect(() => {
-    if(!displayMenu) {
-        dispatch({
-          type: 'reset',
-          payload: initialState,
-        });
+    if (currentIndex === index) {
+      // is current : open
+      if (previousIndex === -1) {
+        btnRefs.current[index].setAttribute('aria-expanded', 'true');
+        submenuRefs.current[index].style.maxHeight = '100vh';
+      } else {
+        setTimeout(() => {
+          btnRefs.current[index].setAttribute('aria-expanded', 'true');
+          submenuRefs.current[index].style.maxHeight = '100vh';
+        }, delay);
+      }
+    } else if (previousIndex === index) {
+      // is previous : close
+      btnRefs.current[index].setAttribute('aria-expanded', 'false');
+      submenuRefs.current[index].style.maxHeight = '0';
+    } else {
+      // reset : close
+      btnRefs.current[index].setAttribute('aria-expanded', 'false');
+      submenuRefs.current[index].style.maxHeight = '0';
     }
-  }, [displayMenu])
+  }, [currentIndex, previousIndex, index]);
+
+  useEffect(() => {
+    if (!displayMenu) {
+      dispatch({
+        type: 'reset',
+        payload: initialState,
+      });
+    }
+  }, [displayMenu]);
 
   return { handleClick };
 };

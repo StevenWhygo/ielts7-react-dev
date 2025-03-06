@@ -6,7 +6,6 @@ const initialState = {
   currentIndex: -1,
   previousIndex: -1,
   delay: 500,
-  className: 'mobile-submenu',
 };
 
 export const MenuProvider = ({ children }) => {
@@ -16,8 +15,7 @@ export const MenuProvider = ({ children }) => {
 
   const [state, dispatch] = useReducer(menuReducer, initialState);
 
-  const { currentIndex, previousIndex, displaySubmenu, delay, className } =
-    state;
+  const { currentIndex, previousIndex, delay } = state;
 
   return (
     <MenuContext.Provider
@@ -27,7 +25,6 @@ export const MenuProvider = ({ children }) => {
         currentIndex,
         previousIndex,
         delay,
-        className,
         dispatch,
         initialState,
         btnRefs,
