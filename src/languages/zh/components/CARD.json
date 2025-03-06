@@ -1,315 +1,310 @@
-[ 
+[
   {
-      "type": "course",
-      "title": "課程",
-      "style": "media-element",
-      "cards": [
-        {
-          "title": {
-            "text": "基礎語法"
-          },
-          "image": {
-            "src": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-beginner.png?t=4e99648",
-            "alt": "IELTS 初學者語法課程圖片"
-          },
-          "list": [
-            { "icon": "grammar", "text": "關鍵語法" },
-            { "icon": "video", "text": "無限視訊課程" },
-            { "icon": "exercise", "text": "數百個練習" },
-            { "icon": "quiz", "text": "期末測驗" },
-            { "icon": "price", "text": "702 點數 / 月" }
-          ],
-          "links": {
-            "page": {
-              "text": "了解更多",
-              "url": "./courses/grammar-basic"
-            },
-            "trial": {
-              "text": "免費試用",
-              "url": "https://www.ielts7.online/main/10"
-            }
+    "type": "course",
+    "title": "課程",
+    "style": "media-element",
+    "cards": [
+      {
+        "title": {
+          "text": "基礎語法"
+        },
+        "image": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-beginner.png?t=4e99648",
+          "alt": "IELTS 初學者語法課程圖片"
+        },
+        "list": [
+          { "icon": "grammar", "text": "關鍵語法" },
+          { "icon": "video", "text": "無限視訊課程" },
+          { "icon": "exercise", "text": "數百個練習" },
+          { "icon": "quiz", "text": "期末測驗" },
+          { "icon": "price", "text": "702 點數 / 月" }
+        ],
+        "links": {
+          "page": {
+            "text": "了解更多",
+            "url": "./courses/grammar-basic"
           }
         },
-        {
-          "title": {
-            "text": "進階語法"
-          },
-          "image": {
-            "src": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-advanced.png?t=4e99648",
-            "alt": "IELTS 進階語法課程圖片"
-          },
-          "list": [
-            { "icon": "exam", "text": "IELTS 考試回顧" },
-            { "icon": "video", "text": "無限視訊課程" },
-            { "icon": "words", "text": "2000 個 IELTS 必學單字" },
-            { "icon": "quiz", "text": "期末測驗" },
-            { "icon": "price", "text": "702 點數 / 月" }
-          ],
-          "links": {
-            "page": {
-              "text": "了解更多",
-              "url": "./courses/grammar-advanced"
-            },
-            "trial": {
-              "text": "免費試用",
-              "url": "https://www.ielts7.online/main/11"
-            }
+        "trial": {
+          "url": "https://www.ielts7.online/main/10"
+        }
+      },
+      {
+        "title": {
+          "text": "進階語法"
+        },
+        "image": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/product-course-grammar-advanced.png?t=4e99648",
+          "alt": "IELTS 進階語法課程圖片"
+        },
+        "list": [
+          { "icon": "exam", "text": "IELTS 考試回顧" },
+          { "icon": "video", "text": "無限視訊課程" },
+          { "icon": "words", "text": "2000 個 IELTS 必學單字" },
+          { "icon": "quiz", "text": "期末測驗" },
+          { "icon": "price", "text": "702 點數 / 月" }
+        ],
+        "links": {
+          "page": {
+            "text": "了解更多",
+            "url": "./courses/grammar-advanced"
           }
         },
-        {
-          "title": {
-            "text": "IELTS 基礎"
-          },
-          "image": {
-            "src": "https://storage.ieltstaipei.com/public/images/home/product-course-ielts-beginner.png?t=4e99648",
-            "alt": "IELTS 初學者課程圖片"
-          },
-          "list": [
-            { "icon": "exam", "text": "IELTS 考試回顧" },
-            { "icon": "video", "text": "無限視訊課程" },
-            { "icon": "words", "text": "2000 個 IELTS 必學單字" },
-            { "icon": "quiz", "text": "期末測驗" },
-            { "icon": "price", "text": "702 點數 / 月" }
-          ],
-          "links": {
-            "page": {
-              "text": "了解更多",
-              "url": "./courses/ielts-basic"
-            },
-            "trial": {
-              "text": "免費試用",
-              "url": "https://www.ielts7.online/main/1"
-            }
+        "trial": {
+          "url": "https://www.ielts7.online/main/11"
+        }
+      },
+      {
+        "title": {
+          "text": "IELTS 基礎"
+        },
+        "image": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/product-course-ielts-beginner.png?t=4e99648",
+          "alt": "IELTS 初學者課程圖片"
+        },
+        "list": [
+          { "icon": "exam", "text": "IELTS 考試回顧" },
+          { "icon": "video", "text": "無限視訊課程" },
+          { "icon": "words", "text": "2000 個 IELTS 必學單字" },
+          { "icon": "quiz", "text": "期末測驗" },
+          { "icon": "price", "text": "702 點數 / 月" }
+        ],
+        "links": {
+          "page": {
+            "text": "了解更多",
+            "url": "./courses/ielts-basic"
           }
         },
-        {
-          "title": {
-            "text": "IELTS 進階"
-          },
-          "image": {
-            "src": "https://storage.ieltstaipei.com/public/images/home/product-course-ielts-advanced.png?t=4e99648",
-            "alt": "IELTS 進階課程圖片"
-          },
-          "list": [
-            { "icon": "exam", "text": "IELTS 考試回顧" },
-            { "icon": "video", "text": "無限視訊課程" },
-            { "icon": "exercise", "text": "數百個練習" },
-            { "icon": "quiz", "text": "期末測驗" },
-            { "icon": "price", "text": "702 點數 / 月" }
-          ],
-          "links": {
-            "page": {
-              "text": "了解更多",
-              "url": "./courses/ielts-advanced"
-            },
-            "trial": {
-              "text": "免費試用",
-              "url": "https://www.ielts7.online/main/2"
-            }
+        "trial": {
+          "url": "https://www.ielts7.online/main/1"
+        }
+      },
+      {
+        "title": {
+          "text": "IELTS 進階"
+        },
+        "image": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/product-course-ielts-advanced.png?t=4e99648",
+          "alt": "IELTS 進階課程圖片"
+        },
+        "list": [
+          { "icon": "exam", "text": "IELTS 考試回顧" },
+          { "icon": "video", "text": "無限視訊課程" },
+          { "icon": "exercise", "text": "數百個練習" },
+          { "icon": "quiz", "text": "期末測驗" },
+          { "icon": "price", "text": "702 點數 / 月" }
+        ],
+        "links": {
+          "page": {
+            "text": "了解更多",
+            "url": "./courses/ielts-advanced"
           }
         },
-        {
-          "title": {
-            "text": "口說測驗"
-          },
-          "image": {
-            "src": "https://storage.ieltstaipei.com/public/images/home/products_IELTS_scored_speaking.png?t=4e99648",
-            "alt": "IELTS 口說測驗課程圖片"
-          },
-          "list": [
-            { "icon": "speak", "text": "口說練習" },
-            { "icon": "group", "text": "口說聚會" },
-            { "icon": "help", "text": "教師協助" },
-            { "icon": "feedback", "text": "個別回饋" },
-            { "icon": "price", "text": "176 點數 / 測驗" }
-          ],
-          "links": {
-            "page": {
-              "text": "了解更多",
-              "url": "./courses/ielts-advanced"
-            }
-          }
+        "trial": {
+          "url": "https://www.ielts7.online/main/2"
+        }
+      },
+      {
+        "title": {
+          "text": "口說測驗"
         },
-        {
-          "title": {
-            "text": "寫作測驗"
-          },
-          "image": {
-            "src": "https://storage.ieltstaipei.com/public/images/home/products_IELTS_scored_essay.png?t=4e99648",
-            "alt": "IELTS 寫作測驗課程圖片"
-          },
-          "list": [
-            { "icon": "check", "text": "IELTS 寫作最佳實踐" },
-            { "icon": "score_fill", "text": "評分作文" },
-            { "icon": "help", "text": "教師協助" },
-            { "icon": "feedback", "text": "個別回饋" },
-            { "icon": "price", "text": "176 點數 / 測驗" }
-          ],
-          "links": {
-            "page": {
-              "text": "了解更多",
-              "url": "./courses/ielts-advanced"
-            }
+        "image": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/products_IELTS_scored_speaking.png?t=4e99648",
+          "alt": "IELTS 口說測驗課程圖片"
+        },
+        "list": [
+          { "icon": "speak", "text": "口說練習" },
+          { "icon": "group", "text": "口說聚會" },
+          { "icon": "help", "text": "教師協助" },
+          { "icon": "feedback", "text": "個別回饋" },
+          { "icon": "price", "text": "176 點數 / 測驗" }
+        ],
+        "links": {
+          "page": {
+            "text": "了解更多",
+            "url": "./courses/ielts-advanced"
           }
         }
-      ]
-    },
-    {
-      "type": "mocktest",
-      "title": "模擬測驗",
-      "style": "media-element label",
-      "cards": [
-        {
-          "title": "免費試用",
-          "color": "rgb(68, 64, 59)",
-          "image": {
-            "src": "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
-            "alt": "男人戴著耳機看著筆記型電腦"
-          },
-          "list": [
-            { "icon": "unregistered", "text": "不需註冊帳號" },
-            { "icon": "single", "text": "單一測驗" },
-            { "icon": "writing", "text": "寫作練習" },
-            { "icon": "comprehension", "text": "閱讀理解練習" }
-          ],
-          "links": {
-            "page": {
-              "text": "進入模擬測驗頁面",
-              "url": "./mocktests"
-            },
-            "trial": {
-              "text": "嘗試模擬測驗",
-              "url": "./mocktests"
-            }
-          }
+      },
+      {
+        "title": {
+          "text": "寫作測驗"
         },
-        {
-          "title": "基礎方案",
-          "color": "rgb(13, 84, 43)",
-          "image": {
-            "src": "https://images.unsplash.com/photo-1565598621680-94ac0c22b148?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
-            "alt": "兩位年輕女性正在觀看電腦螢幕"
-          },
-          "list": [
-            { "icon": "registered", "text": "註冊使用者" },
-            { "icon": "many", "text": "多項測驗" },
-            { "icon": "results", "text": "保存進度" },
-            { "icon": "course", "text": "課程免費試用" }
-          ],
-          "links": {
-            "page": {
-              "text": "進入模擬測驗頁面",
-              "url": "./mocktests"
-            },
-            "signin": {
-              "text": "登入",
-              "url": "./signin"
-            },
-            "signup": {
-              "text": "註冊",
-              "url": "./signup"
-            }
-          }
+        "image": {
+          "src": "https://storage.ieltstaipei.com/public/images/home/products_IELTS_scored_essay.png?t=4e99648",
+          "alt": "IELTS 寫作測驗課程圖片"
         },
-        {
-          "title": "高級方案",
-          "color": "rgb(16, 78, 100)",
-          "image": {
-            "src": "https://images.unsplash.com/photo-1579389082289-3d6922d506c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
-            "alt": "男人坐在桌前看著手機"
-          },
-          "list": [
-            { "icon": "premium", "text": "高級使用者" },
-            { "icon": "many", "text": "無限制測驗" },
-            { "icon": "score", "text": "評分寫作" },
-            { "icon": "score", "text": "評分口說測驗" }
-          ],
-          "links": {
-            "page": {
-              "text": "了解更多",
-              "url": "./courses/grammar-basic"
-            },
-            "signin": {
-              "text": "登入",
-              "url": "./signin"
-            },
-            "signup": {
-              "text": "註冊",
-              "url": "./signup"
-            }
+        "list": [
+          { "icon": "check", "text": "IELTS 寫作最佳實踐" },
+          { "icon": "score_fill", "text": "評分作文" },
+          { "icon": "help", "text": "教師協助" },
+          { "icon": "feedback", "text": "個別回饋" },
+          { "icon": "price", "text": "176 點數 / 測驗" }
+        ],
+        "links": {
+          "page": {
+            "text": "了解更多",
+            "url": "./courses/ielts-advanced"
           }
         }
-      ]
-    },
-    {
-      "type": "teacher",
-      "title": "我們的老師",
-      "style": "media-element gap-4",
-      "cards": [
-        {
-          "title": "Steven Tessier",
-          "rate": { "title": "價錢", "text": "1755 點數 / 30 分鐘" },
-          "text": "Steven 是一位有超過 30 年經驗的資深教師，專門教授和準備學生參加 IELTS 測驗...",
-          "image": {
-            "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/ZDaTNQdqBQWPQVUS.png?t=0f58c8a",
-            "alt": "Steven Tessier 縮圖"
-          },
-          "links": {
-            "page": {
-              "text": "了解更多",
-              "url": "./teachers/steven-tessier"
-            },
-            "action": {
-              "text": "預約",
-              "url": "/"
-            }
+      }
+    ]
+  },
+  {
+    "type": "mocktest",
+    "title": "模擬測驗",
+    "style": "media-element label",
+    "cards": [
+      {
+        "title": "免費試用",
+        "color": "rgb(68, 64, 59)",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "男人戴著耳機看著筆記型電腦"
+        },
+        "list": [
+          { "icon": "unregistered", "text": "不需註冊帳號" },
+          { "icon": "single", "text": "單一測驗" },
+          { "icon": "writing", "text": "寫作練習" },
+          { "icon": "comprehension", "text": "閱讀理解練習" }
+        ],
+        "links": {
+          "page": {
+            "text": "進入模擬測驗頁面",
+            "url": "./mocktests"
           }
         },
-        {
-          "title": "Shad Gilbert",
-          "rate": { "title": "價錢", "text": "1755 點數 / 30 分鐘" },
-          "text": "Shad 是一位有超過 20 年教學經驗的資深教師，在美國、中國和台灣都有教學經歷...",
-          "image": {
-            "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/5QXZ7HiiF7ER3rLM.png?t=0f58c8a",
-            "alt": "Shad Gilbert 縮圖"
-          },
-          "links": {
-            "page": {
-              "text": "了解更多",
-              "url": "./teachers/shad-gilbert"
-            },
-            "action": {
-              "text": "預約",
-              "url": "/"
-            }
-          }
+        "trial": {
+          "url": "./mocktests"
+        }
+      },
+      {
+        "title": "基礎方案",
+        "color": "rgb(13, 84, 43)",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1565598621680-94ac0c22b148?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "兩位年輕女性正在觀看電腦螢幕"
         },
-        {
-          "title": "Kate Licup",
-          "rate": { "title": "價錢", "text": "264 點數 / 30 分鐘" },
-          "text": "Kate 擁有 TESOL 英語教學證書...",
-          "image": {
-            "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/D4nrCI0kapCx2FOk.jpg?t=0f58c8a",
-            "alt": "Kate Licup 縮圖"
+        "list": [
+          { "icon": "registered", "text": "註冊使用者" },
+          { "icon": "many", "text": "多項測驗" },
+          { "icon": "results", "text": "保存進度" },
+          { "icon": "course", "text": "課程免費試用" }
+        ],
+        "links": {
+          "page": {
+            "text": "進入模擬測驗頁面",
+            "url": "./mocktests"
           },
-          "links": {
-            "page": {
-              "text": "了解更多",
-              "url": "./teachers/kate-licup"
-            },
-            "action": {
-              "text": "預約",
-              "url": "/"
-            }
+          "signin": {
+            "text": "登入",
+            "url": "./signin"
+          },
+          "signup": {
+            "text": "註冊",
+            "url": "./signup"
           }
         }
-      ]
-    },
-    {
-      "type": "testimonial",
-      "title": "學員心得",
-      "style": "media-element",
-     "cards": [
+      },
+      {
+        "title": "高級方案",
+        "color": "rgb(16, 78, 100)",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1579389082289-3d6922d506c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "男人坐在桌前看著手機"
+        },
+        "list": [
+          { "icon": "premium", "text": "高級使用者" },
+          { "icon": "many", "text": "無限制測驗" },
+          { "icon": "score", "text": "評分寫作" },
+          { "icon": "score", "text": "評分口說測驗" }
+        ],
+        "links": {
+          "page": {
+            "text": "了解更多",
+            "url": "./courses/grammar-basic"
+          },
+          "signin": {
+            "text": "登入",
+            "url": "./signin"
+          },
+          "signup": {
+            "text": "註冊",
+            "url": "./signup"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "teacher",
+    "title": "我們的老師",
+    "style": "media-element gap-4",
+    "cards": [
+      {
+        "title": "Steven Tessier",
+        "rate": { "title": "價錢", "text": "1755 點數 / 30 分鐘" },
+        "text": "Steven 是一位有超過 30 年經驗的資深教師，專門教授和準備學生參加 IELTS 測驗...",
+        "image": {
+          "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/ZDaTNQdqBQWPQVUS.png?t=0f58c8a",
+          "alt": "Steven Tessier 縮圖"
+        },
+        "links": {
+          "page": {
+            "text": "了解更多",
+            "url": "./teachers/steven-tessier"
+          },
+          "action": {
+            "text": "預約",
+            "url": "/"
+          }
+        }
+      },
+      {
+        "title": "Shad Gilbert",
+        "rate": { "title": "價錢", "text": "1755 點數 / 30 分鐘" },
+        "text": "Shad 是一位有超過 20 年教學經驗的資深教師，在美國、中國和台灣都有教學經歷...",
+        "image": {
+          "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/5QXZ7HiiF7ER3rLM.png?t=0f58c8a",
+          "alt": "Shad Gilbert 縮圖"
+        },
+        "links": {
+          "page": {
+            "text": "了解更多",
+            "url": "./teachers/shad-gilbert"
+          },
+          "action": {
+            "text": "預約",
+            "url": "/"
+          }
+        }
+      },
+      {
+        "title": "Kate Licup",
+        "rate": { "title": "價錢", "text": "264 點數 / 30 分鐘" },
+        "text": "Kate 擁有 TESOL 英語教學證書...",
+        "image": {
+          "src": "https://storage-school.ieltstaipei.com/ielts-dojo/production/user/D4nrCI0kapCx2FOk.jpg?t=0f58c8a",
+          "alt": "Kate Licup 縮圖"
+        },
+        "links": {
+          "page": {
+            "text": "了解更多",
+            "url": "./teachers/kate-licup"
+          },
+          "action": {
+            "text": "預約",
+            "url": "/"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "testimonial",
+    "title": "學員心得",
+    "style": "media-element",
+    "cards": [
       {
         "title": "Catherine",
         "color": "dark-clr",
@@ -377,6 +372,5 @@
         }
       }
     ]
-    }
+  }
 ]
-  

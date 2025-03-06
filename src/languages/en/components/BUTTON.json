@@ -1,8 +1,5 @@
 {
-    "cart": {
-        "type": "button",
-        "name": "cart",
-        "value": "Add To Cart", 
-        "style": "relative flex justify-center items-center w-full py-1 border-yellow bg-yellow-500 text-stone-900 text-base font-semibold rounded-sm opacity-100"
-    }
+  "cart": "Add To Cart",
+  "course": "Free Trial",
+  "test": "Try Mock Test"
 }

@@ -8,7 +8,6 @@ import {
 } from 'react';
 import { Link } from 'react-router-dom';
 import Picture from '../../components/Picture';
-import Indicator from '../../components/Indicator';
 import Icon from '../../components/Icon';
 import Button from '../../components/Button';
 import { IconContext } from 'react-icons';
@@ -201,8 +200,8 @@ const Carousel = ({ elements }) => {
           return (
             <Button
               key={i}
+              layout="indicator"
               name="indicator"
-              className="indicator"
               value={
                 <Icon
                   type="indicator"
