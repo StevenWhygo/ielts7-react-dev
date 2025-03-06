@@ -67,6 +67,8 @@ import { FaYoutube } from 'react-icons/fa6';
 import { FaSquareInstagram } from 'react-icons/fa6';
 // linkedin
 import { FaLinkedin } from 'react-icons/fa6';
+// slide indicator
+import { GoDotFill } from 'react-icons/go';
 
 
 const icons = {
@@ -101,7 +103,8 @@ const icons = {
   'youtube': <FaYoutube />,
   'linkedin': <FaLinkedin />,
   'left': <TfiAngleLeft />,
-  'right': <TfiAngleRight />
+  'right': <TfiAngleRight />,
+  'indicator': <GoDotFill />
 };
 
 export default icons

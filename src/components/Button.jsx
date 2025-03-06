@@ -1,31 +1,30 @@
 import { forwardRef } from 'react';
+import Icon from './Icon';
 
 const Button = forwardRef(function Button(props, ref) {
-  const { children, handler = null, attributes } = props;
-
   const {
-    id = 'button',
-    className = 'button',
+    value = '',
+    name = '',
     type = 'button',
-    name = 'button',
+    className = '',
     ariaControls = false,
     ariaExpanded = false,
     ariaLabel = false,
-  } = attributes;
+    handleClick = null,
+  } = props;
 
   return (
     <button
-      id={id}
       className={className}
       type={type}
       name={name}
       aria-controls={ariaControls}
       aria-expanded={ariaExpanded}
       aria-label={ariaLabel}
-      onClick={handler}
+      onClick={handleClick}
       ref={ref}
     >
-      {children}
+      {value}
     </button>
   );
 });
