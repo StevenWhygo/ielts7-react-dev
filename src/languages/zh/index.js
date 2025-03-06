@@ -1,6 +1,7 @@
 // Components
 import card from './components/CARD.json'
 import carousel from './components/CAROUSEL.json'
+import button from './components/BUTTON.json'
 import footer from './components/FOOTER.json'
 import menu from './components/MENU.json'
 
@@ -24,6 +25,7 @@ import terms from './pages/TERMS.json'
 const global = { 
     card, 
     carousel, 
+    button,
     footer,
     menu, 
     about, 

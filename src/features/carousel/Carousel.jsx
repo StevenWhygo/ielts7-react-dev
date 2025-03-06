@@ -8,10 +8,9 @@ import {
 } from 'react';
 import { Link } from 'react-router-dom';
 import Picture from '../../components/Picture';
-import Indicators from '../../components/Indicators';
-import Button from '../../components/Button';
+import Indicator from '../../components/Indicator';
 import Icon from '../../components/Icon';
-
+import Button from '../../components/Button';
 import { IconContext } from 'react-icons';
 import { TfiAngleLeft } from 'react-icons/tfi';
 import { TfiAngleRight } from 'react-icons/tfi';
@@ -73,9 +72,8 @@ const Carousel = ({ elements }) => {
     }
     // Indicators
     else {
-      const indicator = parseInt(slide);
-      setTranslateX(containerRef.current.clientWidth * (indicator + 1));
-      setCurrentIndex(indicator + 1);
+      setTranslateX(containerRef.current.clientWidth * (slide + 1));
+      setCurrentIndex(slide + 1);
     }
   };
 
@@ -187,7 +185,6 @@ const Carousel = ({ elements }) => {
           name="next"
           className="block absolute top-0 bottom-0 right-0 cursor-pointer transition-opacity pr-3/12 hover:opacity-60"
           onClick={(e) => slideHandler(e.target.name)}
-          // aria-label={`View Image ${currentIndex}`}
         >
           <Icon
             type="right"
@@ -198,12 +195,28 @@ const Carousel = ({ elements }) => {
           />
         </button>
       </>
-
-      <Indicators
-        count={elements.length}
-        slideIndex={currentIndex}
-        slideHandler={slideHandler}
-      />
+      {/* Indicators */}
+      <div className="indicators">
+        {elements.map((_, i) => {
+          return (
+            <Button
+              key={i}
+              name="indicator"
+              className="indicator"
+              value={
+                <Icon
+                  type="indicator"
+                  value={{
+                    size: '1.2rem',
+                    color: currentIndex === i + 1 ? '#0080c8' : '#e2e8f0',
+                  }}
+                />
+              }
+              handleClick={(e) => slideHandler(parseInt(i))}
+            />
+          );
+        })}
+      </div>
     </section>
   );
 };
