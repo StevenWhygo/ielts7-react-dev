@@ -1,8 +1,5 @@
 {
-    "cart": {
-        "type": "button",
-        "name": "cart",
-        "value": "加入購物車",
-        "style": "relative flex justify-center items-center w-full py-1 border-yellow bg-yellow-500 text-stone-900 text-base font-semibold rounded-sm opacity-100"
-    }
+  "cart": "加入購物車",
+  "course": "免費試用",
+  "test": "嘗試模擬測驗"
 }

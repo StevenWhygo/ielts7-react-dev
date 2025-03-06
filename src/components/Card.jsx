@@ -4,6 +4,8 @@ import CardFooter from './services/CardFooter';
 
 const Card = (props) => {
   const { style, fill, ...rest } = props;
+  console.log(rest);
+  
   return (
     <article
       className={style}
