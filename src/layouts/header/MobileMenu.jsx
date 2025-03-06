@@ -14,7 +14,7 @@ const MobileMenu = ({ options }) => {
   return (
     <ul
       id="menu"
-      className="menu w-full bg-slate-100 border-t border-slate-300"
+      className="menu w-full bg-slate-100 border-t border-slate-100"
       ref={menuRef}
     >
       <>
@@ -23,11 +23,11 @@ const MobileMenu = ({ options }) => {
             <ListItem
               key={i}
               index={i}
-              style="relative flex items-center border-b border-slate-200"
+              style="relative flex items-center bg-slate-100 h-12"
               submenu={option.submenu ? option.submenu : null}
             >
               <NavLink
-                className="flex-1 min-h-12 h-full text-xl pl-3 leading-[3rem]"
+                className="flex-1 h-12 text-xl font-light pl-6 leading-[3rem] border-b border-slate-200"
                 to={option.url}
               >
                 {option.text}

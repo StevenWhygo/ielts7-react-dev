@@ -14,10 +14,13 @@ const Submenu = ({ index, options }) => {
         return (
           <li
             key={i}
-            className="flex items-center border-b  border-slate-100 bg-slate-200"
+            className="flex items-center border-b  border-slate-100 bg-slate-50"
           >
-            <NavLink className="flex-1 min-h-12 pl-3" to={option.url}>
-              <div className="pl-4 leading-[3rem] text-lg h-full flex items-center gap-4">
+            <NavLink
+              className="flex-1 min-h-12 pl-10 font-light text-slate-900"
+              to={option.url}
+            >
+              <div className="leading-[3rem] text-lg h-full flex items-center gap-4">
                 {option.image && (
                   <img
                     className="max-w-8 h-fit aspect-square rounded-full bg-no-repeat bg-slate-100"
